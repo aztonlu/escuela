@@ -1,0 +1,48 @@
+C:\Users\gallo\Desktop\Ap_escuela\Ap_escuela\bin\Debug\Ap_escuela.exe
+C:\Users\gallo\Desktop\Ap_escuela\Ap_escuela\bin\Debug\Ap_escuela.pdb
+C:\Users\gallo\Desktop\Ap_escuela\Ap_escuela\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\gallo\Desktop\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Form1.resources
+C:\Users\gallo\Desktop\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Properties.Resources.resources
+C:\Users\gallo\Desktop\Ap_escuela\Ap_escuela\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\gallo\Desktop\Ap_escuela\Ap_escuela\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\gallo\Desktop\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.exe
+C:\Users\gallo\Desktop\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.pdb
+C:\Users\gallo\Desktop\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.exe
+C:\Users\gallo\Desktop\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.pdb
+C:\Users\gallo\Desktop\Tutoriales\Ap_escuela\Ap_escuela\bin\Debug\Ap_escuela.exe
+C:\Users\gallo\Desktop\Tutoriales\Ap_escuela\Ap_escuela\bin\Debug\Ap_escuela.pdb
+C:\Users\gallo\Desktop\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\gallo\Desktop\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Buscar.resources
+C:\Users\gallo\Desktop\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Form1.resources
+C:\Users\gallo\Desktop\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Properties.Resources.resources
+C:\Users\gallo\Desktop\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\gallo\Desktop\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\gallo\Desktop\Archivos\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.exe
+C:\Users\gallo\Desktop\Archivos\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.pdb
+C:\Users\gallo\Desktop\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Registro_Usuarios.resources
+C:\Users\gallo\Desktop\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Autentificacion.resources
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.exe
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.pdb
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\bin\Debug\Ap_escuela.exe
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\bin\Debug\Ap_escuela.pdb
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Autentificacion.resources
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Buscar.resources
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Form1.resources
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Properties.Resources.resources
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Registro_Usuarios.resources
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\gallo\Desktop\tem\Tutoriales\Ap_escuela\Ap_escuela\obj\x86\Debug\GenerateResource.read.7.tlog
+C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.exe
+C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.pdb
+C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.csprojResolveAssemblyReference.cache
+C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Autentificacion.resources
+C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Buscar.resources
+C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Form1.resources
+C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Properties.Resources.resources
+C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Registro_Usuarios.resources
+C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.csproj.GenerateResource.Cache
+C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\bin\Debug\Ap_escuela.exe.config
+C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\bin\Debug\Ap_escuela.exe
+C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\bin\Debug\Ap_escuela.pdb

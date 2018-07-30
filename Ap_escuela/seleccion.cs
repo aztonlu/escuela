@@ -32,5 +32,11 @@ namespace Ap_escuela
             RegistroDocentes registrodoc = new RegistroDocentes();
             registrodoc.Show();
         }
+
+        private void metroTileItem10_Click(object sender, EventArgs e)
+        {
+            Registrargrupo grupo = new Registrargrupo();
+            grupo.Show();
+        }
     }
 }

@@ -29,13 +29,16 @@ namespace Ap_escuela
         private void InitializeComponent()
         {
             this.btnguardar = new DevComponents.DotNetBar.ButtonX();
-            this.txtdni = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtnumerogrupo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.comboTree1 = new DevComponents.DotNetBar.Controls.ComboTree();
             this.Día = new DevComponents.AdvTree.ColumnHeader();
             this.Tarde = new DevComponents.AdvTree.ColumnHeader();
             this.Noche = new DevComponents.AdvTree.ColumnHeader();
+            this.cbhorario = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.comboItem1 = new DevComponents.Editors.ComboItem();
+            this.comboItem2 = new DevComponents.Editors.ComboItem();
+            this.comboItem3 = new DevComponents.Editors.ComboItem();
             this.SuspendLayout();
             // 
             // btnguardar
@@ -50,21 +53,21 @@ namespace Ap_escuela
             this.btnguardar.Text = "Guardar";
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
-            // txtdni
+            // txtnumerogrupo
             // 
-            this.txtdni.BackColor = System.Drawing.Color.White;
+            this.txtnumerogrupo.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
-            this.txtdni.Border.Class = "TextBoxBorder";
-            this.txtdni.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtdni.DisabledBackColor = System.Drawing.Color.White;
-            this.txtdni.ForeColor = System.Drawing.Color.Black;
-            this.txtdni.Location = new System.Drawing.Point(168, 46);
-            this.txtdni.Name = "txtdni";
-            this.txtdni.PreventEnterBeep = true;
-            this.txtdni.Size = new System.Drawing.Size(100, 22);
-            this.txtdni.TabIndex = 24;
+            this.txtnumerogrupo.Border.Class = "TextBoxBorder";
+            this.txtnumerogrupo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtnumerogrupo.DisabledBackColor = System.Drawing.Color.White;
+            this.txtnumerogrupo.ForeColor = System.Drawing.Color.Black;
+            this.txtnumerogrupo.Location = new System.Drawing.Point(168, 46);
+            this.txtnumerogrupo.Name = "txtnumerogrupo";
+            this.txtnumerogrupo.PreventEnterBeep = true;
+            this.txtnumerogrupo.Size = new System.Drawing.Size(100, 22);
+            this.txtnumerogrupo.TabIndex = 24;
             // 
             // labelX2
             // 
@@ -90,24 +93,6 @@ namespace Ap_escuela
             this.labelX1.TabIndex = 21;
             this.labelX1.Text = "Numero de Grupo:";
             // 
-            // comboTree1
-            // 
-            this.comboTree1.BackColor = System.Drawing.SystemColors.Window;
-            // 
-            // 
-            // 
-            this.comboTree1.BackgroundStyle.Class = "TextBoxBorder";
-            this.comboTree1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.comboTree1.ButtonDropDown.Visible = true;
-            this.comboTree1.Columns.Add(this.Día);
-            this.comboTree1.Columns.Add(this.Tarde);
-            this.comboTree1.Columns.Add(this.Noche);
-            this.comboTree1.Location = new System.Drawing.Point(168, 107);
-            this.comboTree1.Name = "comboTree1";
-            this.comboTree1.Size = new System.Drawing.Size(141, 23);
-            this.comboTree1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.comboTree1.TabIndex = 28;
-            // 
             // Día
             // 
             this.Día.Name = "Día";
@@ -126,14 +111,43 @@ namespace Ap_escuela
             this.Noche.Text = "Column";
             this.Noche.Width.Absolute = 150;
             // 
+            // cbhorario
+            // 
+            this.cbhorario.DisplayMember = "Text";
+            this.cbhorario.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbhorario.ForeColor = System.Drawing.Color.Black;
+            this.cbhorario.FormattingEnabled = true;
+            this.cbhorario.ItemHeight = 16;
+            this.cbhorario.Items.AddRange(new object[] {
+            this.comboItem1,
+            this.comboItem2,
+            this.comboItem3});
+            this.cbhorario.Location = new System.Drawing.Point(168, 108);
+            this.cbhorario.Name = "cbhorario";
+            this.cbhorario.Size = new System.Drawing.Size(121, 22);
+            this.cbhorario.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cbhorario.TabIndex = 29;
+            // 
+            // comboItem1
+            // 
+            this.comboItem1.Text = "Día";
+            // 
+            // comboItem2
+            // 
+            this.comboItem2.Text = "Tarde";
+            // 
+            // comboItem3
+            // 
+            this.comboItem3.Text = "Noche";
+            // 
             // Registrargrupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 257);
-            this.Controls.Add(this.comboTree1);
+            this.Controls.Add(this.cbhorario);
             this.Controls.Add(this.btnguardar);
-            this.Controls.Add(this.txtdni);
+            this.Controls.Add(this.txtnumerogrupo);
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.labelX1);
             this.DoubleBuffered = true;
@@ -147,12 +161,15 @@ namespace Ap_escuela
         #endregion
 
         private DevComponents.DotNetBar.ButtonX btnguardar;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtdni;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtnumerogrupo;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.Controls.ComboTree comboTree1;
         private DevComponents.AdvTree.ColumnHeader Día;
         private DevComponents.AdvTree.ColumnHeader Tarde;
         private DevComponents.AdvTree.ColumnHeader Noche;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cbhorario;
+        private DevComponents.Editors.ComboItem comboItem1;
+        private DevComponents.Editors.ComboItem comboItem2;
+        private DevComponents.Editors.ComboItem comboItem3;
     }
 }

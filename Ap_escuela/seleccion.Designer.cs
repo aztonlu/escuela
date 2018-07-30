@@ -41,6 +41,7 @@ namespace Ap_escuela
             this.metroTileItem14 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem15 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem16 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroTileItem3 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.itemPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,12 +134,13 @@ namespace Ap_escuela
             // 
             this.metroTileItem10.Name = "metroTileItem10";
             this.metroTileItem10.SymbolColor = System.Drawing.Color.Empty;
-            this.metroTileItem10.Text = "Curso";
+            this.metroTileItem10.Text = "Grupo";
             this.metroTileItem10.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
             // 
             // 
             // 
             this.metroTileItem10.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTileItem10.Click += new System.EventHandler(this.metroTileItem10_Click);
             // 
             // metroTileItem11
             // 
@@ -163,7 +165,8 @@ namespace Ap_escuela
             this.metroTileItem12,
             this.metroTileItem13,
             this.metroTileItem14,
-            this.metroTileItem15});
+            this.metroTileItem15,
+            this.metroTileItem3});
             // 
             // 
             // 
@@ -222,6 +225,17 @@ namespace Ap_escuela
             // 
             this.metroTileItem16.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
+            // metroTileItem3
+            // 
+            this.metroTileItem3.Name = "metroTileItem3";
+            this.metroTileItem3.SymbolColor = System.Drawing.Color.Empty;
+            this.metroTileItem3.Text = "metroTileItem3";
+            this.metroTileItem3.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
+            // 
+            // 
+            // 
+            this.metroTileItem3.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
             // seleccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -253,5 +267,6 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem13;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem14;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem15;
+        private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem3;
     }
 }

@@ -14,8 +14,8 @@ namespace Ap_escuela
            int retorno = 0;
            using (SqlConnection Conn = BDComun.ObtnerCOnexion())
            { 
-           SqlCommand Comando=new SqlCommand(string.Format("Insert Into Alumnos (Nombre, Apellido, Direccion, Fecha_nacimiento) values ('{0}', '{1}','{2}','{3}')",
-               pAlumno.Nombre, pAlumno.Apellido, pAlumno.Direccion, pAlumno.Fecha_Nac),Conn);
+           SqlCommand Comando=new SqlCommand(string.Format("Insert Into talumno (dni, observacion, interesseguimiento) values ('{0}', '{1}','{2}')",
+               pAlumno.Dni, pAlumno.Observacion, pAlumno.Interesseguimiento),Conn);
 
            retorno = Comando.ExecuteNonQuery();
            Conn.Close();
@@ -24,22 +24,9 @@ namespace Ap_escuela
            return retorno;       
        }
 
-       public static int AgregarPersona(Persona pPersona)
-       {
-           int retorno = 1;
-           using (SqlConnection Conn = BDComun.ObtnerCOnexion())
-           {
-               SqlCommand Comando = new SqlCommand(string.Format("Insert Into tpersona (Dni, Nombre, Appat, Apmat, Fecha_nac, Telefono, Correo, Direccion) values ('{0}', '{1}','{2}','{3}','{4}','{5}','{6}','{7}')",
-                   pPersona.Dni, pPersona.Nombre, pPersona.Appat, pPersona.Apmat, pPersona.Fecha_Nac, pPersona.Telefono, pPersona.Correo, pPersona.Direccion), Conn);
+       
 
-               retorno = Comando.ExecuteNonQuery();
-               Conn.Close();
-
-           }
-           return retorno;
-       }
-
-       public static List<Alumno> BuscarAlumnos(String pNombre, String pApellido)
+       /*public static List<Alumno> BuscarAlumnos(String pNombre, String pApellido)
        {
 
            List<Alumno> Lista = new List<Alumno>();
@@ -67,11 +54,11 @@ namespace Ap_escuela
 
            }
 
-       }
+       }*/
 
 
 
-       public static Alumno ObtenerAlumno(Int64 pId)
+       /*public static Alumno ObtenerAlumno(Int64 pId)
        {
 
            using (SqlConnection conexion = BDComun.ObtnerCOnexion())
@@ -99,11 +86,11 @@ namespace Ap_escuela
 
            }
 
-       }
+       }*/
 
 
 
-       public static int Modificar(Alumno pAlumno)
+       /*public static int Modificar(Alumno pAlumno)
        {
            int retorno = 0;
            using (SqlConnection conexion = BDComun.ObtnerCOnexion())
@@ -116,7 +103,7 @@ namespace Ap_escuela
            }
            return retorno;
        
-       }
+       }*/
 
 
        public static int Eliminar(Int64 pId)

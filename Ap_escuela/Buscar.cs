@@ -23,12 +23,12 @@ namespace Ap_escuela
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = AlumnoDAL.BuscarAlumnos(txtNombre.Text, txtApellido.Text);
+            //dataGridView1.DataSource = AlumnoDAL.BuscarAlumnos(txtNombre.Text, txtApellido.Text);
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count == 1)
+            /*if (dataGridView1.SelectedRows.Count == 1)
             {
                 Int64 Id = Convert.ToInt64(dataGridView1.CurrentRow.Cells[0].Value);
                 AlumnoSeleccionado = AlumnoDAL.ObtenerAlumno(Id);
@@ -37,7 +37,7 @@ namespace Ap_escuela
             else
             {
                 MessageBox.Show("Aun no ha seleccionado Ningun Alumno");
-            }
+            }*/
 
         }
 

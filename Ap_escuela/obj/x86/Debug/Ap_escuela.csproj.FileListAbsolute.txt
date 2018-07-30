@@ -60,3 +60,19 @@ D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Prope
 D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Registro_Usuarios.resources
 D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.seleccion.resources
 D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.csproj.GenerateResource.Cache
+D:\proyecto escuela\escuela\Ap_escuela\bin\Debug\Ap_escuela.exe.config
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.exe
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.pdb
+D:\proyecto escuela\escuela\Ap_escuela\bin\Debug\Ap_escuela.exe
+D:\proyecto escuela\escuela\Ap_escuela\bin\Debug\Ap_escuela.pdb
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.csprojResolveAssemblyReference.cache
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Autentificacion.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Buscar.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Form1.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Principal.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Properties.Resources.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Registro_Usuarios.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.seleccion.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.csproj.GenerateResource.Cache
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Form2.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.RegistroDocentes.resources

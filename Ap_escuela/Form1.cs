@@ -29,10 +29,10 @@ namespace Ap_escuela
             else
             {
                 Alumno Alumno = new Alumno();
-                Alumno.Nombre = txtNombre.Text;
-                Alumno.Apellido = txtApellido.Text;
-                Alumno.Direccion = txtDireccion.Text;
-                Alumno.Fecha_Nac = dtfecha.Value.ToShortDateString();
+                Alumno.Dni = Convert.ToInt32(txtdni.Text);
+                Alumno.Observacion = txtApellido.Text;
+                Alumno.Interesseguimiento = txtDireccion.Text;
+                
 
                 Persona Persona = new Persona();
                 Persona.Dni = Convert.ToInt32(txtdni.Text);
@@ -47,7 +47,7 @@ namespace Ap_escuela
 
 
                 int resultado = AlumnoDAL.Agregar(Alumno);
-                AlumnoDAL.AgregarPersona(Persona);
+                PersonaDAL.AgregarPersona(Persona);
 
                 if (resultado > 0)
                 {
@@ -69,7 +69,7 @@ namespace Ap_escuela
             this.Close();
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        /*private void btnBuscar_Click(object sender, EventArgs e)
         {
             Buscar pBuscar = new Buscar();
             pBuscar.ShowDialog();
@@ -88,9 +88,9 @@ namespace Ap_escuela
                 btnEliminar.Enabled = true;
 
             }
-        }
+        }*/
 
-        private void btnModificar_Click(object sender, EventArgs e)
+        /*private void btnModificar_Click(object sender, EventArgs e)
         {
             Alumno pAlumno = new Alumno();
             pAlumno.Nombre = txtNombre.Text;
@@ -120,7 +120,7 @@ namespace Ap_escuela
 
 
 
-        }
+        }*/
 
 
         void limpiar()
@@ -139,7 +139,7 @@ namespace Ap_escuela
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Esta seguro que desea eliminar el alumno??", "Esta seguro?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+           /* if (MessageBox.Show("Esta seguro que desea eliminar el alumno??", "Esta seguro?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
 
                 int resultado = AlumnoDAL.Eliminar(AlumnoActual.Id);
@@ -161,7 +161,7 @@ namespace Ap_escuela
 
             }
             else
-                MessageBox.Show("Se cancelo la eliminacion", "Cancelado");
+                MessageBox.Show("Se cancelo la eliminacion", "Cancelado");*/
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

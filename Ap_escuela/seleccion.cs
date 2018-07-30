@@ -15,5 +15,22 @@ namespace Ap_escuela
         {
             InitializeComponent();
         }
+
+        private void metroregistraralumnos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTileItem1_Click(object sender, EventArgs e)
+        {
+            Form2 formularioregistro = new Form2();
+            formularioregistro.Show();
+        }
+
+        private void metroTileItem2_Click(object sender, EventArgs e)
+        {
+            RegistroDocentes registrodoc = new RegistroDocentes();
+            registrodoc.Show();
+        }
     }
 }

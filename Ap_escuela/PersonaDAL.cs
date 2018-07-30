@@ -6,9 +6,23 @@ using System.Data.SqlClient;
 
 namespace Ap_escuela
 {
-    class PersonaDAL
+    public class PersonaDAL
     {
-       public static int Agregar(Alumno pAlumno)
+        public static int AgregarPersona(Persona pPersona)
+        {
+            int retorno = 1;
+            using (SqlConnection Conn = BDComun.ObtnerCOnexion())
+            {
+                SqlCommand Comando = new SqlCommand(string.Format("Insert Into tpersona (Dni, Nombre, Appat, Apmat, Fecha_nac, Telefono, Correo, Direccion) values ('{0}', '{1}','{2}','{3}','{4}','{5}','{6}','{7}')",
+                    pPersona.Dni, pPersona.Nombre, pPersona.Appat, pPersona.Apmat, pPersona.Fecha_Nac, pPersona.Telefono, pPersona.Correo, pPersona.Direccion), Conn);
+
+                retorno = Comando.ExecuteNonQuery();
+                Conn.Close();
+
+            }
+            return retorno;
+        }
+       /*public static int Agregar(Alumno pAlumno)
        {
            int retorno = 0;
            using (SqlConnection Conn = BDComun.ObtnerCOnexion())
@@ -86,19 +100,19 @@ namespace Ap_escuela
 
        }
 
-
+        */
 
        public static int Modificar(Alumno pAlumno)
        {
            int retorno = 0;
-           using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+           /*using (SqlConnection conexion = BDComun.ObtnerCOnexion())
            {
                SqlCommand comando = new SqlCommand(string.Format("Update Alumnos set Nombre='{0}', Apellido='{1}', Direccion='{2}', Fecha_Nacimiento='{3}' where Id={4}",
                    pAlumno.Nombre, pAlumno.Apellido, pAlumno.Direccion, pAlumno.Fecha_Nac, pAlumno.Id), conexion);
 
                retorno = comando.ExecuteNonQuery();
                conexion.Close();
-           }
+           }*/
            return retorno;
        
        }
@@ -107,13 +121,13 @@ namespace Ap_escuela
        public static int Eliminar(Int64 pId)
        {
            int retorno = 0;
-           using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+           /*using (SqlConnection conexion = BDComun.ObtnerCOnexion())
            {
 
                SqlCommand comando = new SqlCommand(string.Format("Delete from Alumnos where Id={0}", pId), conexion);
                retorno = comando.ExecuteNonQuery();
                conexion.Close();
-           }
+           }*/
            return retorno;
        
        }

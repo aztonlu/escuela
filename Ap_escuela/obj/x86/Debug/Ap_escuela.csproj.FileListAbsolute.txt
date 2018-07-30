@@ -46,3 +46,17 @@ C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_esc
 C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\bin\Debug\Ap_escuela.exe.config
 C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\bin\Debug\Ap_escuela.exe
 C:\Users\Luis\Dropbox\Desarrollo Cusco\colegio administradores\Ap_escuela\Ap_escuela\bin\Debug\Ap_escuela.pdb
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\bin\Debug\Ap_escuela.exe.config
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.exe
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.pdb
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\bin\Debug\Ap_escuela.exe
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\bin\Debug\Ap_escuela.pdb
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.csprojResolveAssemblyReference.cache
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Autentificacion.resources
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Buscar.resources
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Form1.resources
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Principal.resources
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Properties.Resources.resources
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Registro_Usuarios.resources
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.seleccion.resources
+D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.csproj.GenerateResource.Cache

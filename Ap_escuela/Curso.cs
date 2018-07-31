@@ -10,16 +10,17 @@ namespace Ap_escuela
       public String Idcurso { get; set; }
       public String Nombrecurso { get; set; }
       public String Numerogrupo { get; set; }
-      public String dni { get; set; }
+      public Int32 Dni { get; set; }
 
       public Curso() { }
 
-      public Curso(String pIdcurso, String pInteresseguimiento, String pObservacion, String pInteresseguimiento)
+      public Curso(String pIdcurso, String pNombrecurso, String pNumerogrupo, Int32 pDni)
 
       {
+          this.Idcurso = pIdcurso;
+          this.Nombrecurso = pNombrecurso;
+          this.Numerogrupo = pNumerogrupo;
           this.Dni = pDni;
-          this.Observacion = pObservacion;
-          this.Interesseguimiento = pInteresseguimiento;
           
       }
     }

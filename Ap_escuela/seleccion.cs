@@ -38,5 +38,23 @@ namespace Ap_escuela
             Registrargrupo grupo = new Registrargrupo();
             grupo.Show();
         }
+
+        private void metroTileItem11_Click(object sender, EventArgs e)
+        {
+            RegistrarCurso curso = new RegistrarCurso();
+            curso.Show();
+        }
+
+        private void metroTileItem16_Click(object sender, EventArgs e)
+        {
+            AgregarMatricula matricula = new AgregarMatricula();
+            matricula.Show();
+        }
+
+        private void metroTileItem4_Click(object sender, EventArgs e)
+        {
+            RegistrarAsistenciaAlumno asistencia = new RegistrarAsistenciaAlumno();
+            asistencia.Show();
+        }
     }
 }

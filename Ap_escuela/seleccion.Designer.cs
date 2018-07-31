@@ -42,6 +42,7 @@ namespace Ap_escuela
             this.metroTileItem15 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem16 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem3 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroTileItem4 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.itemPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,7 +99,8 @@ namespace Ap_escuela
             this.metroTileItem2,
             this.metroTileItem10,
             this.metroTileItem11,
-            this.metroTileItem16});
+            this.metroTileItem16,
+            this.metroTileItem4});
             // 
             // 
             // 
@@ -146,11 +148,13 @@ namespace Ap_escuela
             // 
             this.metroTileItem11.Name = "metroTileItem11";
             this.metroTileItem11.SymbolColor = System.Drawing.Color.Empty;
+            this.metroTileItem11.Text = "Curso";
             this.metroTileItem11.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
             // 
             // 
             // 
             this.metroTileItem11.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTileItem11.Click += new System.EventHandler(this.metroTileItem11_Click);
             // 
             // itemContainer4
             // 
@@ -218,12 +222,13 @@ namespace Ap_escuela
             // 
             this.metroTileItem16.Name = "metroTileItem16";
             this.metroTileItem16.SymbolColor = System.Drawing.Color.Empty;
-            this.metroTileItem16.Text = "metroTileItem16";
+            this.metroTileItem16.Text = "Matricula";
             this.metroTileItem16.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
             // 
             // 
             // 
             this.metroTileItem16.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTileItem16.Click += new System.EventHandler(this.metroTileItem16_Click);
             // 
             // metroTileItem3
             // 
@@ -235,6 +240,18 @@ namespace Ap_escuela
             // 
             // 
             this.metroTileItem3.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // metroTileItem4
+            // 
+            this.metroTileItem4.Name = "metroTileItem4";
+            this.metroTileItem4.SymbolColor = System.Drawing.Color.Empty;
+            this.metroTileItem4.Text = "Asistencia de Alumnos";
+            this.metroTileItem4.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
+            // 
+            // 
+            // 
+            this.metroTileItem4.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTileItem4.Click += new System.EventHandler(this.metroTileItem4_Click);
             // 
             // seleccion
             // 
@@ -268,5 +285,6 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem14;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem15;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem3;
+        private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem4;
     }
 }

@@ -77,3 +77,6 @@ D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.csproj.GenerateR
 D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Form2.resources
 D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.RegistroDocentes.resources
 D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Registrargrupo.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.RegistrarCurso.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.AgregarMatricula.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.RegistrarAsistenciaAlumno.resources

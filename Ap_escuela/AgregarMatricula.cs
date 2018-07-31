@@ -33,8 +33,8 @@ namespace Ap_escuela
             else
             {
                 Matricula Matricula = new Matricula();
-                Matricula.Numerogrupo = txtnumerogrupo.Text;
-                Matricula.Idcurso = txtidcurso.Text;
+                Matricula.Numerogrupo = cbnumerogrupo.Text;
+                Matricula.Idcurso = cbidcurso.Text;
                 Matricula.Dni = Convert.ToInt32(txtdni.Text);
 
                 int resultado = MatriculaDAL.AgregarMatricula(Matricula);
@@ -52,6 +52,45 @@ namespace Ap_escuela
                     MessageBox.Show("No se pudieron Guardar lo datos", "Error al Guardar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
+        }
+
+        private void AgregarMatricula_Load(object sender, EventArgs e)
+        {
+            MatriculaDAL matri = new MatriculaDAL();
+            matri.Buscargrupocb(cbnombrecurso);
+            
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+             MessageBox.Show(Convert.ToString(cbidcurso.Items[1]));
+        }
+
+        private void cbnombrecurso_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            /*
+            String numero;
+            switch (num)
+            {
+                case 1:
+                    numero = "uno";
+                    break;
+                case 2:
+                    numero = "dos";
+                    break;
+                case 3:
+                    numero = "tres";
+                    break;
+                case 4:
+                    numero = "cuatro";
+                    break;
+                case 5:
+                    numero = "cinco";
+                    break;
+                default:
+                    numero = "error";
+                    break;
+            }*/
         }
     }
 }

@@ -72,6 +72,12 @@
     <Compile Include="Buscar.Designer.cs">
       <DependentUpon>Buscar.cs</DependentUpon>
     </Compile>
+    <Compile Include="BusquedaAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaAlumno.Designer.cs">
+      <DependentUpon>BusquedaAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Curso.cs" />
     <Compile Include="CursoDAL.cs" />
     <Compile Include="Docente.cs" />
@@ -97,6 +103,8 @@
     <Compile Include="GrupoDAL.cs" />
     <Compile Include="Matricula.cs" />
     <Compile Include="MatriculaDAL.cs" />
+    <Compile Include="PagoCurso.cs" />
+    <Compile Include="PagoCursoDAL.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="PersonaDAL.cs" />
     <Compile Include="Principal.cs">
@@ -125,11 +133,25 @@
     <Compile Include="Registrargrupo.Designer.cs">
       <DependentUpon>Registrargrupo.cs</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarPagoCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarPagoCurso.Designer.cs">
+      <DependentUpon>RegistrarPagoCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PagoDocente.cs" />
+    <Compile Include="PagoDocenteDAL.cs" />
     <Compile Include="RegistroDocentes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistroDocentes.Designer.cs">
       <DependentUpon>RegistroDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroPagoDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroPagoDocente.Designer.cs">
+      <DependentUpon>RegistroPagoDocente.cs</DependentUpon>
     </Compile>
     <Compile Include="Registro_Usuarios.cs">
       <SubType>Form</SubType>
@@ -152,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaAlumno.resx">
+      <DependentUpon>BusquedaAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -180,8 +205,14 @@
     <EmbeddedResource Include="Registrargrupo.resx">
       <DependentUpon>Registrargrupo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarPagoCurso.resx">
+      <DependentUpon>RegistrarPagoCurso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistroDocentes.resx">
       <DependentUpon>RegistroDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroPagoDocente.resx">
+      <DependentUpon>RegistroPagoDocente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registro_Usuarios.resx">
       <DependentUpon>Registro_Usuarios.cs</DependentUpon>

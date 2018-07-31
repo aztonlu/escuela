@@ -9,17 +9,15 @@ using DevComponents.DotNetBar;
 
 namespace Ap_escuela
 {
-    public partial class RegistrarCurso : DevComponents.DotNetBar.Metro.MetroForm
+    public partial class RegistrarPagoCurso : DevComponents.DotNetBar.Metro.MetroForm
     {
-        public RegistrarCurso()
+        public RegistrarPagoCurso()
         {
             InitializeComponent();
         }
+        public PagoCurso PagoActual { get; set; }
 
-        public Curso CursoActual { get; set; }
-        //public Persona PersonaActual { get; set; }
-
-        private void btnguardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
             if (txtdni.Text == "")
             {
@@ -27,16 +25,21 @@ namespace Ap_escuela
             }
             else
             {
-                Curso Curso = new Curso();
-                Curso.Idcurso = txtidcurso.Text;
-                Curso.Nombrecurso = txtnombrecurso.Text;
-                Curso.Numerogrupo = cbnumerogrupo.Text;
-                Curso.Dni = Convert.ToInt32(txtdni.Text);
+                PagoCurso Pago = new PagoCurso();
+                Pago.Idpago = txtidpago.Text;
+                Pago.Numerogrupo = txtnumerogrupo.Text;
+                Pago.Idcurso = txtidcurso.Text;
+                Pago.Dni = Convert.ToInt32(txtdni.Text);
+                Pago.Monto = Convert.ToDecimal(txtmonto.Text);
+                Pago.Cuenta = Convert.ToDecimal(txtcuenta.Text);
+                Pago.Fecha = monthCalendarAdv1.SelectedDate.ToShortDateString();
+                Pago.Nrorecibo = txtnumerorecibo.Text;
+                Pago.Estado = txtestado.Text;
+                Pago.Observacion = txtobservacion.Text;
 
 
-                int resultado = CursoDAL.AgregarCurso(Curso);
+                int resultado = PagoCursoDAL.AgregarPagocurso(Pago);
                 
-
                 if (resultado > 0)
                 {
                     MessageBox.Show("Datos Guardados Corerectamente", "Datos Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -49,13 +52,6 @@ namespace Ap_escuela
                     MessageBox.Show("No se pudieron Guardar lo datos", "Error al Guardar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
-        }
-
-        private void RegistrarCurso_Load(object sender, EventArgs e)
-        {
-            CursoDAL cur = new CursoDAL();
-            cur.Buscargrupocb(cbnumerogrupo);
-            //alu.Buscar(dni, dataGridViewX1); //AlumnoDAL.Buscar(dataGridViewX1);
         }
     }
 }

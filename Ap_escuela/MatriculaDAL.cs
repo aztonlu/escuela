@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
+using System.Windows.Forms;
+using System.Data;
 
 namespace Ap_escuela
 {
@@ -21,6 +23,57 @@ namespace Ap_escuela
 
             }
             return retorno;
+        }
+
+        public void Buscargrupocb(ComboBox cb)
+        {
+            using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+                try
+                {
+                    Grupo pGrupo = new Grupo();
+                    SqlCommand comando = new SqlCommand(string.Format("Select idcurso, nombrecurso from tcurso"), conexion);
+
+                    SqlDataReader reader = comando.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        cb.Items.Add(reader["idcurso"]);
+                        cb.Items.Add(reader["nombrecurso"]);
+
+                    }
+                    conexion.Close();
+
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex.ToString());
+                }
+            
+        }
+
+        public void Buscarnombrecursogrupocb(ComboBox cb)
+        {
+            using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+                try
+                {
+                    Grupo pGrupo = new Grupo();
+                    SqlCommand comando = new SqlCommand(string.Format("Select idcurso from tcurso"), conexion);
+
+                    SqlDataReader reader = comando.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        cb.Items.Add(reader["idcurso"]);
+
+                    }
+                    conexion.Close();
+
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex.ToString());
+                }
+
         }
     }
 }

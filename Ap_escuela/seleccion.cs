@@ -56,5 +56,23 @@ namespace Ap_escuela
             RegistrarAsistenciaAlumno asistencia = new RegistrarAsistenciaAlumno();
             asistencia.Show();
         }
+
+        private void metroTileItem5_Click(object sender, EventArgs e)
+        {
+            RegistrarPagoCurso pagocurso = new RegistrarPagoCurso();
+            pagocurso.Show();
+        }
+
+        private void metroTileItem6_Click(object sender, EventArgs e)
+        {
+            RegistroPagoDocente pagodocente = new RegistroPagoDocente();
+            pagodocente.Show();
+        }
+
+        private void metroTileItem12_Click(object sender, EventArgs e)
+        {
+            BusquedaAlumno busqueda = new BusquedaAlumno();
+            busqueda.Show();
+        }
     }
 }

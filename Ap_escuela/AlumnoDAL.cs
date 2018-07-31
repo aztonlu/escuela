@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
+using System.Data;
+using System.Drawing;
+using System.Windows.Forms;
+using DevComponents.DotNetBar;
 
 namespace Ap_escuela
 {
     class AlumnoDAL
     {
+        
+        DataTable dt;
+        SqlDataAdapter da;
 
        public static int Agregar(Alumno pAlumno)
        {
@@ -24,7 +31,61 @@ namespace Ap_escuela
            return retorno;       
        }
 
-       
+       public void Buscar(int dni, DataGridView dgv)
+       {
+           using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+           try
+           {
+               da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion, talumno.observacion, talumno.interesseguimiento from tpersona inner join talumno on tpersona.dni = talumno.dni where tpersona.dni like '%{0}%'", dni),conexion);
+               dt = new DataTable();
+               da.Fill(dt);
+               dgv.DataSource = dt;
+           }
+
+           catch(Exception ex)
+           {
+               MessageBox.Show("Error" + ex.ToString());
+           }
+       }
+
+
+       /*public static List<Alumno> BuscarAlumnos(String pDni)
+       {
+
+           List<Alumno> Lista = new List<Alumno>();
+           using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+           {
+               SqlCommand comando = new SqlCommand(string.Format(
+                   "Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion, talumno.observacion, talumno.interesseguimiento from tpersona inner join talumno on tpersona.dni = talumno.dni where tpersona.dni like '%{0}%'", pDni), conexion);
+
+               SqlDataReader reader = comando.ExecuteReader();
+
+               while (reader.Read())
+               {
+                   Persona pPersona = new Persona();
+                   Alumno pAlumno = new Alumno();
+                   pPersona.Dni = reader.GetInt32(0);
+                   pPersona.Nombre = reader.GetString(1);
+                   pPersona.Appat = reader.GetString(2);
+                   pPersona.Apmat = reader.GetString(3);
+                   pPersona.Fecha_Nac = Convert.ToString(reader.GetDateTime(4));
+                   pPersona.Telefono = reader.GetInt32(5);
+                   pPersona.Correo = reader.GetString(6);
+                   pPersona.Direccion = reader.GetString(7);
+
+                   pAlumno.Observacion = reader.GetString(8);
+                   pAlumno.Interesseguimiento = reader.GetString(9);
+                   //pAlumno.Fecha_Nac = Convert.ToString(reader.GetDateTime(4));
+
+                   //Lista.Add(pPersona);
+                   Lista.Add(pAlumno);
+
+               }
+               conexion.Close();
+               return Lista;
+
+           }
+       }*/
 
        /*public static List<Alumno> BuscarAlumnos(String pNombre, String pApellido)
        {

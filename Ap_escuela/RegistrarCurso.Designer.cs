@@ -30,13 +30,13 @@ namespace Ap_escuela
         {
             this.btnguardar = new DevComponents.DotNetBar.ButtonX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.txtnombrecurso = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
-            this.txtnumerogrupo = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtnombrecurso = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.txtdni = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.txtidcurso = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.cbnumerogrupo = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.SuspendLayout();
             // 
             // btnguardar
@@ -53,15 +53,31 @@ namespace Ap_escuela
             // 
             // labelX1
             // 
+            this.labelX1.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.ForeColor = System.Drawing.Color.Black;
             this.labelX1.Location = new System.Drawing.Point(45, 55);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(106, 23);
             this.labelX1.TabIndex = 30;
             this.labelX1.Text = "Id Curso:";
+            // 
+            // labelX2
+            // 
+            this.labelX2.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX2.ForeColor = System.Drawing.Color.Black;
+            this.labelX2.Location = new System.Drawing.Point(45, 102);
+            this.labelX2.Name = "labelX2";
+            this.labelX2.Size = new System.Drawing.Size(106, 23);
+            this.labelX2.TabIndex = 35;
+            this.labelX2.Text = "Nombre Curso:";
             // 
             // txtnombrecurso
             // 
@@ -77,42 +93,16 @@ namespace Ap_escuela
             this.txtnombrecurso.Name = "txtnombrecurso";
             this.txtnombrecurso.PreventEnterBeep = true;
             this.txtnombrecurso.Size = new System.Drawing.Size(100, 22);
-            this.txtnombrecurso.TabIndex = 36;
-            // 
-            // labelX2
-            // 
-            // 
-            // 
-            // 
-            this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Location = new System.Drawing.Point(45, 102);
-            this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(106, 23);
-            this.labelX2.TabIndex = 35;
-            this.labelX2.Text = "Nombre Curso:";
-            // 
-            // txtnumerogrupo
-            // 
-            this.txtnumerogrupo.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.txtnumerogrupo.Border.Class = "TextBoxBorder";
-            this.txtnumerogrupo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtnumerogrupo.DisabledBackColor = System.Drawing.Color.White;
-            this.txtnumerogrupo.ForeColor = System.Drawing.Color.Black;
-            this.txtnumerogrupo.Location = new System.Drawing.Point(179, 148);
-            this.txtnumerogrupo.Name = "txtnumerogrupo";
-            this.txtnumerogrupo.PreventEnterBeep = true;
-            this.txtnumerogrupo.Size = new System.Drawing.Size(100, 22);
-            this.txtnumerogrupo.TabIndex = 38;
+            this.txtnombrecurso.TabIndex = 38;
             // 
             // labelX3
             // 
+            this.labelX3.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.ForeColor = System.Drawing.Color.Black;
             this.labelX3.Location = new System.Drawing.Point(45, 145);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(106, 23);
@@ -137,10 +127,12 @@ namespace Ap_escuela
             // 
             // labelX4
             // 
+            this.labelX4.BackColor = System.Drawing.Color.White;
             // 
             // 
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX4.ForeColor = System.Drawing.Color.Black;
             this.labelX4.Location = new System.Drawing.Point(45, 185);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(106, 23);
@@ -163,17 +155,30 @@ namespace Ap_escuela
             this.txtidcurso.Size = new System.Drawing.Size(100, 22);
             this.txtidcurso.TabIndex = 41;
             // 
+            // cbnumerogrupo
+            // 
+            this.cbnumerogrupo.DisplayMember = "Text";
+            this.cbnumerogrupo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbnumerogrupo.ForeColor = System.Drawing.Color.Black;
+            this.cbnumerogrupo.FormattingEnabled = true;
+            this.cbnumerogrupo.ItemHeight = 16;
+            this.cbnumerogrupo.Location = new System.Drawing.Point(179, 145);
+            this.cbnumerogrupo.Name = "cbnumerogrupo";
+            this.cbnumerogrupo.Size = new System.Drawing.Size(121, 22);
+            this.cbnumerogrupo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cbnumerogrupo.TabIndex = 42;
+            // 
             // RegistrarCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(720, 297);
+            this.Controls.Add(this.cbnumerogrupo);
             this.Controls.Add(this.txtidcurso);
             this.Controls.Add(this.txtdni);
             this.Controls.Add(this.labelX4);
-            this.Controls.Add(this.txtnumerogrupo);
-            this.Controls.Add(this.labelX3);
             this.Controls.Add(this.txtnombrecurso);
+            this.Controls.Add(this.labelX3);
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.labelX1);
@@ -181,6 +186,7 @@ namespace Ap_escuela
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "RegistrarCurso";
             this.Text = "Agregar Curso";
+            this.Load += new System.EventHandler(this.RegistrarCurso_Load);
             this.ResumeLayout(false);
 
         }
@@ -189,12 +195,12 @@ namespace Ap_escuela
 
         private DevComponents.DotNetBar.ButtonX btnguardar;
         private DevComponents.DotNetBar.LabelX labelX1;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtnombrecurso;
         private DevComponents.DotNetBar.LabelX labelX2;
-        private DevComponents.DotNetBar.Controls.TextBoxX txtnumerogrupo;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtnombrecurso;
         private DevComponents.DotNetBar.LabelX labelX3;
         private DevComponents.DotNetBar.Controls.TextBoxX txtdni;
         private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.Controls.TextBoxX txtidcurso;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cbnumerogrupo;
     }
 }

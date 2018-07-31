@@ -80,3 +80,6 @@ D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Registrargrupo.r
 D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.RegistrarCurso.resources
 D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.AgregarMatricula.resources
 D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.RegistrarAsistenciaAlumno.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.RegistrarPagoCurso.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.RegistroPagoDocente.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.BusquedaAlumno.resources

@@ -53,5 +53,24 @@ namespace Ap_escuela
                 }
             }
         }
+
+        private void btndni_Click(object sender, EventArgs e)
+        {
+            int dni = Convert.ToInt32(txtdni.Text);
+            PagoCursoDAL pago = new PagoCursoDAL();
+            pago.Buscarcarga(dni, dataGridViewX1); //AlumnoDAL.Buscar(dataGridViewX1);
+        }
+
+        private void dataGridViewX1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string dato;
+            string dato2;
+            dato = (String)dataGridViewX1.CurrentRow.Cells[0].Value; //CurrentCell.Value.ToString(); //Rows[0].Cells[0].Value.ToString();
+            dato2 = (String)dataGridViewX1.CurrentRow.Cells[1].Value; //.CurrentCell.Value.ToString();
+            
+            txtidcurso.Text = dato2;
+            
+            txtnumerogrupo.Text = dato;
+        }
     }
 }

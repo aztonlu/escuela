@@ -28,6 +28,7 @@ namespace Ap_escuela
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnlimpiar = new DevComponents.DotNetBar.ButtonX();
             this.btncancelar = new DevComponents.DotNetBar.ButtonX();
             this.btnGuardar = new DevComponents.DotNetBar.ButtonX();
@@ -49,6 +50,9 @@ namespace Ap_escuela
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.btndni = new DevComponents.DotNetBar.ButtonX();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnlimpiar
@@ -100,6 +104,7 @@ namespace Ap_escuela
             this.monthCalendarAdv1.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.monthCalendarAdv1.ContainerControlProcessDialogKey = true;
             this.monthCalendarAdv1.DisplayMonth = new System.DateTime(2018, 7, 1, 0, 0, 0, 0);
+            this.monthCalendarAdv1.FirstDayOfWeek = System.DayOfWeek.Monday;
             this.monthCalendarAdv1.ForeColor = System.Drawing.Color.Black;
             this.monthCalendarAdv1.Location = new System.Drawing.Point(521, 58);
             this.monthCalendarAdv1.Name = "monthCalendarAdv1";
@@ -188,7 +193,7 @@ namespace Ap_escuela
             this.txtidcurso.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtidcurso.DisabledBackColor = System.Drawing.Color.White;
             this.txtidcurso.ForeColor = System.Drawing.Color.Black;
-            this.txtidcurso.Location = new System.Drawing.Point(207, 143);
+            this.txtidcurso.Location = new System.Drawing.Point(207, 187);
             this.txtidcurso.Name = "txtidcurso";
             this.txtidcurso.PreventEnterBeep = true;
             this.txtidcurso.Size = new System.Drawing.Size(100, 22);
@@ -204,7 +209,7 @@ namespace Ap_escuela
             this.txtnumerogrupo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtnumerogrupo.DisabledBackColor = System.Drawing.Color.White;
             this.txtnumerogrupo.ForeColor = System.Drawing.Color.Black;
-            this.txtnumerogrupo.Location = new System.Drawing.Point(207, 102);
+            this.txtnumerogrupo.Location = new System.Drawing.Point(207, 146);
             this.txtnumerogrupo.Name = "txtnumerogrupo";
             this.txtnumerogrupo.PreventEnterBeep = true;
             this.txtnumerogrupo.Size = new System.Drawing.Size(100, 22);
@@ -220,7 +225,7 @@ namespace Ap_escuela
             this.txtidpago.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtidpago.DisabledBackColor = System.Drawing.Color.White;
             this.txtidpago.ForeColor = System.Drawing.Color.Black;
-            this.txtidpago.Location = new System.Drawing.Point(207, 61);
+            this.txtidpago.Location = new System.Drawing.Point(207, 105);
             this.txtidpago.Name = "txtidpago";
             this.txtidpago.PreventEnterBeep = true;
             this.txtidpago.Size = new System.Drawing.Size(100, 22);
@@ -236,7 +241,7 @@ namespace Ap_escuela
             this.txtdni.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtdni.DisabledBackColor = System.Drawing.Color.White;
             this.txtdni.ForeColor = System.Drawing.Color.Black;
-            this.txtdni.Location = new System.Drawing.Point(207, 192);
+            this.txtdni.Location = new System.Drawing.Point(208, 58);
             this.txtdni.Name = "txtdni";
             this.txtdni.PreventEnterBeep = true;
             this.txtdni.Size = new System.Drawing.Size(100, 22);
@@ -306,7 +311,7 @@ namespace Ap_escuela
             // 
             this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX5.ForeColor = System.Drawing.Color.Black;
-            this.labelX5.Location = new System.Drawing.Point(409, 58);
+            this.labelX5.Location = new System.Drawing.Point(409, 119);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(106, 23);
             this.labelX5.TabIndex = 50;
@@ -320,7 +325,7 @@ namespace Ap_escuela
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.ForeColor = System.Drawing.Color.Black;
-            this.labelX4.Location = new System.Drawing.Point(73, 140);
+            this.labelX4.Location = new System.Drawing.Point(73, 184);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(106, 23);
             this.labelX4.TabIndex = 49;
@@ -334,7 +339,7 @@ namespace Ap_escuela
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.ForeColor = System.Drawing.Color.Black;
-            this.labelX3.Location = new System.Drawing.Point(73, 99);
+            this.labelX3.Location = new System.Drawing.Point(73, 143);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(106, 23);
             this.labelX3.TabIndex = 48;
@@ -348,7 +353,7 @@ namespace Ap_escuela
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.ForeColor = System.Drawing.Color.Black;
-            this.labelX2.Location = new System.Drawing.Point(73, 61);
+            this.labelX2.Location = new System.Drawing.Point(73, 105);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(75, 23);
             this.labelX2.TabIndex = 47;
@@ -362,17 +367,49 @@ namespace Ap_escuela
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.ForeColor = System.Drawing.Color.Black;
-            this.labelX1.Location = new System.Drawing.Point(73, 189);
+            this.labelX1.Location = new System.Drawing.Point(74, 55);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(75, 23);
             this.labelX1.TabIndex = 46;
             this.labelX1.Text = "Dni Docente:";
+            // 
+            // dataGridViewX1
+            // 
+            this.dataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.dataGridViewX1.Location = new System.Drawing.Point(73, 412);
+            this.dataGridViewX1.Name = "dataGridViewX1";
+            this.dataGridViewX1.Size = new System.Drawing.Size(240, 99);
+            this.dataGridViewX1.TabIndex = 69;
+            this.dataGridViewX1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellContentClick);
+            // 
+            // btndni
+            // 
+            this.btndni.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btndni.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btndni.Location = new System.Drawing.Point(347, 58);
+            this.btndni.Name = "btndni";
+            this.btndni.Size = new System.Drawing.Size(75, 23);
+            this.btndni.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btndni.TabIndex = 70;
+            this.btndni.Text = "Buscar";
+            this.btndni.Click += new System.EventHandler(this.btndni_Click);
             // 
             // RegistroPagoDocente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(767, 507);
+            this.Controls.Add(this.btndni);
+            this.Controls.Add(this.dataGridViewX1);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btnGuardar);
@@ -398,6 +435,7 @@ namespace Ap_escuela
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "RegistroPagoDocente";
             this.Text = "MetroForm";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -426,5 +464,7 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.LabelX labelX3;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.LabelX labelX1;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
+        private DevComponents.DotNetBar.ButtonX btndni;
     }
 }

@@ -28,6 +28,7 @@ namespace Ap_escuela
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtdni = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
@@ -38,6 +39,11 @@ namespace Ap_escuela
             this.btnLimpiar = new DevComponents.DotNetBar.ButtonX();
             this.cbnombrecurso = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.txtidcurso = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtnombrecurso = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.txtnumerogrupo = new DevComponents.DotNetBar.Controls.TextBoxX();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtdni
@@ -50,7 +56,7 @@ namespace Ap_escuela
             this.txtdni.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtdni.DisabledBackColor = System.Drawing.Color.White;
             this.txtdni.ForeColor = System.Drawing.Color.Black;
-            this.txtdni.Location = new System.Drawing.Point(245, 257);
+            this.txtdni.Location = new System.Drawing.Point(167, 203);
             this.txtdni.Name = "txtdni";
             this.txtdni.PreventEnterBeep = true;
             this.txtdni.Size = new System.Drawing.Size(100, 22);
@@ -64,7 +70,7 @@ namespace Ap_escuela
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.ForeColor = System.Drawing.Color.Black;
-            this.labelX4.Location = new System.Drawing.Point(111, 254);
+            this.labelX4.Location = new System.Drawing.Point(33, 200);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(106, 23);
             this.labelX4.TabIndex = 48;
@@ -78,7 +84,7 @@ namespace Ap_escuela
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.ForeColor = System.Drawing.Color.Black;
-            this.labelX3.Location = new System.Drawing.Point(111, 106);
+            this.labelX3.Location = new System.Drawing.Point(33, 52);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(106, 23);
             this.labelX3.TabIndex = 46;
@@ -104,7 +110,7 @@ namespace Ap_escuela
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.ForeColor = System.Drawing.Color.Black;
-            this.labelX1.Location = new System.Drawing.Point(111, 147);
+            this.labelX1.Location = new System.Drawing.Point(33, 93);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(106, 23);
             this.labelX1.TabIndex = 42;
@@ -117,7 +123,7 @@ namespace Ap_escuela
             this.cbnumerogrupo.ForeColor = System.Drawing.Color.Black;
             this.cbnumerogrupo.FormattingEnabled = true;
             this.cbnumerogrupo.ItemHeight = 16;
-            this.cbnumerogrupo.Location = new System.Drawing.Point(245, 106);
+            this.cbnumerogrupo.Location = new System.Drawing.Point(167, 52);
             this.cbnumerogrupo.Name = "cbnumerogrupo";
             this.cbnumerogrupo.Size = new System.Drawing.Size(121, 22);
             this.cbnumerogrupo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -130,7 +136,7 @@ namespace Ap_escuela
             this.cbidcurso.ForeColor = System.Drawing.Color.Black;
             this.cbidcurso.FormattingEnabled = true;
             this.cbidcurso.ItemHeight = 16;
-            this.cbidcurso.Location = new System.Drawing.Point(245, 147);
+            this.cbidcurso.Location = new System.Drawing.Point(167, 93);
             this.cbidcurso.Name = "cbidcurso";
             this.cbidcurso.Size = new System.Drawing.Size(121, 22);
             this.cbidcurso.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -155,7 +161,7 @@ namespace Ap_escuela
             this.cbnombrecurso.ForeColor = System.Drawing.Color.Black;
             this.cbnombrecurso.FormattingEnabled = true;
             this.cbnombrecurso.ItemHeight = 16;
-            this.cbnombrecurso.Location = new System.Drawing.Point(245, 187);
+            this.cbnombrecurso.Location = new System.Drawing.Point(167, 133);
             this.cbnombrecurso.Name = "cbnombrecurso";
             this.cbnombrecurso.Size = new System.Drawing.Size(121, 22);
             this.cbnombrecurso.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -170,17 +176,90 @@ namespace Ap_escuela
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.ForeColor = System.Drawing.Color.Black;
-            this.labelX2.Location = new System.Drawing.Point(111, 187);
+            this.labelX2.Location = new System.Drawing.Point(33, 133);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(106, 23);
             this.labelX2.TabIndex = 54;
             this.labelX2.Text = "Nombre Curso:";
+            // 
+            // dataGridViewX1
+            // 
+            this.dataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.dataGridViewX1.Location = new System.Drawing.Point(75, 249);
+            this.dataGridViewX1.Name = "dataGridViewX1";
+            this.dataGridViewX1.Size = new System.Drawing.Size(517, 154);
+            this.dataGridViewX1.TabIndex = 56;
+            this.dataGridViewX1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellClick);
+            this.dataGridViewX1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellContentClick);
+            this.dataGridViewX1.SelectionChanged += new System.EventHandler(this.dataGridViewX1_SelectionChanged);
+            // 
+            // txtidcurso
+            // 
+            this.txtidcurso.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtidcurso.Border.Class = "TextBoxBorder";
+            this.txtidcurso.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtidcurso.DisabledBackColor = System.Drawing.Color.White;
+            this.txtidcurso.ForeColor = System.Drawing.Color.Black;
+            this.txtidcurso.Location = new System.Drawing.Point(337, 96);
+            this.txtidcurso.Name = "txtidcurso";
+            this.txtidcurso.PreventEnterBeep = true;
+            this.txtidcurso.Size = new System.Drawing.Size(100, 22);
+            this.txtidcurso.TabIndex = 57;
+            // 
+            // txtnombrecurso
+            // 
+            this.txtnombrecurso.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtnombrecurso.Border.Class = "TextBoxBorder";
+            this.txtnombrecurso.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtnombrecurso.DisabledBackColor = System.Drawing.Color.White;
+            this.txtnombrecurso.ForeColor = System.Drawing.Color.Black;
+            this.txtnombrecurso.Location = new System.Drawing.Point(337, 133);
+            this.txtnombrecurso.Name = "txtnombrecurso";
+            this.txtnombrecurso.PreventEnterBeep = true;
+            this.txtnombrecurso.ReadOnly = true;
+            this.txtnombrecurso.Size = new System.Drawing.Size(100, 22);
+            this.txtnombrecurso.TabIndex = 58;
+            // 
+            // txtnumerogrupo
+            // 
+            this.txtnumerogrupo.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtnumerogrupo.Border.Class = "TextBoxBorder";
+            this.txtnumerogrupo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtnumerogrupo.DisabledBackColor = System.Drawing.Color.White;
+            this.txtnumerogrupo.ForeColor = System.Drawing.Color.Black;
+            this.txtnumerogrupo.Location = new System.Drawing.Point(337, 52);
+            this.txtnumerogrupo.Name = "txtnumerogrupo";
+            this.txtnumerogrupo.PreventEnterBeep = true;
+            this.txtnumerogrupo.Size = new System.Drawing.Size(100, 22);
+            this.txtnumerogrupo.TabIndex = 59;
             // 
             // AgregarMatricula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 449);
+            this.Controls.Add(this.txtnumerogrupo);
+            this.Controls.Add(this.txtnombrecurso);
+            this.Controls.Add(this.txtidcurso);
+            this.Controls.Add(this.dataGridViewX1);
             this.Controls.Add(this.cbnombrecurso);
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.btnLimpiar);
@@ -193,9 +272,11 @@ namespace Ap_escuela
             this.Controls.Add(this.labelX1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "AgregarMatricula";
             this.Text = "MetroForm";
             this.Load += new System.EventHandler(this.AgregarMatricula_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -212,5 +293,9 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.ButtonX btnLimpiar;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cbnombrecurso;
         private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtidcurso;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtnombrecurso;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtnumerogrupo;
     }
 }

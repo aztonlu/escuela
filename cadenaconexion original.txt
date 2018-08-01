@@ -1,0 +1,1 @@
+connectionString="Data Source=DESKTOP-INBOSNU;Initial Catalog=Escuela;Integrated Security=True"

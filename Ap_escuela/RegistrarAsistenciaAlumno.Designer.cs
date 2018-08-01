@@ -28,6 +28,7 @@ namespace Ap_escuela
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtidcurso = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtdni = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
@@ -37,6 +38,8 @@ namespace Ap_escuela
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.monthCalendarAdv1 = new DevComponents.Editors.DateTimeAdv.MonthCalendarAdv();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
+            this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtidcurso
@@ -149,6 +152,7 @@ namespace Ap_escuela
             this.monthCalendarAdv1.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.monthCalendarAdv1.ContainerControlProcessDialogKey = true;
             this.monthCalendarAdv1.DisplayMonth = new System.DateTime(2018, 7, 1, 0, 0, 0, 0);
+            this.monthCalendarAdv1.FirstDayOfWeek = System.DayOfWeek.Monday;
             this.monthCalendarAdv1.Location = new System.Drawing.Point(183, 203);
             this.monthCalendarAdv1.Name = "monthCalendarAdv1";
             // 
@@ -174,11 +178,29 @@ namespace Ap_escuela
             this.labelX2.TabIndex = 52;
             this.labelX2.Text = "Fecha:";
             // 
+            // dataGridViewX1
+            // 
+            this.dataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.dataGridViewX1.Location = new System.Drawing.Point(60, 360);
+            this.dataGridViewX1.Name = "dataGridViewX1";
+            this.dataGridViewX1.Size = new System.Drawing.Size(517, 154);
+            this.dataGridViewX1.TabIndex = 57;
+            // 
             // RegistrarAsistenciaAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 497);
+            this.ClientSize = new System.Drawing.Size(653, 563);
+            this.Controls.Add(this.dataGridViewX1);
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.monthCalendarAdv1);
             this.Controls.Add(this.txtidcurso);
@@ -192,6 +214,8 @@ namespace Ap_escuela
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "RegistrarAsistenciaAlumno";
             this.Text = "MetroForm";
+            this.Load += new System.EventHandler(this.RegistrarAsistenciaAlumno_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,5 +232,6 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.LabelX labelX1;
         private DevComponents.Editors.DateTimeAdv.MonthCalendarAdv monthCalendarAdv1;
         private DevComponents.DotNetBar.LabelX labelX2;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
     }
 }

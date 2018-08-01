@@ -33,8 +33,8 @@ namespace Ap_escuela
             else
             {
                 Matricula Matricula = new Matricula();
-                Matricula.Numerogrupo = cbnumerogrupo.Text;
-                Matricula.Idcurso = cbidcurso.Text;
+                Matricula.Numerogrupo = txtnumerogrupo.Text; //cbnumerogrupo.Text;
+                Matricula.Idcurso = txtidcurso.Text; //cbidcurso.Text;
                 Matricula.Dni = Convert.ToInt32(txtdni.Text);
 
                 int resultado = MatriculaDAL.AgregarMatricula(Matricula);
@@ -58,6 +58,8 @@ namespace Ap_escuela
         {
             MatriculaDAL matri = new MatriculaDAL();
             matri.Buscargrupocb(cbnombrecurso);
+
+            matri.Buscarcarga(dataGridViewX1);
             
         }
 
@@ -91,6 +93,29 @@ namespace Ap_escuela
                     numero = "error";
                     break;
             }*/
+        }
+
+        private void dataGridViewX1_SelectionChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dataGridViewX1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void dataGridViewX1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string dato;
+            string dato2;
+            string dato3;
+            dato = (String)dataGridViewX1.CurrentRow.Cells[0].Value; //CurrentCell.Value.ToString(); //Rows[0].Cells[0].Value.ToString();
+            dato2 = (String)dataGridViewX1.CurrentRow.Cells[1].Value; //.CurrentCell.Value.ToString();
+            dato3 = (String)dataGridViewX1.CurrentRow.Cells[2].Value;
+            txtidcurso.Text = dato;
+            txtnombrecurso.Text = dato2;
+            txtnumerogrupo.Text = dato3;
         }
     }
 }

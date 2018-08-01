@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
+using System.Windows.Forms;
+using System.Data;
 
 namespace Ap_escuela
 {
@@ -22,5 +24,28 @@ namespace Ap_escuela
             }
             return retorno;
         }
+
+        DataTable dt;
+        SqlDataAdapter da;
+
+        public void Buscarcarga(int dni, DataGridView dgv)
+        {
+            using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+
+                try
+                {
+                    //da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion, talumno.observacion, talumno.interesseguimiento from tpersona inner join talumno on tpersona.dni = talumno.dni where tpersona.dni like '%{0}%'", dni), conexion);
+                    da = new SqlDataAdapter(string.Format("Select tmatricula.numerogrupo AS Grupo, tmatricula.idcurso AS Codigo_Curso from tmatricula inner join talumno on tmatricula.dni = talumno.dni where tmatricula.dni like '%{0}%'",dni), conexion);
+                    dt = new DataTable();
+                    da.Fill(dt);
+                    dgv.DataSource = dt;
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex.ToString());
+                }
+        }
+
     }
 }

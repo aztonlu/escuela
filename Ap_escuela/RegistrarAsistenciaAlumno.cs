@@ -50,5 +50,11 @@ namespace Ap_escuela
                 }
             }
         }
+
+        private void RegistrarAsistenciaAlumno_Load(object sender, EventArgs e)
+        {
+            AsistenciaalumnoDAL asis = new AsistenciaalumnoDAL();
+            asis.Buscarcarga(dataGridViewX1);
+        }
     }
 }

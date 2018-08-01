@@ -10,6 +10,8 @@ namespace Ap_escuela
 {
     class MatriculaDAL
     {
+        DataTable dt;
+        SqlDataAdapter da;
         public static int AgregarMatricula(Matricula pMatricula)
         {
             int retorno = 1;
@@ -31,6 +33,7 @@ namespace Ap_escuela
                 try
                 {
                     Grupo pGrupo = new Grupo();
+                    //SqlCommand comando = new SqlCommand(string.Format("Select idcurso, nombrecurso from tcurso"), conexion);
                     SqlCommand comando = new SqlCommand(string.Format("Select idcurso, nombrecurso from tcurso"), conexion);
 
                     SqlDataReader reader = comando.ExecuteReader();
@@ -49,6 +52,25 @@ namespace Ap_escuela
                     MessageBox.Show("Error" + ex.ToString());
                 }
             
+        }
+
+        public void Buscarcarga(DataGridView dgv)
+        {
+            using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+
+                try
+                {
+                    //da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion, talumno.observacion, talumno.interesseguimiento from tpersona inner join talumno on tpersona.dni = talumno.dni where tpersona.dni like '%{0}%'", dni), conexion);
+                    da = new SqlDataAdapter(string.Format("Select idcurso AS Codigo_Curso, nombrecurso AS Nombre_Curso, numerogrupo AS Grupo, dni AS DNI_Docente from tcurso"), conexion);
+                    dt = new DataTable();
+                    da.Fill(dt);
+                    dgv.DataSource = dt;
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex.ToString());
+                }
         }
 
         public void Buscarnombrecursogrupocb(ComboBox cb)

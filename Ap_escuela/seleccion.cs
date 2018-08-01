@@ -74,5 +74,10 @@ namespace Ap_escuela
             BusquedaAlumno busqueda = new BusquedaAlumno();
             busqueda.Show();
         }
+
+        private void metroTilePanel1_ItemClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -331,6 +331,7 @@ namespace Ap_escuela
             this.monthCalendarAdv1.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.monthCalendarAdv1.ContainerControlProcessDialogKey = true;
             this.monthCalendarAdv1.DisplayMonth = new System.DateTime(2018, 7, 1, 0, 0, 0, 0);
+            this.monthCalendarAdv1.FirstDayOfWeek = System.DayOfWeek.Monday;
             this.monthCalendarAdv1.Location = new System.Drawing.Point(487, 47);
             this.monthCalendarAdv1.Name = "monthCalendarAdv1";
             // 
@@ -382,6 +383,8 @@ namespace Ap_escuela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(895, 566);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btncancelar);

@@ -195,6 +195,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RegistrarAsistenciaAlumno.resx">
       <DependentUpon>RegistrarAsistenciaAlumno.cs</DependentUpon>
@@ -244,6 +245,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.png" />
+    <None Include="Resources\pagodocente.png" />
+    <None Include="Resources\pagocurso.png" />
+    <None Include="Resources\asistencia1.png" />
+    <None Include="Resources\asistencia.png" />
+    <None Include="Resources\matricula1.png" />
+    <None Include="Resources\curso1.png" />
+    <None Include="Resources\grupo1.png" />
+    <None Include="Resources\Docentes.png" />
+    <None Include="Resources\alumnos1.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\Alumnos.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

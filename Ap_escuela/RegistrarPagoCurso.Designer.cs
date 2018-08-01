@@ -28,7 +28,7 @@ namespace Ap_escuela
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnlimpiar = new DevComponents.DotNetBar.ButtonX();
             this.btncancelar = new DevComponents.DotNetBar.ButtonX();
             this.btnGuardar = new DevComponents.DotNetBar.ButtonX();
@@ -72,6 +72,7 @@ namespace Ap_escuela
             // 
             this.btncancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btncancelar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btncancelar.Image = global::Ap_escuela.Properties.Resources.cancelar;
             this.btncancelar.Location = new System.Drawing.Point(510, 299);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(150, 54);
@@ -83,6 +84,7 @@ namespace Ap_escuela
             // 
             this.btnGuardar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnGuardar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnGuardar.Image = global::Ap_escuela.Properties.Resources.Guardar;
             this.btnGuardar.Location = new System.Drawing.Point(510, 217);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(150, 54);
@@ -410,17 +412,18 @@ namespace Ap_escuela
             // dataGridViewX1
             // 
             this.dataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.dataGridViewX1.Location = new System.Drawing.Point(84, 424);
             this.dataGridViewX1.Name = "dataGridViewX1";
+            this.dataGridViewX1.RowHeadersVisible = false;
             this.dataGridViewX1.Size = new System.Drawing.Size(240, 99);
             this.dataGridViewX1.TabIndex = 46;
             this.dataGridViewX1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellContentClick);
@@ -429,9 +432,10 @@ namespace Ap_escuela
             // 
             this.btndni.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btndni.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btndni.Location = new System.Drawing.Point(316, 35);
+            this.btndni.Image = global::Ap_escuela.Properties.Resources.buscar;
+            this.btndni.Location = new System.Drawing.Point(313, 28);
             this.btndni.Name = "btndni";
-            this.btndni.Size = new System.Drawing.Size(75, 23);
+            this.btndni.Size = new System.Drawing.Size(82, 35);
             this.btndni.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btndni.TabIndex = 47;
             this.btndni.Text = "Buscar";

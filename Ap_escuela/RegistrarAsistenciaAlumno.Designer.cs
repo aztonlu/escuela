@@ -39,6 +39,7 @@ namespace Ap_escuela
             this.monthCalendarAdv1 = new DevComponents.Editors.DateTimeAdv.MonthCalendarAdv();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.btncancelar = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +52,7 @@ namespace Ap_escuela
             this.txtidcurso.Border.Class = "TextBoxBorder";
             this.txtidcurso.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtidcurso.DisabledBackColor = System.Drawing.Color.White;
+            this.txtidcurso.Enabled = false;
             this.txtidcurso.ForeColor = System.Drawing.Color.Black;
             this.txtidcurso.Location = new System.Drawing.Point(183, 155);
             this.txtidcurso.Name = "txtidcurso";
@@ -95,6 +97,7 @@ namespace Ap_escuela
             this.txtnumerogrupo.Border.Class = "TextBoxBorder";
             this.txtnumerogrupo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtnumerogrupo.DisabledBackColor = System.Drawing.Color.White;
+            this.txtnumerogrupo.Enabled = false;
             this.txtnumerogrupo.ForeColor = System.Drawing.Color.Black;
             this.txtnumerogrupo.Location = new System.Drawing.Point(183, 115);
             this.txtnumerogrupo.Name = "txtnumerogrupo";
@@ -118,6 +121,7 @@ namespace Ap_escuela
             // 
             this.btnguardar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnguardar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnguardar.Image = global::Ap_escuela.Properties.Resources.Guardar;
             this.btnguardar.Location = new System.Drawing.Point(427, 67);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(150, 54);
@@ -190,16 +194,31 @@ namespace Ap_escuela
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.dataGridViewX1.Location = new System.Drawing.Point(60, 360);
+            this.dataGridViewX1.Location = new System.Drawing.Point(102, 360);
             this.dataGridViewX1.Name = "dataGridViewX1";
-            this.dataGridViewX1.Size = new System.Drawing.Size(517, 154);
+            this.dataGridViewX1.RowHeadersVisible = false;
+            this.dataGridViewX1.Size = new System.Drawing.Size(417, 135);
             this.dataGridViewX1.TabIndex = 57;
+            this.dataGridViewX1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellContentClick);
+            // 
+            // btncancelar
+            // 
+            this.btncancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btncancelar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btncancelar.Image = global::Ap_escuela.Properties.Resources.cancelar;
+            this.btncancelar.Location = new System.Drawing.Point(427, 127);
+            this.btncancelar.Name = "btncancelar";
+            this.btncancelar.Size = new System.Drawing.Size(150, 54);
+            this.btncancelar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btncancelar.TabIndex = 58;
+            this.btncancelar.Text = "Cancelar";
             // 
             // RegistrarAsistenciaAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 563);
+            this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.dataGridViewX1);
             this.Controls.Add(this.labelX2);
             this.Controls.Add(this.monthCalendarAdv1);
@@ -213,7 +232,7 @@ namespace Ap_escuela
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "RegistrarAsistenciaAlumno";
-            this.Text = "MetroForm";
+            this.Text = "Registrar Asistencia de Alumno";
             this.Load += new System.EventHandler(this.RegistrarAsistenciaAlumno_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
             this.ResumeLayout(false);
@@ -233,5 +252,6 @@ namespace Ap_escuela
         private DevComponents.Editors.DateTimeAdv.MonthCalendarAdv monthCalendarAdv1;
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
+        private DevComponents.DotNetBar.ButtonX btncancelar;
     }
 }

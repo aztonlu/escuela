@@ -58,7 +58,7 @@ namespace Ap_escuela
         private void AgregarMatricula_Load(object sender, EventArgs e)
         {
             MatriculaDAL matri = new MatriculaDAL();
-            matri.Buscargrupocb(cbnombrecurso);
+            //matri.Buscargrupocb(cbnombrecurso);
 
             matri.Buscarcarga(dataGridViewX1);
             

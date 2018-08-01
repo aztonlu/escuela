@@ -103,6 +103,26 @@ namespace Ap_escuela.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buscar {
+            get {
+                object obj = ResourceManager.GetObject("buscar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancelar {
+            get {
+                object obj = ResourceManager.GetObject("cancelar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap curso1 {
             get {
                 object obj = ResourceManager.GetObject("curso1", resourceCulture);
@@ -126,6 +146,16 @@ namespace Ap_escuela.Properties {
         internal static System.Drawing.Bitmap grupo1 {
             get {
                 object obj = ResourceManager.GetObject("grupo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Guardar {
+            get {
+                object obj = ResourceManager.GetObject("Guardar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +196,16 @@ namespace Ap_escuela.Properties {
         internal static System.Drawing.Bitmap pagodocente {
             get {
                 object obj = ResourceManager.GetObject("pagodocente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Save_37110 {
+            get {
+                object obj = ResourceManager.GetObject("Save_37110", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

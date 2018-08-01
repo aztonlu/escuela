@@ -48,9 +48,9 @@ namespace Ap_escuela
             this.txtobservacion = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtcursointeres = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.monthCalendarAdv1 = new DevComponents.Editors.DateTimeAdv.MonthCalendarAdv();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.btncancelar = new DevComponents.DotNetBar.ButtonX();
             this.btnlimpiar = new DevComponents.DotNetBar.ButtonX();
+            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
             // labelX1
@@ -59,11 +59,12 @@ namespace Ap_escuela
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(39, 47);
+            this.labelX1.Location = new System.Drawing.Point(56, 50);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(75, 23);
+            this.labelX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Windows7;
             this.labelX1.TabIndex = 0;
-            this.labelX1.Text = "Dni:";
+            this.labelX1.Text = "Dni Alumno:";
             // 
             // labelX2
             // 
@@ -71,7 +72,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Location = new System.Drawing.Point(39, 92);
+            this.labelX2.Location = new System.Drawing.Point(56, 79);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(75, 23);
             this.labelX2.TabIndex = 1;
@@ -83,7 +84,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Location = new System.Drawing.Point(39, 132);
+            this.labelX3.Location = new System.Drawing.Point(56, 108);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(106, 23);
             this.labelX3.TabIndex = 2;
@@ -95,7 +96,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Location = new System.Drawing.Point(39, 173);
+            this.labelX4.Location = new System.Drawing.Point(56, 137);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(106, 23);
             this.labelX4.TabIndex = 3;
@@ -119,7 +120,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX6.Location = new System.Drawing.Point(39, 258);
+            this.labelX6.Location = new System.Drawing.Point(56, 166);
             this.labelX6.Name = "labelX6";
             this.labelX6.Size = new System.Drawing.Size(75, 23);
             this.labelX6.TabIndex = 5;
@@ -131,7 +132,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX7.Location = new System.Drawing.Point(39, 301);
+            this.labelX7.Location = new System.Drawing.Point(56, 195);
             this.labelX7.Name = "labelX7";
             this.labelX7.Size = new System.Drawing.Size(75, 23);
             this.labelX7.TabIndex = 6;
@@ -143,7 +144,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX8.Location = new System.Drawing.Point(39, 340);
+            this.labelX8.Location = new System.Drawing.Point(56, 224);
             this.labelX8.Name = "labelX8";
             this.labelX8.Size = new System.Drawing.Size(75, 23);
             this.labelX8.TabIndex = 7;
@@ -155,7 +156,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX9.Location = new System.Drawing.Point(39, 379);
+            this.labelX9.Location = new System.Drawing.Point(56, 253);
             this.labelX9.Name = "labelX9";
             this.labelX9.Size = new System.Drawing.Size(75, 23);
             this.labelX9.TabIndex = 8;
@@ -167,7 +168,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX10.Location = new System.Drawing.Point(39, 420);
+            this.labelX10.Location = new System.Drawing.Point(46, 342);
             this.labelX10.Name = "labelX10";
             this.labelX10.Size = new System.Drawing.Size(106, 23);
             this.labelX10.TabIndex = 9;
@@ -199,7 +200,7 @@ namespace Ap_escuela
             this.txtnombre.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtnombre.DisabledBackColor = System.Drawing.Color.White;
             this.txtnombre.ForeColor = System.Drawing.Color.Black;
-            this.txtnombre.Location = new System.Drawing.Point(173, 92);
+            this.txtnombre.Location = new System.Drawing.Point(173, 82);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.PreventEnterBeep = true;
             this.txtnombre.Size = new System.Drawing.Size(100, 22);
@@ -215,7 +216,7 @@ namespace Ap_escuela
             this.txtappat.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtappat.DisabledBackColor = System.Drawing.Color.White;
             this.txtappat.ForeColor = System.Drawing.Color.Black;
-            this.txtappat.Location = new System.Drawing.Point(173, 135);
+            this.txtappat.Location = new System.Drawing.Point(173, 111);
             this.txtappat.Name = "txtappat";
             this.txtappat.PreventEnterBeep = true;
             this.txtappat.Size = new System.Drawing.Size(100, 22);
@@ -231,7 +232,7 @@ namespace Ap_escuela
             this.txtapmat.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtapmat.DisabledBackColor = System.Drawing.Color.White;
             this.txtapmat.ForeColor = System.Drawing.Color.Black;
-            this.txtapmat.Location = new System.Drawing.Point(173, 176);
+            this.txtapmat.Location = new System.Drawing.Point(173, 140);
             this.txtapmat.Name = "txtapmat";
             this.txtapmat.PreventEnterBeep = true;
             this.txtapmat.Size = new System.Drawing.Size(100, 22);
@@ -247,7 +248,7 @@ namespace Ap_escuela
             this.txttelefono.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txttelefono.DisabledBackColor = System.Drawing.Color.White;
             this.txttelefono.ForeColor = System.Drawing.Color.Black;
-            this.txttelefono.Location = new System.Drawing.Point(173, 261);
+            this.txttelefono.Location = new System.Drawing.Point(173, 169);
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.PreventEnterBeep = true;
             this.txttelefono.Size = new System.Drawing.Size(100, 22);
@@ -263,7 +264,7 @@ namespace Ap_escuela
             this.txtcorreo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtcorreo.DisabledBackColor = System.Drawing.Color.White;
             this.txtcorreo.ForeColor = System.Drawing.Color.Black;
-            this.txtcorreo.Location = new System.Drawing.Point(173, 304);
+            this.txtcorreo.Location = new System.Drawing.Point(173, 198);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.PreventEnterBeep = true;
             this.txtcorreo.Size = new System.Drawing.Size(100, 22);
@@ -279,7 +280,7 @@ namespace Ap_escuela
             this.txtdireccion.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtdireccion.DisabledBackColor = System.Drawing.Color.White;
             this.txtdireccion.ForeColor = System.Drawing.Color.Black;
-            this.txtdireccion.Location = new System.Drawing.Point(173, 343);
+            this.txtdireccion.Location = new System.Drawing.Point(173, 226);
             this.txtdireccion.Name = "txtdireccion";
             this.txtdireccion.PreventEnterBeep = true;
             this.txtdireccion.Size = new System.Drawing.Size(100, 22);
@@ -295,10 +296,11 @@ namespace Ap_escuela
             this.txtobservacion.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtobservacion.DisabledBackColor = System.Drawing.Color.White;
             this.txtobservacion.ForeColor = System.Drawing.Color.Black;
-            this.txtobservacion.Location = new System.Drawing.Point(173, 382);
+            this.txtobservacion.Location = new System.Drawing.Point(173, 256);
+            this.txtobservacion.Multiline = true;
             this.txtobservacion.Name = "txtobservacion";
             this.txtobservacion.PreventEnterBeep = true;
-            this.txtobservacion.Size = new System.Drawing.Size(100, 22);
+            this.txtobservacion.Size = new System.Drawing.Size(148, 74);
             this.txtobservacion.TabIndex = 17;
             // 
             // txtcursointeres
@@ -311,7 +313,7 @@ namespace Ap_escuela
             this.txtcursointeres.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtcursointeres.DisabledBackColor = System.Drawing.Color.White;
             this.txtcursointeres.ForeColor = System.Drawing.Color.Black;
-            this.txtcursointeres.Location = new System.Drawing.Point(173, 423);
+            this.txtcursointeres.Location = new System.Drawing.Point(173, 345);
             this.txtcursointeres.Name = "txtcursointeres";
             this.txtcursointeres.PreventEnterBeep = true;
             this.txtcursointeres.Size = new System.Drawing.Size(100, 22);
@@ -345,23 +347,12 @@ namespace Ap_escuela
             this.monthCalendarAdv1.TabIndex = 19;
             this.monthCalendarAdv1.Text = "monthCalendarAdv1";
             // 
-            // buttonX1
-            // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(507, 229);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(150, 54);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 20;
-            this.buttonX1.Text = "Guardar";
-            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
-            // 
             // btncancelar
             // 
             this.btncancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btncancelar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btncancelar.Location = new System.Drawing.Point(507, 311);
+            this.btncancelar.Image = global::Ap_escuela.Properties.Resources.cancelar;
+            this.btncancelar.Location = new System.Drawing.Point(487, 311);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(150, 54);
             this.btncancelar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -372,12 +363,28 @@ namespace Ap_escuela
             // 
             this.btnlimpiar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnlimpiar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnlimpiar.Location = new System.Drawing.Point(507, 401);
+            this.btnlimpiar.Image = global::Ap_escuela.Properties.Resources.cancelar;
+            this.btnlimpiar.Location = new System.Drawing.Point(665, 222);
             this.btnlimpiar.Name = "btnlimpiar";
             this.btnlimpiar.Size = new System.Drawing.Size(150, 54);
             this.btnlimpiar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnlimpiar.TabIndex = 22;
             this.btnlimpiar.Text = "Limpiar";
+            // 
+            // buttonX1
+            // 
+            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonX1.BackgroundImage = global::Ap_escuela.Properties.Resources.Guardar;
+            this.buttonX1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonX1.Image = global::Ap_escuela.Properties.Resources.Guardar;
+            this.buttonX1.Location = new System.Drawing.Point(487, 222);
+            this.buttonX1.Name = "buttonX1";
+            this.buttonX1.Size = new System.Drawing.Size(150, 54);
+            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonX1.TabIndex = 20;
+            this.buttonX1.Text = "Guardar";
+            this.buttonX1.Click += new System.EventHandler(this.buttonX1_Click);
             // 
             // Form2
             // 
@@ -385,7 +392,7 @@ namespace Ap_escuela
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(895, 566);
+            this.ClientSize = new System.Drawing.Size(823, 460);
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.buttonX1);

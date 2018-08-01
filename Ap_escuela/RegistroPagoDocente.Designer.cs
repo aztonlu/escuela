@@ -70,6 +70,7 @@ namespace Ap_escuela
             // 
             this.btncancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btncancelar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btncancelar.Image = global::Ap_escuela.Properties.Resources.cancelar;
             this.btncancelar.Location = new System.Drawing.Point(541, 322);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(150, 54);
@@ -81,6 +82,7 @@ namespace Ap_escuela
             // 
             this.btnGuardar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnGuardar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnGuardar.Image = global::Ap_escuela.Properties.Resources.Guardar;
             this.btnGuardar.Location = new System.Drawing.Point(541, 240);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(150, 54);
@@ -129,7 +131,7 @@ namespace Ap_escuela
             this.txtestado.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtestado.DisabledBackColor = System.Drawing.Color.White;
             this.txtestado.ForeColor = System.Drawing.Color.Black;
-            this.txtestado.Location = new System.Drawing.Point(207, 333);
+            this.txtestado.Location = new System.Drawing.Point(207, 317);
             this.txtestado.Name = "txtestado";
             this.txtestado.PreventEnterBeep = true;
             this.txtestado.Size = new System.Drawing.Size(100, 22);
@@ -145,7 +147,7 @@ namespace Ap_escuela
             this.txtobservacion.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtobservacion.DisabledBackColor = System.Drawing.Color.White;
             this.txtobservacion.ForeColor = System.Drawing.Color.Black;
-            this.txtobservacion.Location = new System.Drawing.Point(207, 379);
+            this.txtobservacion.Location = new System.Drawing.Point(207, 363);
             this.txtobservacion.Name = "txtobservacion";
             this.txtobservacion.PreventEnterBeep = true;
             this.txtobservacion.Size = new System.Drawing.Size(100, 22);
@@ -161,7 +163,7 @@ namespace Ap_escuela
             this.txtnumerorecibo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtnumerorecibo.DisabledBackColor = System.Drawing.Color.White;
             this.txtnumerorecibo.ForeColor = System.Drawing.Color.Black;
-            this.txtnumerorecibo.Location = new System.Drawing.Point(207, 291);
+            this.txtnumerorecibo.Location = new System.Drawing.Point(207, 275);
             this.txtnumerorecibo.Name = "txtnumerorecibo";
             this.txtnumerorecibo.PreventEnterBeep = true;
             this.txtnumerorecibo.Size = new System.Drawing.Size(100, 22);
@@ -177,7 +179,7 @@ namespace Ap_escuela
             this.txtmonto.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtmonto.DisabledBackColor = System.Drawing.Color.White;
             this.txtmonto.ForeColor = System.Drawing.Color.Black;
-            this.txtmonto.Location = new System.Drawing.Point(207, 242);
+            this.txtmonto.Location = new System.Drawing.Point(207, 226);
             this.txtmonto.Name = "txtmonto";
             this.txtmonto.PreventEnterBeep = true;
             this.txtmonto.Size = new System.Drawing.Size(100, 22);
@@ -192,6 +194,7 @@ namespace Ap_escuela
             this.txtidcurso.Border.Class = "TextBoxBorder";
             this.txtidcurso.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtidcurso.DisabledBackColor = System.Drawing.Color.White;
+            this.txtidcurso.Enabled = false;
             this.txtidcurso.ForeColor = System.Drawing.Color.Black;
             this.txtidcurso.Location = new System.Drawing.Point(207, 187);
             this.txtidcurso.Name = "txtidcurso";
@@ -208,6 +211,7 @@ namespace Ap_escuela
             this.txtnumerogrupo.Border.Class = "TextBoxBorder";
             this.txtnumerogrupo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtnumerogrupo.DisabledBackColor = System.Drawing.Color.White;
+            this.txtnumerogrupo.Enabled = false;
             this.txtnumerogrupo.ForeColor = System.Drawing.Color.Black;
             this.txtnumerogrupo.Location = new System.Drawing.Point(207, 146);
             this.txtnumerogrupo.Name = "txtnumerogrupo";
@@ -255,7 +259,7 @@ namespace Ap_escuela
             // 
             this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX10.ForeColor = System.Drawing.Color.Black;
-            this.labelX10.Location = new System.Drawing.Point(73, 330);
+            this.labelX10.Location = new System.Drawing.Point(73, 314);
             this.labelX10.Name = "labelX10";
             this.labelX10.Size = new System.Drawing.Size(106, 23);
             this.labelX10.TabIndex = 55;
@@ -269,7 +273,7 @@ namespace Ap_escuela
             // 
             this.labelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX9.ForeColor = System.Drawing.Color.Black;
-            this.labelX9.Location = new System.Drawing.Point(73, 376);
+            this.labelX9.Location = new System.Drawing.Point(73, 360);
             this.labelX9.Name = "labelX9";
             this.labelX9.Size = new System.Drawing.Size(75, 23);
             this.labelX9.TabIndex = 54;
@@ -283,7 +287,7 @@ namespace Ap_escuela
             // 
             this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX8.ForeColor = System.Drawing.Color.Black;
-            this.labelX8.Location = new System.Drawing.Point(73, 288);
+            this.labelX8.Location = new System.Drawing.Point(73, 272);
             this.labelX8.Name = "labelX8";
             this.labelX8.Size = new System.Drawing.Size(106, 23);
             this.labelX8.TabIndex = 53;
@@ -297,7 +301,7 @@ namespace Ap_escuela
             // 
             this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX6.ForeColor = System.Drawing.Color.Black;
-            this.labelX6.Location = new System.Drawing.Point(73, 239);
+            this.labelX6.Location = new System.Drawing.Point(73, 223);
             this.labelX6.Name = "labelX6";
             this.labelX6.Size = new System.Drawing.Size(75, 23);
             this.labelX6.TabIndex = 51;
@@ -385,9 +389,9 @@ namespace Ap_escuela
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.dataGridViewX1.Location = new System.Drawing.Point(73, 412);
+            this.dataGridViewX1.Location = new System.Drawing.Point(126, 412);
             this.dataGridViewX1.Name = "dataGridViewX1";
-            this.dataGridViewX1.Size = new System.Drawing.Size(240, 99);
+            this.dataGridViewX1.Size = new System.Drawing.Size(220, 99);
             this.dataGridViewX1.TabIndex = 69;
             this.dataGridViewX1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellContentClick);
             // 
@@ -395,9 +399,10 @@ namespace Ap_escuela
             // 
             this.btndni.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btndni.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btndni.Location = new System.Drawing.Point(347, 58);
+            this.btndni.Image = global::Ap_escuela.Properties.Resources.buscar;
+            this.btndni.Location = new System.Drawing.Point(347, 47);
             this.btndni.Name = "btndni";
-            this.btndni.Size = new System.Drawing.Size(75, 23);
+            this.btndni.Size = new System.Drawing.Size(75, 36);
             this.btndni.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btndni.TabIndex = 70;
             this.btndni.Text = "Buscar";

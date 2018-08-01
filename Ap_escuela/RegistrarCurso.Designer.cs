@@ -37,13 +37,15 @@ namespace Ap_escuela
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.txtidcurso = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.cbnumerogrupo = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.btnCancelar = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
             // btnguardar
             // 
             this.btnguardar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnguardar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnguardar.Location = new System.Drawing.Point(415, 58);
+            this.btnguardar.Image = global::Ap_escuela.Properties.Resources.Guardar;
+            this.btnguardar.Location = new System.Drawing.Point(460, 71);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(150, 54);
             this.btnguardar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -168,11 +170,24 @@ namespace Ap_escuela
             this.cbnumerogrupo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cbnumerogrupo.TabIndex = 42;
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnCancelar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnCancelar.Image = global::Ap_escuela.Properties.Resources.cancelar;
+            this.btnCancelar.Location = new System.Drawing.Point(460, 145);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(150, 54);
+            this.btnCancelar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnCancelar.TabIndex = 43;
+            this.btnCancelar.Text = "Cancelar";
+            // 
             // RegistrarCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(720, 297);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.cbnumerogrupo);
             this.Controls.Add(this.txtidcurso);
             this.Controls.Add(this.txtdni);
@@ -202,5 +217,6 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.Controls.TextBoxX txtidcurso;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cbnumerogrupo;
+        private DevComponents.DotNetBar.ButtonX btnCancelar;
     }
 }

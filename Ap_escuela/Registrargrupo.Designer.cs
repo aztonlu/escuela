@@ -39,13 +39,15 @@ namespace Ap_escuela
             this.comboItem1 = new DevComponents.Editors.ComboItem();
             this.comboItem2 = new DevComponents.Editors.ComboItem();
             this.comboItem3 = new DevComponents.Editors.ComboItem();
+            this.btncancelar = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
             // btnguardar
             // 
             this.btnguardar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnguardar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnguardar.Location = new System.Drawing.Point(393, 89);
+            this.btnguardar.Image = global::Ap_escuela.Properties.Resources.Guardar;
+            this.btnguardar.Location = new System.Drawing.Point(424, 46);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(150, 54);
             this.btnguardar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -63,7 +65,7 @@ namespace Ap_escuela
             this.txtnumerogrupo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtnumerogrupo.DisabledBackColor = System.Drawing.Color.White;
             this.txtnumerogrupo.ForeColor = System.Drawing.Color.Black;
-            this.txtnumerogrupo.Location = new System.Drawing.Point(168, 46);
+            this.txtnumerogrupo.Location = new System.Drawing.Point(168, 60);
             this.txtnumerogrupo.Name = "txtnumerogrupo";
             this.txtnumerogrupo.PreventEnterBeep = true;
             this.txtnumerogrupo.Size = new System.Drawing.Size(100, 22);
@@ -75,7 +77,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Location = new System.Drawing.Point(34, 107);
+            this.labelX2.Location = new System.Drawing.Point(34, 121);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(106, 23);
             this.labelX2.TabIndex = 22;
@@ -87,7 +89,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(34, 43);
+            this.labelX1.Location = new System.Drawing.Point(34, 57);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(106, 23);
             this.labelX1.TabIndex = 21;
@@ -122,7 +124,7 @@ namespace Ap_escuela
             this.comboItem1,
             this.comboItem2,
             this.comboItem3});
-            this.cbhorario.Location = new System.Drawing.Point(168, 108);
+            this.cbhorario.Location = new System.Drawing.Point(168, 122);
             this.cbhorario.Name = "cbhorario";
             this.cbhorario.Size = new System.Drawing.Size(121, 22);
             this.cbhorario.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -140,11 +142,24 @@ namespace Ap_escuela
             // 
             this.comboItem3.Text = "Noche";
             // 
+            // btncancelar
+            // 
+            this.btncancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btncancelar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btncancelar.Image = global::Ap_escuela.Properties.Resources.cancelar;
+            this.btncancelar.Location = new System.Drawing.Point(424, 121);
+            this.btncancelar.Name = "btncancelar";
+            this.btncancelar.Size = new System.Drawing.Size(150, 54);
+            this.btncancelar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btncancelar.TabIndex = 30;
+            this.btncancelar.Text = "Cancelar";
+            // 
             // Registrargrupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 257);
+            this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.cbhorario);
             this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.txtnumerogrupo);
@@ -153,7 +168,7 @@ namespace Ap_escuela
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Registrargrupo";
-            this.Text = "MetroForm";
+            this.Text = "Registrar Grupo";
             this.ResumeLayout(false);
 
         }
@@ -171,5 +186,6 @@ namespace Ap_escuela
         private DevComponents.Editors.ComboItem comboItem1;
         private DevComponents.Editors.ComboItem comboItem2;
         private DevComponents.Editors.ComboItem comboItem3;
+        private DevComponents.DotNetBar.ButtonX btncancelar;
     }
 }

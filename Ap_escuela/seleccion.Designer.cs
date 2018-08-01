@@ -173,6 +173,8 @@ namespace Ap_escuela
             // 
             // 
             this.metroTileItem13.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTileItem13.TitleText = "Buscar";
+            this.metroTileItem13.Click += new System.EventHandler(this.metroTileItem13_Click);
             // 
             // metroTileItem14
             // 

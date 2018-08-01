@@ -245,6 +245,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.png" />
+    <None Include="Resources\buscar.png" />
+    <None Include="Resources\cancelar.png" />
+    <None Include="Resources\Guardar.png" />
+    <None Include="Resources\Save_37110.png" />
     <None Include="Resources\pagodocente.png" />
     <None Include="Resources\pagocurso.png" />
     <None Include="Resources\asistencia1.png" />

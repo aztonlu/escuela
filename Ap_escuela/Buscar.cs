@@ -9,6 +9,8 @@ using System.Windows.Forms;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace Ap_escuela
 {
@@ -20,10 +22,31 @@ namespace Ap_escuela
         }
 
         public Alumno AlumnoSeleccionado { get; set; }
+        DataTable dt;
+        SqlDataAdapter da;
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            int dni = Convert.ToInt32(txtNombre.Text);
+            /*using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+            
+                try
+                {
+                    da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion, talumno.observacion, talumno.interesseguimiento from tpersona inner join talumno on tpersona.dni = talumno.dni where tpersona.dni like '%{0}%'", dni), conexion);
+                    dt = new DataTable();
+                    da.Fill(dt);
+                    dataGridView1.DataSource = dt; //dgv.DataSource = dt;
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex.ToString());
+                }
+            
+            */
+            
             //dataGridView1.DataSource = AlumnoDAL.BuscarAlumnos(txtNombre.Text, txtApellido.Text);
+            dataGridView1.DataSource = AlumnoDAL.BuscarAlumnos(dni);
         }
 
         private void btnAceptar_Click(object sender, EventArgs e)

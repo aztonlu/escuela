@@ -36,6 +36,7 @@ namespace Ap_escuela
                 Matricula.Numerogrupo = txtnumerogrupo.Text; //cbnumerogrupo.Text;
                 Matricula.Idcurso = txtidcurso.Text; //cbidcurso.Text;
                 Matricula.Dni = Convert.ToInt32(txtdni.Text);
+                Matricula.Fecha = Convert.ToString(DateTime.Today.ToShortDateString());
 
                 int resultado = MatriculaDAL.AgregarMatricula(Matricula);
                 //PersonaDAL.AgregarPersona(Persona);
@@ -65,7 +66,8 @@ namespace Ap_escuela
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-             MessageBox.Show(Convert.ToString(cbidcurso.Items[1]));
+             //MessageBox.Show(Convert.ToString(cbidcurso.Items[1]));
+            MessageBox.Show(Convert.ToString(DateTime.Today.ToShortDateString()));
         }
 
         private void cbnombrecurso_SelectedIndexChanged(object sender, EventArgs e)

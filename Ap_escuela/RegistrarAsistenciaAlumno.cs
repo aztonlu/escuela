@@ -59,7 +59,7 @@ namespace Ap_escuela
 
         private void dataGridViewX1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string dato;
+            //string dato;
             string dato2;
             string dato3;
             //dato = (String)dataGridViewX1.CurrentRow.Cells[0].Value; //CurrentCell.Value.ToString(); //Rows[0].Cells[0].Value.ToString();

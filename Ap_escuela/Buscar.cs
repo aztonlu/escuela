@@ -10,7 +10,6 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
 using System.Data.SqlClient;
-using System.Data;
 
 namespace Ap_escuela
 {
@@ -22,8 +21,8 @@ namespace Ap_escuela
         }
 
         public Alumno AlumnoSeleccionado { get; set; }
-        DataTable dt;
-        SqlDataAdapter da;
+        //DataTable dt;
+        //SqlDataAdapter da;
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {

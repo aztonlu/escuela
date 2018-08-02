@@ -73,6 +73,27 @@ namespace Ap_escuela
                 }
         }
 
+
+        public void Buscarrecibo(int dni, DataGridView dgv)
+        {
+            using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+
+                try
+                {
+                    //da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion, talumno.observacion, talumno.interesseguimiento from tpersona inner join talumno on tpersona.dni = talumno.dni where tpersona.dni like '%{0}%'", dni), conexion);
+                    da = new SqlDataAdapter(string.Format("Select talumno.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.telefono, tmatricula.numerogrupo, tmatricula.idcurso, tpagocurso.cuenta, tpagocurso.monto from talumno inner join tpersona on talumno.dni = tpersona.dni inner join tmatricula on talumno.dni = tmatricula.dni inner join tpagocurso on tpagocurso.dni = talumno.dni where tmatricula.dni like '%{0}%'",dni), conexion);
+                    //da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion from tpersona where tpersona.dni like '%{0}%'", dni), conexion);
+                    dt = new DataTable();
+                    da.Fill(dt);
+                    dgv.DataSource = dt;
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex.ToString());
+                }
+        }
+
         public void Buscarnombrecursogrupocb(ComboBox cb)
         {
             using (SqlConnection conexion = BDComun.ObtnerCOnexion())

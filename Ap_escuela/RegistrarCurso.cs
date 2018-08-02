@@ -32,6 +32,7 @@ namespace Ap_escuela
                 Curso.Nombrecurso = txtnombrecurso.Text;
                 Curso.Numerogrupo = cbnumerogrupo.Text;
                 Curso.Dni = Convert.ToInt32(txtdni.Text);
+                Curso.Monto = Convert.ToDecimal(txtcosto.Text);
 
 
                 int resultado = CursoDAL.AgregarCurso(Curso);

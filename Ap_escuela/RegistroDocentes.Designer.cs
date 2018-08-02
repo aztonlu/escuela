@@ -29,8 +29,6 @@ namespace Ap_escuela
         private void InitializeComponent()
         {
             this.btnlimpiar = new DevComponents.DotNetBar.ButtonX();
-            this.btncancelar = new DevComponents.DotNetBar.ButtonX();
-            this.btnguardar = new DevComponents.DotNetBar.ButtonX();
             this.monthCalendarAdv1 = new DevComponents.Editors.DateTimeAdv.MonthCalendarAdv();
             this.txtdireccion = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtcorreo = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -47,6 +45,8 @@ namespace Ap_escuela
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.btncancelar = new DevComponents.DotNetBar.ButtonX();
+            this.btnguardar = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
             // 
             // btnlimpiar
@@ -59,31 +59,6 @@ namespace Ap_escuela
             this.btnlimpiar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnlimpiar.TabIndex = 45;
             this.btnlimpiar.Text = "Limpiar";
-            // 
-            // btncancelar
-            // 
-            this.btncancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btncancelar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btncancelar.Image = global::Ap_escuela.Properties.Resources.cancelar;
-            this.btncancelar.Location = new System.Drawing.Point(488, 290);
-            this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(150, 54);
-            this.btncancelar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btncancelar.TabIndex = 44;
-            this.btncancelar.Text = "Cancelar";
-            // 
-            // btnguardar
-            // 
-            this.btnguardar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnguardar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnguardar.Image = global::Ap_escuela.Properties.Resources.Guardar;
-            this.btnguardar.Location = new System.Drawing.Point(488, 221);
-            this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(150, 54);
-            this.btnguardar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnguardar.TabIndex = 43;
-            this.btnguardar.Text = "Guardar";
-            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // monthCalendarAdv1
             // 
@@ -123,7 +98,7 @@ namespace Ap_escuela
             this.txtdireccion.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtdireccion.DisabledBackColor = System.Drawing.Color.White;
             this.txtdireccion.ForeColor = System.Drawing.Color.Black;
-            this.txtdireccion.Location = new System.Drawing.Point(174, 199);
+            this.txtdireccion.Location = new System.Drawing.Point(174, 234);
             this.txtdireccion.Name = "txtdireccion";
             this.txtdireccion.PreventEnterBeep = true;
             this.txtdireccion.Size = new System.Drawing.Size(100, 22);
@@ -139,7 +114,7 @@ namespace Ap_escuela
             this.txtcorreo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtcorreo.DisabledBackColor = System.Drawing.Color.White;
             this.txtcorreo.ForeColor = System.Drawing.Color.Black;
-            this.txtcorreo.Location = new System.Drawing.Point(174, 170);
+            this.txtcorreo.Location = new System.Drawing.Point(174, 205);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.PreventEnterBeep = true;
             this.txtcorreo.Size = new System.Drawing.Size(100, 22);
@@ -155,7 +130,7 @@ namespace Ap_escuela
             this.txttelefono.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txttelefono.DisabledBackColor = System.Drawing.Color.White;
             this.txttelefono.ForeColor = System.Drawing.Color.Black;
-            this.txttelefono.Location = new System.Drawing.Point(174, 141);
+            this.txttelefono.Location = new System.Drawing.Point(174, 176);
             this.txttelefono.Name = "txttelefono";
             this.txttelefono.PreventEnterBeep = true;
             this.txttelefono.Size = new System.Drawing.Size(100, 22);
@@ -171,7 +146,7 @@ namespace Ap_escuela
             this.txtapmat.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtapmat.DisabledBackColor = System.Drawing.Color.White;
             this.txtapmat.ForeColor = System.Drawing.Color.Black;
-            this.txtapmat.Location = new System.Drawing.Point(174, 112);
+            this.txtapmat.Location = new System.Drawing.Point(174, 147);
             this.txtapmat.Name = "txtapmat";
             this.txtapmat.PreventEnterBeep = true;
             this.txtapmat.Size = new System.Drawing.Size(100, 22);
@@ -187,7 +162,7 @@ namespace Ap_escuela
             this.txtappat.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtappat.DisabledBackColor = System.Drawing.Color.White;
             this.txtappat.ForeColor = System.Drawing.Color.Black;
-            this.txtappat.Location = new System.Drawing.Point(174, 83);
+            this.txtappat.Location = new System.Drawing.Point(174, 118);
             this.txtappat.Name = "txtappat";
             this.txtappat.PreventEnterBeep = true;
             this.txtappat.Size = new System.Drawing.Size(100, 22);
@@ -203,7 +178,7 @@ namespace Ap_escuela
             this.txtnombre.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtnombre.DisabledBackColor = System.Drawing.Color.White;
             this.txtnombre.ForeColor = System.Drawing.Color.Black;
-            this.txtnombre.Location = new System.Drawing.Point(174, 54);
+            this.txtnombre.Location = new System.Drawing.Point(174, 89);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.PreventEnterBeep = true;
             this.txtnombre.Size = new System.Drawing.Size(100, 22);
@@ -219,7 +194,7 @@ namespace Ap_escuela
             this.txtdni.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtdni.DisabledBackColor = System.Drawing.Color.White;
             this.txtdni.ForeColor = System.Drawing.Color.Black;
-            this.txtdni.Location = new System.Drawing.Point(174, 25);
+            this.txtdni.Location = new System.Drawing.Point(174, 60);
             this.txtdni.Name = "txtdni";
             this.txtdni.PreventEnterBeep = true;
             this.txtdni.Size = new System.Drawing.Size(100, 22);
@@ -231,7 +206,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX8.Location = new System.Drawing.Point(40, 196);
+            this.labelX8.Location = new System.Drawing.Point(40, 231);
             this.labelX8.Name = "labelX8";
             this.labelX8.Size = new System.Drawing.Size(75, 23);
             this.labelX8.TabIndex = 30;
@@ -243,7 +218,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX7.Location = new System.Drawing.Point(40, 167);
+            this.labelX7.Location = new System.Drawing.Point(40, 202);
             this.labelX7.Name = "labelX7";
             this.labelX7.Size = new System.Drawing.Size(75, 23);
             this.labelX7.TabIndex = 29;
@@ -255,7 +230,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX6.Location = new System.Drawing.Point(40, 138);
+            this.labelX6.Location = new System.Drawing.Point(40, 173);
             this.labelX6.Name = "labelX6";
             this.labelX6.Size = new System.Drawing.Size(75, 23);
             this.labelX6.TabIndex = 28;
@@ -279,7 +254,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Location = new System.Drawing.Point(40, 109);
+            this.labelX4.Location = new System.Drawing.Point(40, 144);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(106, 23);
             this.labelX4.TabIndex = 26;
@@ -291,7 +266,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Location = new System.Drawing.Point(40, 80);
+            this.labelX3.Location = new System.Drawing.Point(40, 115);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(106, 23);
             this.labelX3.TabIndex = 25;
@@ -303,7 +278,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Location = new System.Drawing.Point(40, 51);
+            this.labelX2.Location = new System.Drawing.Point(40, 86);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(75, 23);
             this.labelX2.TabIndex = 24;
@@ -315,11 +290,36 @@ namespace Ap_escuela
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(40, 22);
+            this.labelX1.Location = new System.Drawing.Point(40, 57);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(75, 23);
             this.labelX1.TabIndex = 23;
             this.labelX1.Text = "Dni:";
+            // 
+            // btncancelar
+            // 
+            this.btncancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btncancelar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btncancelar.Image = global::Ap_escuela.Properties.Resources.cancelar;
+            this.btncancelar.Location = new System.Drawing.Point(488, 290);
+            this.btncancelar.Name = "btncancelar";
+            this.btncancelar.Size = new System.Drawing.Size(150, 54);
+            this.btncancelar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btncancelar.TabIndex = 44;
+            this.btncancelar.Text = "Cancelar";
+            // 
+            // btnguardar
+            // 
+            this.btnguardar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnguardar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnguardar.Image = global::Ap_escuela.Properties.Resources.Guardar;
+            this.btnguardar.Location = new System.Drawing.Point(488, 221);
+            this.btnguardar.Name = "btnguardar";
+            this.btnguardar.Size = new System.Drawing.Size(150, 54);
+            this.btnguardar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnguardar.TabIndex = 43;
+            this.btnguardar.Text = "Guardar";
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // RegistroDocentes
             // 
@@ -348,7 +348,7 @@ namespace Ap_escuela
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "RegistroDocentes";
-            this.Text = "MetroForm";
+            this.Text = "Registro Docentes";
             this.ResumeLayout(false);
             this.PerformLayout();
 

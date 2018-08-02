@@ -85,5 +85,11 @@ namespace Ap_escuela
             Buscar bus = new Buscar();
             bus.Show();
         }
+
+        private void metroTileItem14_Click(object sender, EventArgs e)
+        {
+            ReciboAlumno recibo = new ReciboAlumno();
+            recibo.Show();
+        }
     }
 }

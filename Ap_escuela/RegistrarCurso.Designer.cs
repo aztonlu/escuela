@@ -28,7 +28,6 @@ namespace Ap_escuela
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnguardar = new DevComponents.DotNetBar.ButtonX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.txtnombrecurso = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -37,21 +36,11 @@ namespace Ap_escuela
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.txtidcurso = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.cbnumerogrupo = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.txtcosto = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.btnCancelar = new DevComponents.DotNetBar.ButtonX();
+            this.btnguardar = new DevComponents.DotNetBar.ButtonX();
             this.SuspendLayout();
-            // 
-            // btnguardar
-            // 
-            this.btnguardar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnguardar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnguardar.Image = global::Ap_escuela.Properties.Resources.Guardar;
-            this.btnguardar.Location = new System.Drawing.Point(460, 71);
-            this.btnguardar.Name = "btnguardar";
-            this.btnguardar.Size = new System.Drawing.Size(150, 54);
-            this.btnguardar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnguardar.TabIndex = 33;
-            this.btnguardar.Text = "Guardar";
-            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
             // labelX1
             // 
@@ -121,7 +110,7 @@ namespace Ap_escuela
             this.txtdni.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtdni.DisabledBackColor = System.Drawing.Color.White;
             this.txtdni.ForeColor = System.Drawing.Color.Black;
-            this.txtdni.Location = new System.Drawing.Point(179, 188);
+            this.txtdni.Location = new System.Drawing.Point(179, 223);
             this.txtdni.Name = "txtdni";
             this.txtdni.PreventEnterBeep = true;
             this.txtdni.Size = new System.Drawing.Size(100, 22);
@@ -135,7 +124,7 @@ namespace Ap_escuela
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.ForeColor = System.Drawing.Color.Black;
-            this.labelX4.Location = new System.Drawing.Point(45, 185);
+            this.labelX4.Location = new System.Drawing.Point(45, 220);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(106, 23);
             this.labelX4.TabIndex = 39;
@@ -170,6 +159,36 @@ namespace Ap_escuela
             this.cbnumerogrupo.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.cbnumerogrupo.TabIndex = 42;
             // 
+            // txtcosto
+            // 
+            this.txtcosto.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtcosto.Border.Class = "TextBoxBorder";
+            this.txtcosto.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtcosto.DisabledBackColor = System.Drawing.Color.White;
+            this.txtcosto.ForeColor = System.Drawing.Color.Black;
+            this.txtcosto.Location = new System.Drawing.Point(179, 188);
+            this.txtcosto.Name = "txtcosto";
+            this.txtcosto.PreventEnterBeep = true;
+            this.txtcosto.Size = new System.Drawing.Size(100, 22);
+            this.txtcosto.TabIndex = 45;
+            // 
+            // labelX5
+            // 
+            this.labelX5.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX5.ForeColor = System.Drawing.Color.Black;
+            this.labelX5.Location = new System.Drawing.Point(45, 185);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(106, 23);
+            this.labelX5.TabIndex = 44;
+            this.labelX5.Text = "Costo curso:";
+            // 
             // btnCancelar
             // 
             this.btnCancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -182,11 +201,26 @@ namespace Ap_escuela
             this.btnCancelar.TabIndex = 43;
             this.btnCancelar.Text = "Cancelar";
             // 
+            // btnguardar
+            // 
+            this.btnguardar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnguardar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnguardar.Image = global::Ap_escuela.Properties.Resources.Guardar;
+            this.btnguardar.Location = new System.Drawing.Point(460, 71);
+            this.btnguardar.Name = "btnguardar";
+            this.btnguardar.Size = new System.Drawing.Size(150, 54);
+            this.btnguardar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnguardar.TabIndex = 33;
+            this.btnguardar.Text = "Guardar";
+            this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
+            // 
             // RegistrarCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(720, 297);
+            this.Controls.Add(this.txtcosto);
+            this.Controls.Add(this.labelX5);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.cbnumerogrupo);
             this.Controls.Add(this.txtidcurso);
@@ -218,5 +252,7 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.Controls.TextBoxX txtidcurso;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cbnumerogrupo;
         private DevComponents.DotNetBar.ButtonX btnCancelar;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtcosto;
+        private DevComponents.DotNetBar.LabelX labelX5;
     }
 }

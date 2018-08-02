@@ -32,13 +32,6 @@ namespace Ap_escuela
             this.metroTilePanel1 = new DevComponents.DotNetBar.Metro.MetroTilePanel();
             this.itemContainer2 = new DevComponents.DotNetBar.ItemContainer();
             this.itemContainer4 = new DevComponents.DotNetBar.ItemContainer();
-            this.metroTileItem12 = new DevComponents.DotNetBar.Metro.MetroTileItem();
-            this.metroTileItem13 = new DevComponents.DotNetBar.Metro.MetroTileItem();
-            this.metroTileItem14 = new DevComponents.DotNetBar.Metro.MetroTileItem();
-            this.metroTileItem15 = new DevComponents.DotNetBar.Metro.MetroTileItem();
-            this.metroTileItem3 = new DevComponents.DotNetBar.Metro.MetroTileItem();
-            this.metroTileItem7 = new DevComponents.DotNetBar.Metro.MetroTileItem();
-            this.metroTileItem8 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem1 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem2 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem10 = new DevComponents.DotNetBar.Metro.MetroTileItem();
@@ -47,6 +40,9 @@ namespace Ap_escuela
             this.metroTileItem4 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem5 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem6 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroTileItem12 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroTileItem13 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroTileItem14 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.itemPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,7 +88,7 @@ namespace Ap_escuela
             this.metroTilePanel1.Location = new System.Drawing.Point(14, 26);
             this.metroTilePanel1.MultiLine = true;
             this.metroTilePanel1.Name = "metroTilePanel1";
-            this.metroTilePanel1.Size = new System.Drawing.Size(820, 663);
+            this.metroTilePanel1.Size = new System.Drawing.Size(820, 580);
             this.metroTilePanel1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
             this.metroTilePanel1.TabIndex = 0;
             this.metroTilePanel1.Text = "metroTilePanel1";
@@ -139,97 +135,13 @@ namespace Ap_escuela
             this.itemContainer4.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.metroTileItem12,
             this.metroTileItem13,
-            this.metroTileItem14,
-            this.metroTileItem15,
-            this.metroTileItem3,
-            this.metroTileItem7,
-            this.metroTileItem8});
+            this.metroTileItem14});
             // 
             // 
             // 
             this.itemContainer4.TitleStyle.Class = "MetroTileGroupTitle";
             this.itemContainer4.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.itemContainer4.TitleText = "Reportes";
-            // 
-            // metroTileItem12
-            // 
-            this.metroTileItem12.Name = "metroTileItem12";
-            this.metroTileItem12.SymbolColor = System.Drawing.Color.Empty;
-            this.metroTileItem12.Text = "Buscar Alumnos";
-            this.metroTileItem12.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
-            this.metroTileItem12.TileSize = new System.Drawing.Size(220, 100);
-            // 
-            // 
-            // 
-            this.metroTileItem12.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroTileItem12.Click += new System.EventHandler(this.metroTileItem12_Click);
-            // 
-            // metroTileItem13
-            // 
-            this.metroTileItem13.Name = "metroTileItem13";
-            this.metroTileItem13.SymbolColor = System.Drawing.Color.Empty;
-            this.metroTileItem13.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
-            // 
-            // 
-            // 
-            this.metroTileItem13.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroTileItem13.TitleText = "Compromiso de Pago";
-            this.metroTileItem13.Click += new System.EventHandler(this.metroTileItem13_Click);
-            // 
-            // metroTileItem14
-            // 
-            this.metroTileItem14.Name = "metroTileItem14";
-            this.metroTileItem14.SymbolColor = System.Drawing.Color.Empty;
-            this.metroTileItem14.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
-            // 
-            // 
-            // 
-            this.metroTileItem14.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroTileItem14.TitleText = "Buscar Recibo";
-            this.metroTileItem14.Click += new System.EventHandler(this.metroTileItem14_Click);
-            // 
-            // metroTileItem15
-            // 
-            this.metroTileItem15.Name = "metroTileItem15";
-            this.metroTileItem15.SymbolColor = System.Drawing.Color.Empty;
-            this.metroTileItem15.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
-            // 
-            // 
-            // 
-            this.metroTileItem15.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // metroTileItem3
-            // 
-            this.metroTileItem3.Name = "metroTileItem3";
-            this.metroTileItem3.SymbolColor = System.Drawing.Color.Empty;
-            this.metroTileItem3.Text = "metroTileItem3";
-            this.metroTileItem3.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
-            // 
-            // 
-            // 
-            this.metroTileItem3.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // metroTileItem7
-            // 
-            this.metroTileItem7.Name = "metroTileItem7";
-            this.metroTileItem7.SymbolColor = System.Drawing.Color.Empty;
-            this.metroTileItem7.Text = "metroTileItem7";
-            this.metroTileItem7.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
-            // 
-            // 
-            // 
-            this.metroTileItem7.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // metroTileItem8
-            // 
-            this.metroTileItem8.Name = "metroTileItem8";
-            this.metroTileItem8.SymbolColor = System.Drawing.Color.Empty;
-            this.metroTileItem8.Text = "metroTileItem8";
-            this.metroTileItem8.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
-            // 
-            // 
-            // 
-            this.metroTileItem8.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // metroTileItem1
             // 
@@ -353,7 +265,8 @@ namespace Ap_escuela
             // 
             // metroTileItem6
             // 
-            this.metroTileItem6.Image = global::Ap_escuela.Properties.Resources.pagodocente;
+            this.metroTileItem6.Image = global::Ap_escuela.Properties.Resources.pagodocente3;
+            this.metroTileItem6.ImageIndent = new System.Drawing.Point(5, 5);
             this.metroTileItem6.Name = "metroTileItem6";
             this.metroTileItem6.NotificationMarkOffset = new System.Drawing.Point(-5, -5);
             this.metroTileItem6.SymbolColor = System.Drawing.Color.Empty;
@@ -364,9 +277,61 @@ namespace Ap_escuela
             // 
             this.metroTileItem6.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.metroTileItem6.TitleText = "Pago Docente";
-            this.metroTileItem6.TitleTextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTileItem6.TitleTextAlignment = System.Drawing.ContentAlignment.MiddleRight;
             this.metroTileItem6.TitleTextFont = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTileItem6.Click += new System.EventHandler(this.metroTileItem6_Click);
+            // 
+            // metroTileItem12
+            // 
+            this.metroTileItem12.Image = global::Ap_escuela.Properties.Resources.busqueda2;
+            this.metroTileItem12.ImageIndent = new System.Drawing.Point(5, 5);
+            this.metroTileItem12.Name = "metroTileItem12";
+            this.metroTileItem12.NotificationMarkOffset = new System.Drawing.Point(-5, -5);
+            this.metroTileItem12.SymbolColor = System.Drawing.Color.Empty;
+            this.metroTileItem12.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
+            this.metroTileItem12.TileSize = new System.Drawing.Size(220, 100);
+            // 
+            // 
+            // 
+            this.metroTileItem12.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTileItem12.TitleText = "Buscar Alumnos";
+            this.metroTileItem12.TitleTextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroTileItem12.TitleTextFont = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroTileItem12.Click += new System.EventHandler(this.metroTileItem12_Click);
+            // 
+            // metroTileItem13
+            // 
+            this.metroTileItem13.Image = global::Ap_escuela.Properties.Resources.compromiso;
+            this.metroTileItem13.ImageIndent = new System.Drawing.Point(5, 5);
+            this.metroTileItem13.Name = "metroTileItem13";
+            this.metroTileItem13.SymbolColor = System.Drawing.Color.Empty;
+            this.metroTileItem13.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
+            this.metroTileItem13.TileSize = new System.Drawing.Size(220, 100);
+            // 
+            // 
+            // 
+            this.metroTileItem13.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTileItem13.TitleText = "Compromiso Pago";
+            this.metroTileItem13.TitleTextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroTileItem13.TitleTextFont = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroTileItem13.Click += new System.EventHandler(this.metroTileItem13_Click);
+            // 
+            // metroTileItem14
+            // 
+            this.metroTileItem14.Image = global::Ap_escuela.Properties.Resources.reportemonto;
+            this.metroTileItem14.ImageIndent = new System.Drawing.Point(5, 5);
+            this.metroTileItem14.Name = "metroTileItem14";
+            this.metroTileItem14.SymbolColor = System.Drawing.Color.Empty;
+            this.metroTileItem14.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
+            this.metroTileItem14.TileSize = new System.Drawing.Size(220, 110);
+            // 
+            // 
+            // 
+            this.metroTileItem14.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTileItem14.TitleText = "Buscar Recibo";
+            this.metroTileItem14.TitleTextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroTileItem14.TitleTextFont = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroTileItem14.Click += new System.EventHandler(this.metroTileItem14_Click);
             // 
             // seleccion
             // 
@@ -378,7 +343,7 @@ namespace Ap_escuela
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "seleccion";
-            this.Text = "MetroForm";
+            this.Text = "Sistema de control y registro";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.itemPanel1.ResumeLayout(false);
             this.itemPanel1.PerformLayout();
@@ -401,12 +366,8 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem12;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem13;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem14;
-        private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem15;
-        private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem3;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem4;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem5;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem6;
-        private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem7;
-        private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem8;
     }
 }

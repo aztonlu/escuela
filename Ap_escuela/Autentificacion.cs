@@ -18,14 +18,16 @@ namespace Ap_escuela
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            if(UsuarioDAL.Autentificar(txtUsuario.Text,txtContraseña.Text)>0)
+            /*if(UsuarioDAL.Autentificar(txtUsuario.Text,txtContraseña.Text)>0)
                 {
                     this.Hide();
                    Form1 f=new Form1();
                     f.ShowDialog();
                 }
                 else
-                    MessageBox.Show("Error en los datos");
+                    MessageBox.Show("Error en los datos");*/
+            seleccion sele = new seleccion();
+            sele.Show();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

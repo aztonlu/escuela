@@ -263,6 +263,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.png" />
+    <None Include="Resources\reportemonto.png" />
+    <None Include="Resources\compromiso.png" />
+    <None Include="Resources\busqueda2.png" />
+    <None Include="Resources\pagodocente3.png" />
+    <None Include="Resources\pagodocente2.png" />
     <None Include="Resources\buscar.png" />
     <None Include="Resources\cancelar.png" />
     <None Include="Resources\Guardar.png" />

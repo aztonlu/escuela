@@ -39,6 +39,28 @@ namespace Ap_escuela
                 Matricula.Fecha = Convert.ToString(DateTime.Today.ToShortDateString());
 
                 int resultado = MatriculaDAL.AgregarMatricula(Matricula);
+
+                Random ran = new Random();
+                int cualquiera = ran.Next(10000);
+                //MessageBox.Show(Convert.ToString(DateTime.Today.ToShortDateString()));
+                //("alu" + DateTime.Today.ToShortDateString() + DateTime.Today.Second.ToString() + cualquiera);
+
+                decimal monto = 0;
+                PagoCurso Pago = new PagoCurso();
+                Pago.Idpago = "alu" + DateTime.Today.ToShortDateString() + DateTime.Today.Second.ToString() + cualquiera; // txtidpago.Text;
+                Pago.Numerogrupo = txtnumerogrupo.Text;
+                Pago.Idcurso = txtidcurso.Text;
+                Pago.Dni = Convert.ToInt32(txtdni.Text);
+                Pago.Monto = monto;// Convert.ToDecimal(txtmonto.Text);
+                Pago.Cuenta = monto;// Convert.ToDecimal(txtcuenta.Text);
+                Pago.Fecha = DateTime.Today.ToShortDateString(); // monthCalendarAdv1.SelectedDate.ToShortDateString();
+                Pago.Nrorecibo = "0"; //txtnumerorecibo.Text;
+                //Pago.Estado = txtestado.Text;
+                //Pago.Observacion = txtobservacion.Text;
+
+
+                //int resultado = 
+                    PagoCursoDAL.AgregarPagocurso(Pago);
                 //PersonaDAL.AgregarPersona(Persona);
 
                 if (resultado > 0)
@@ -67,7 +89,10 @@ namespace Ap_escuela
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
              //MessageBox.Show(Convert.ToString(cbidcurso.Items[1]));
+            Random ran = new Random();
+            int cualquiera = ran.Next(10000);
             MessageBox.Show(Convert.ToString(DateTime.Today.ToShortDateString()));
+            MessageBox.Show("alu" + DateTime.Today.ToShortDateString() + DateTime.Today.Second.ToString()+cualquiera);
         }
 
         private void cbnombrecurso_SelectedIndexChanged(object sender, EventArgs e)

@@ -82,8 +82,8 @@ namespace Ap_escuela
 
         private void metroTileItem13_Click(object sender, EventArgs e)
         {
-            Buscar bus = new Buscar();
-            bus.Show();
+            Compromisopago compromiso = new Compromisopago();
+            compromiso.Show();
         }
 
         private void metroTileItem14_Click(object sender, EventArgs e)

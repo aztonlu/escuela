@@ -64,13 +64,18 @@ namespace Ap_escuela
         private void dataGridViewX1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string dato;
-            string dato2;
+            string dato2,dato3,dato4, dato5;
             dato = (String)dataGridViewX1.CurrentRow.Cells[0].Value; //CurrentCell.Value.ToString(); //Rows[0].Cells[0].Value.ToString();
             dato2 = (String)dataGridViewX1.CurrentRow.Cells[1].Value; //.CurrentCell.Value.ToString();
+            dato3 = (String)dataGridViewX1.CurrentRow.Cells[2].Value; //.CurrentCell.Value.ToString();
+            dato4 = Convert.ToString((Decimal)dataGridViewX1.CurrentRow.Cells[3].Value); //.CurrentCell.Value.ToString();
+            dato5 = Convert.ToString((Decimal)dataGridViewX1.CurrentRow.Cells[4].Value); //.CurrentCell.Value.ToString();
             
             txtidcurso.Text = dato2;
-            
+            txtnombrecurso.Text = dato3;
             txtnumerogrupo.Text = dato;
+            txtmonto.Text = dato4;
+            txtsaldo.Text = dato5;
         }
     }
 }

@@ -75,23 +75,29 @@ namespace Ap_escuela
                 PdfWriter.GetInstance(pdfDoc, stream);
                 pdfDoc.Open();
                 iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance("D://logo.png");
+                iTextSharp.text.Image img2 = iTextSharp.text.Image.GetInstance("D://CEAlogo.png");
                 //Resize image depend upon your need
 
                 img.ScaleToFit(100f, 80f);
-
+                img2.ScaleToFit(350f, 330f);
                 //Give space before image
 
                 img.SpacingBefore = 20f;
+                img2.SpacingBefore = 20f;
 
                 //Give some space after the image
 
                 img.SpacingAfter = 1f;
+                img2.SpacingAfter = 1f;
 
                 //img.Alignment = Element.ALIGN_LEFT;
                 img.Alignment = Element.ALIGN_CENTER;
+                img2.Alignment = Element.ALIGN_CENTER;
                 //Imagen - Esquina inferior izquierda
                 img.SetAbsolutePosition(50, 800);
-                pdfDoc.Add(img);
+                img2.SetAbsolutePosition(150, 750);
+                //pdfDoc.Add(img);
+                pdfDoc.Add(img2);
                     
                 pdfDoc.Add(pdfTable);
                 pdfDoc.Close();

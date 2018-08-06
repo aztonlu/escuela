@@ -246,11 +246,25 @@ namespace Ap_escuela
 
             //PdfPTable pdfTable = new PdfPTable(dataGridViewX1.ColumnCount);
             PdfPTable tblPrueba = new PdfPTable(8);
+            PdfPTable tblPruebadni = new PdfPTable(1);
+            PdfPTable tblPruebanombre = new PdfPTable(1);
 
             tblPrueba.DefaultCell.Padding = 3;
             tblPrueba.WidthPercentage = 100;
             tblPrueba.HorizontalAlignment = Element.ALIGN_LEFT;
             tblPrueba.DefaultCell.BorderWidth = 1;
+
+
+            tblPruebadni.DefaultCell.Padding = 3;
+            tblPruebadni.WidthPercentage = 100;
+            tblPruebadni.HorizontalAlignment = Element.ALIGN_LEFT;
+            tblPruebadni.DefaultCell.BorderWidth = 1;
+
+
+            tblPruebanombre.DefaultCell.Padding = 3;
+            tblPruebanombre.WidthPercentage = 100;
+            tblPruebanombre.HorizontalAlignment = Element.ALIGN_LEFT;
+            tblPruebanombre.DefaultCell.BorderWidth = 1;
 
             //iTextSharp.text.Font text = new iTextSharp.text.Font(bf, 10, iTextSharp.text.Font.NORMAL);
             iTextSharp.text.Font _standardFont = new iTextSharp.text.Font(iTextSharp.text.Font.HELVETICA, 8, iTextSharp.text.Font.NORMAL);
@@ -274,12 +288,16 @@ namespace Ap_escuela
             // de nuestros visitante.
             //PdfPTable tblPrueba = new PdfPTable(6);
             tblPrueba.WidthPercentage = 75;
+            tblPruebadni.WidthPercentage = 100;
+            tblPruebanombre.WidthPercentage = 100;
 
             // Configuramos el título de las columnas de la tabla
+            doc.Add(new Paragraph("Dni"));
             PdfPCell clDni = new PdfPCell(new Phrase("dni", _standardFont));
             clDni.BorderWidth = 0;
             clDni.BorderWidthBottom = 0.75f;
-            
+
+            doc.Add(new Paragraph("Nombre"));
             PdfPCell clNombre = new PdfPCell(new Phrase("nombre", _standardFont));
             clNombre.BorderWidth = 0;
             clNombre.BorderWidthBottom = 0.75f;
@@ -309,6 +327,21 @@ namespace Ap_escuela
             clDireccion.BorderWidth = 0;
             clDireccion.BorderWidthBottom = 0.75f;
 
+
+
+
+            PdfPCell cdninuevo = new PdfPCell(new Phrase("dni", _standardFont));
+            clDireccion.BorderWidth = 0;
+            clDireccion.BorderWidthBottom = 0.75f;
+
+
+            PdfPCell cnombrenuevo = new PdfPCell(new Phrase("nombre", _standardFont));
+            clDireccion.BorderWidth = 0;
+            clDireccion.BorderWidthBottom = 0.75f;
+
+
+
+
             // Añadimos las celdas a la tabla
             tblPrueba.AddCell(clDni);
             tblPrueba.AddCell(clNombre);
@@ -318,6 +351,9 @@ namespace Ap_escuela
             tblPrueba.AddCell(clTelefono);
             tblPrueba.AddCell(clCorreo);
             tblPrueba.AddCell(clDireccion);
+
+            tblPruebadni.AddCell(cdninuevo);
+            tblPruebanombre.AddCell(cnombrenuevo);
 
             // Llenamos la tabla con información
             clDni = new PdfPCell(new Phrase(dni, _standardFont));
@@ -344,8 +380,19 @@ namespace Ap_escuela
             clDireccion = new PdfPCell(new Phrase(direccion, _standardFont));
             clDireccion.BorderWidth = 0;
 
+
+            
+            
+            
+            cdninuevo = new PdfPCell(new Phrase(dni, _standardFont));
+            cdninuevo.BorderWidth = 0;
+
+            cnombrenuevo = new PdfPCell(new Phrase(nombre, _standardFont));
+            cnombrenuevo.BorderWidth = 0;
+
             // Añadimos las celdas a la tabla
             tblPrueba.AddCell(clDni);
+            doc.Add(new Paragraph("nom"));
             tblPrueba.AddCell(clNombre);
             tblPrueba.AddCell(clAppat);
             tblPrueba.AddCell(clApmat);
@@ -355,7 +402,12 @@ namespace Ap_escuela
             tblPrueba.AddCell(clDireccion);
 
 
+            tblPruebadni.AddCell(cdninuevo);
+            tblPruebanombre.AddCell(cnombrenuevo);
+
             doc.Add(tblPrueba);
+            doc.Add(tblPruebadni);
+            doc.Add(tblPruebanombre);
             doc.Close();
             writer.Close();
 

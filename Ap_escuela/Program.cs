@@ -17,7 +17,8 @@ namespace Ap_escuela
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
             //Application.Run(new seleccion());
-            Application.Run(new Autentificacion());
+            //Application.Run(new Autentificacion());
+            Application.Run(new Compromisopago());
         }
     }
 }

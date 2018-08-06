@@ -94,3 +94,5 @@ D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Regis
 D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.RegistroPagoDocente.resources
 D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.ReciboAlumno.resources
 D:\Desarrollo Proyecto Escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Compromisopago.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.Compromisopago.resources
+D:\proyecto escuela\escuela\Ap_escuela\obj\x86\Debug\Ap_escuela.ReciboAlumno.resources

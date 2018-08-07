@@ -31,7 +31,6 @@ namespace Ap_escuela
             this.itemPanel1 = new DevComponents.DotNetBar.ItemPanel();
             this.metroTilePanel1 = new DevComponents.DotNetBar.Metro.MetroTilePanel();
             this.itemContainer2 = new DevComponents.DotNetBar.ItemContainer();
-            this.itemContainer4 = new DevComponents.DotNetBar.ItemContainer();
             this.metroTileItem1 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem2 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem10 = new DevComponents.DotNetBar.Metro.MetroTileItem();
@@ -40,9 +39,11 @@ namespace Ap_escuela
             this.metroTileItem4 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem5 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem6 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.itemContainer4 = new DevComponents.DotNetBar.ItemContainer();
             this.metroTileItem12 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem13 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem14 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroTileItem3 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.itemPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,7 +112,8 @@ namespace Ap_escuela
             this.metroTileItem16,
             this.metroTileItem4,
             this.metroTileItem5,
-            this.metroTileItem6});
+            this.metroTileItem6,
+            this.metroTileItem3});
             // 
             // 
             // 
@@ -122,26 +124,6 @@ namespace Ap_escuela
             this.itemContainer2.TitleStyle.Class = "MetroTileGroupTitle";
             this.itemContainer2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.itemContainer2.TitleText = "Registro";
-            // 
-            // itemContainer4
-            // 
-            // 
-            // 
-            // 
-            this.itemContainer4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.itemContainer4.ItemSpacing = 3;
-            this.itemContainer4.MultiLine = true;
-            this.itemContainer4.Name = "itemContainer4";
-            this.itemContainer4.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.metroTileItem12,
-            this.metroTileItem13,
-            this.metroTileItem14});
-            // 
-            // 
-            // 
-            this.itemContainer4.TitleStyle.Class = "MetroTileGroupTitle";
-            this.itemContainer4.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.itemContainer4.TitleText = "Reportes";
             // 
             // metroTileItem1
             // 
@@ -281,6 +263,26 @@ namespace Ap_escuela
             this.metroTileItem6.TitleTextFont = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTileItem6.Click += new System.EventHandler(this.metroTileItem6_Click);
             // 
+            // itemContainer4
+            // 
+            // 
+            // 
+            // 
+            this.itemContainer4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.itemContainer4.ItemSpacing = 3;
+            this.itemContainer4.MultiLine = true;
+            this.itemContainer4.Name = "itemContainer4";
+            this.itemContainer4.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.metroTileItem12,
+            this.metroTileItem13,
+            this.metroTileItem14});
+            // 
+            // 
+            // 
+            this.itemContainer4.TitleStyle.Class = "MetroTileGroupTitle";
+            this.itemContainer4.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.itemContainer4.TitleText = "Reportes";
+            // 
             // metroTileItem12
             // 
             this.metroTileItem12.Image = global::Ap_escuela.Properties.Resources.busqueda2;
@@ -333,6 +335,19 @@ namespace Ap_escuela
             this.metroTileItem14.TitleTextFont = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTileItem14.Click += new System.EventHandler(this.metroTileItem14_Click);
             // 
+            // metroTileItem3
+            // 
+            this.metroTileItem3.Name = "metroTileItem3";
+            this.metroTileItem3.SymbolColor = System.Drawing.Color.Empty;
+            this.metroTileItem3.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
+            // 
+            // 
+            // 
+            this.metroTileItem3.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTileItem3.TitleText = "Registrar Usuarios";
+            this.metroTileItem3.TitleTextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroTileItem3.Click += new System.EventHandler(this.metroTileItem3_Click);
+            // 
             // seleccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -346,9 +361,7 @@ namespace Ap_escuela
             this.Text = "Sistema de control y registro";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.itemPanel1.ResumeLayout(false);
-            this.itemPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -369,5 +382,6 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem4;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem5;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem6;
+        private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem3;
     }
 }

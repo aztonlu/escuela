@@ -91,5 +91,11 @@ namespace Ap_escuela
             ReciboAlumno recibo = new ReciboAlumno();
             recibo.Show();
         }
+
+        private void metroTileItem3_Click(object sender, EventArgs e)
+        {
+            Registro_Usuarios regis = new Registro_Usuarios();
+            regis.Show();
+        }
     }
 }

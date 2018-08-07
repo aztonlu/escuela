@@ -358,6 +358,7 @@ namespace Ap_escuela
             this.btncancelar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btncancelar.TabIndex = 21;
             this.btncancelar.Text = "Cancelar";
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
             // 
             // btnlimpiar
             // 
@@ -370,6 +371,7 @@ namespace Ap_escuela
             this.btnlimpiar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnlimpiar.TabIndex = 22;
             this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
             // buttonX1
             // 

@@ -9,9 +9,9 @@ namespace Ap_escuela
     class UsuarioDAL
     {
 
-        public static int CrearCuentas(string pUsuario, string pContraseña)
+        public static int CrearCuentas(Usuario pUsuario)
         {
-            int resultado = 0;
+            /*int resultado = 0;
             SqlConnection Conn = BDComun.ObtnerCOnexion();
             
             SqlCommand Comando = new SqlCommand(string.Format("Insert Into Usuarios (Nombre, Contraseña) values ('{0}', '{1}')", pUsuario, pContraseña), Conn);
@@ -21,7 +21,18 @@ namespace Ap_escuela
 
             
 
-            return resultado;
+            return resultado;*/
+            int retorno = 1;
+            using (SqlConnection Conn = BDComun.ObtnerCOnexion())
+            {
+                SqlCommand Comando = new SqlCommand(string.Format("Insert Into tusuarios (dni, usuario, clave) values ('{0}', '{1}','{2}')",
+                    pUsuario.Dni, pUsuario.Nombre, pUsuario.Clave), Conn);
+
+                retorno = Comando.ExecuteNonQuery();
+                Conn.Close();
+
+            }
+            return retorno;
         }
 
 

@@ -248,6 +248,12 @@ namespace Ap_escuela
             PdfPTable tblPrueba = new PdfPTable(8);
             PdfPTable tblPruebadni = new PdfPTable(1);
             PdfPTable tblPruebanombre = new PdfPTable(1);
+            PdfPTable tblPruebaappat = new PdfPTable(1);
+            PdfPTable tblPruebaapmat = new PdfPTable(1);
+            PdfPTable tblPruebafecha_nac = new PdfPTable(1);
+            PdfPTable tblPruebatelefono = new PdfPTable(1);
+            PdfPTable tblPruebacorreo = new PdfPTable(1);
+            PdfPTable tblPruebadireccion = new PdfPTable(1);
 
             tblPrueba.DefaultCell.Padding = 3;
             tblPrueba.WidthPercentage = 100;
@@ -266,6 +272,35 @@ namespace Ap_escuela
             tblPruebanombre.HorizontalAlignment = Element.ALIGN_LEFT;
             tblPruebanombre.DefaultCell.BorderWidth = 1;
 
+            tblPruebaappat.DefaultCell.Padding = 3;
+            tblPruebaappat.WidthPercentage = 100;
+            tblPruebaappat.HorizontalAlignment = Element.ALIGN_LEFT;
+            tblPruebaappat.DefaultCell.BorderWidth = 1;
+
+            tblPruebaapmat.DefaultCell.Padding = 3;
+            tblPruebaapmat.WidthPercentage = 100;
+            tblPruebaapmat.HorizontalAlignment = Element.ALIGN_LEFT;
+            tblPruebaapmat.DefaultCell.BorderWidth = 1;
+
+            tblPruebafecha_nac.DefaultCell.Padding = 3;
+            tblPruebafecha_nac.WidthPercentage = 100;
+            tblPruebafecha_nac.HorizontalAlignment = Element.ALIGN_LEFT;
+            tblPruebafecha_nac.DefaultCell.BorderWidth = 1;
+
+            tblPruebatelefono.DefaultCell.Padding = 3;
+            tblPruebatelefono.WidthPercentage = 100;
+            tblPruebatelefono.HorizontalAlignment = Element.ALIGN_LEFT;
+            tblPruebatelefono.DefaultCell.BorderWidth = 1;
+
+            tblPruebacorreo.DefaultCell.Padding = 3;
+            tblPruebacorreo.WidthPercentage = 100;
+            tblPruebacorreo.HorizontalAlignment = Element.ALIGN_LEFT;
+            tblPruebacorreo.DefaultCell.BorderWidth = 1;
+
+            tblPruebadireccion.DefaultCell.Padding = 3;
+            tblPruebadireccion.WidthPercentage = 100;
+            tblPruebadireccion.HorizontalAlignment = Element.ALIGN_LEFT;
+            tblPruebadireccion.DefaultCell.BorderWidth = 1;
             //iTextSharp.text.Font text = new iTextSharp.text.Font(bf, 10, iTextSharp.text.Font.NORMAL);
             iTextSharp.text.Font _standardFont = new iTextSharp.text.Font(iTextSharp.text.Font.HELVETICA, 8, iTextSharp.text.Font.NORMAL);
 
@@ -290,6 +325,12 @@ namespace Ap_escuela
             tblPrueba.WidthPercentage = 75;
             tblPruebadni.WidthPercentage = 100;
             tblPruebanombre.WidthPercentage = 100;
+            tblPruebaappat.WidthPercentage = 100;
+            tblPruebaapmat.WidthPercentage = 100;
+            tblPruebafecha_nac.WidthPercentage = 100;
+            tblPruebatelefono.WidthPercentage = 100;
+            tblPruebacorreo.WidthPercentage = 100;
+            tblPruebadireccion.WidthPercentage = 100;
 
             // Configuramos el título de las columnas de la tabla
             doc.Add(new Paragraph("Dni"));
@@ -339,6 +380,29 @@ namespace Ap_escuela
             clDireccion.BorderWidth = 0;
             clDireccion.BorderWidthBottom = 0.75f;
 
+            PdfPCell cappat = new PdfPCell(new Phrase("Apellido paterno", _standardFont));
+            cappat.BorderWidth = 0;
+            cappat.BorderWidthBottom = 0.75f;
+
+            PdfPCell capmat = new PdfPCell(new Phrase("Apellido materno", _standardFont));
+            capmat.BorderWidth = 0;
+            capmat.BorderWidthBottom = 0.75f;
+
+            PdfPCell cfecha = new PdfPCell(new Phrase("Fecha de Nacimiento", _standardFont));
+            cfecha.BorderWidth = 0;
+            cfecha.BorderWidthBottom = 0.75f;
+
+            PdfPCell ctelefono = new PdfPCell(new Phrase("Telefono", _standardFont));
+            ctelefono.BorderWidth = 0;
+            ctelefono.BorderWidthBottom = 0.75f;
+
+            PdfPCell ccorreo = new PdfPCell(new Phrase("Correo", _standardFont));
+            ccorreo.BorderWidth = 0;
+            ccorreo.BorderWidthBottom = 0.75f;
+
+            PdfPCell cdireccion = new PdfPCell(new Phrase("Direccion", _standardFont));
+            cdireccion.BorderWidth = 0;
+            cdireccion.BorderWidthBottom = 0.75f;
 
 
 
@@ -354,6 +418,12 @@ namespace Ap_escuela
 
             tblPruebadni.AddCell(cdninuevo);
             tblPruebanombre.AddCell(cnombrenuevo);
+            tblPruebaappat.AddCell(cappat);
+            tblPruebaapmat.AddCell(capmat);
+            tblPruebafecha_nac.AddCell(cfecha);
+            tblPruebatelefono.AddCell(ctelefono);
+            tblPruebacorreo.AddCell(ccorreo);
+            tblPruebadireccion.AddCell(cdireccion);
 
             // Llenamos la tabla con información
             clDni = new PdfPCell(new Phrase(dni, _standardFont));
@@ -390,6 +460,27 @@ namespace Ap_escuela
             cnombrenuevo = new PdfPCell(new Phrase(nombre, _standardFont));
             cnombrenuevo.BorderWidth = 0;
 
+            cappat = new PdfPCell(new Phrase(appat, _standardFont));
+            cappat.BorderWidth = 0;
+
+            capmat = new PdfPCell(new Phrase(apmat, _standardFont));
+            capmat.BorderWidth = 0;
+
+            cfecha = new PdfPCell(new Phrase(fecha_nac, _standardFont));
+            cfecha.BorderWidth = 0;
+
+            ctelefono = new PdfPCell(new Phrase(telefono, _standardFont));
+            ctelefono.BorderWidth = 0;
+
+            ccorreo = new PdfPCell(new Phrase(correo, _standardFont));
+            ccorreo.BorderWidth = 0;
+
+            cdireccion = new PdfPCell(new Phrase(direccion, _standardFont));
+            cdireccion.BorderWidth = 0;
+            
+            //cappat = new PdfCell(new Phrase(appat, _standardFont));
+            //cappat.BorderWidth = 0;
+
             // Añadimos las celdas a la tabla
             tblPrueba.AddCell(clDni);
             doc.Add(new Paragraph("nom"));
@@ -404,10 +495,22 @@ namespace Ap_escuela
 
             tblPruebadni.AddCell(cdninuevo);
             tblPruebanombre.AddCell(cnombrenuevo);
+            tblPruebaappat.AddCell(cappat);
+            tblPruebaapmat.AddCell(capmat);
+            tblPruebafecha_nac.AddCell(cfecha);
+            tblPruebatelefono.AddCell(ctelefono);
+            tblPruebacorreo.AddCell(ccorreo);
+            tblPruebadireccion.AddCell(cdireccion); ;
 
             doc.Add(tblPrueba);
             doc.Add(tblPruebadni);
             doc.Add(tblPruebanombre);
+            doc.Add(tblPruebaappat);
+            doc.Add(tblPruebaapmat);
+            doc.Add(tblPruebafecha_nac);
+            doc.Add(tblPruebatelefono);
+            doc.Add(tblPruebacorreo);
+            doc.Add(tblPruebadireccion);
             doc.Close();
             writer.Close();
 

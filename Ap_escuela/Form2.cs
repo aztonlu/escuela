@@ -62,5 +62,24 @@ namespace Ap_escuela
             }
 
         }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            txtdni.Text = "";
+            txtapmat.Text = "";
+            txtappat.Text = "";
+            txtcorreo.Text = "";
+                txtcursointeres.Text="";
+                txtdireccion.Text = "";
+                txtnombre.Text = "";
+                txtobservacion.Text = "";
+                txttelefono.Text = "";
+                txtdni.Focus();
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

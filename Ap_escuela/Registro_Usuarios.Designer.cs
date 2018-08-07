@@ -33,7 +33,7 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtConfirmar = new System.Windows.Forms.TextBox();
+            this.txtdni = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -82,18 +82,17 @@
             this.label3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(43, 193);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 17);
+            this.label3.Size = new System.Drawing.Size(34, 17);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Confirme Contraseña:";
+            this.label3.Text = "Dni:";
             // 
-            // txtConfirmar
+            // txtdni
             // 
-            this.txtConfirmar.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmar.Location = new System.Drawing.Point(206, 185);
-            this.txtConfirmar.Name = "txtConfirmar";
-            this.txtConfirmar.PasswordChar = '*';
-            this.txtConfirmar.Size = new System.Drawing.Size(171, 25);
-            this.txtConfirmar.TabIndex = 5;
+            this.txtdni.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtdni.Location = new System.Drawing.Point(206, 185);
+            this.txtdni.Name = "txtdni";
+            this.txtdni.Size = new System.Drawing.Size(171, 25);
+            this.txtdni.TabIndex = 5;
             // 
             // label4
             // 
@@ -136,12 +135,13 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtConfirmar);
+            this.Controls.Add(this.txtdni);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "Registro_Usuarios";
             this.Text = "Registro_Usuarios";
             this.ResumeLayout(false);
@@ -156,7 +156,7 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtConfirmar;
+        private System.Windows.Forms.TextBox txtdni;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnCancelar;

@@ -177,6 +177,7 @@
     <Compile Include="seleccion.Designer.cs">
       <DependentUpon>seleccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usuario.cs" />
     <Compile Include="UsuarioDAL.cs" />
     <EmbeddedResource Include="AgregarMatricula.resx">
       <DependentUpon>AgregarMatricula.cs</DependentUpon>

@@ -53,8 +53,7 @@ namespace Ap_escuela
 
         private void RegistrarAsistenciaAlumno_Load(object sender, EventArgs e)
         {
-            AsistenciaalumnoDAL asis = new AsistenciaalumnoDAL();
-            asis.Buscarcarga(dataGridViewX1);
+            
         }
 
         private void dataGridViewX1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -68,6 +67,13 @@ namespace Ap_escuela
             txtidcurso.Text = dato3;
             //txtnombrecurso.Text = dato2;
             txtnumerogrupo.Text = dato2;
+        }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            int dni = Convert.ToInt32(txtdni.Text);
+            AsistenciaalumnoDAL asis = new AsistenciaalumnoDAL();
+            asis.Buscarcarga(dataGridViewX1, dni);
         }
     }
 }

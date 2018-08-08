@@ -37,7 +37,7 @@ namespace Ap_escuela
            try
            {
                //da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion, talumno.observacion, talumno.interesseguimiento from tpersona inner join talumno on tpersona.dni = talumno.dni where tpersona.dni like '%{0}%'", dni),conexion);
-               da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion from tpersona where tpersona.dni like '%{0}%'", dni), conexion);
+               da = new SqlDataAdapter(string.Format("Select tpersona.dni AS DNI, tpersona.nombre AS Nombre, tpersona.appat AS Apellido_Paterno, tpersona.apmat as Apellido_Materno, tpersona.fecha_nac AS Fecha_Nacimiento, tpersona.telefono AS Telefono, tpersona.correo AS Correo, tpersona.direccion AS Direccion from tpersona where tpersona.dni like '%{0}%'", dni), conexion);
                dt = new DataTable();
                da.Fill(dt);
 

@@ -28,6 +28,7 @@ namespace Ap_escuela
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.txtnombrecurso = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -40,6 +41,9 @@ namespace Ap_escuela
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.btnCancelar = new DevComponents.DotNetBar.ButtonX();
             this.btnguardar = new DevComponents.DotNetBar.ButtonX();
+            this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.btnbuscar = new DevComponents.DotNetBar.ButtonX();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelX1
@@ -138,7 +142,8 @@ namespace Ap_escuela
             // 
             this.txtidcurso.Border.Class = "TextBoxBorder";
             this.txtidcurso.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txtidcurso.DisabledBackColor = System.Drawing.Color.White;
+            this.txtidcurso.DisabledBackColor = System.Drawing.Color.Gray;
+            this.txtidcurso.Enabled = false;
             this.txtidcurso.ForeColor = System.Drawing.Color.Black;
             this.txtidcurso.Location = new System.Drawing.Point(179, 58);
             this.txtidcurso.Name = "txtidcurso";
@@ -214,11 +219,43 @@ namespace Ap_escuela
             this.btnguardar.Text = "Guardar";
             this.btnguardar.Click += new System.EventHandler(this.btnguardar_Click);
             // 
+            // dataGridViewX1
+            // 
+            this.dataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.dataGridViewX1.Location = new System.Drawing.Point(45, 278);
+            this.dataGridViewX1.Name = "dataGridViewX1";
+            this.dataGridViewX1.RowHeadersVisible = false;
+            this.dataGridViewX1.Size = new System.Drawing.Size(565, 94);
+            this.dataGridViewX1.TabIndex = 46;
+            // 
+            // btnbuscar
+            // 
+            this.btnbuscar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnbuscar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnbuscar.Location = new System.Drawing.Point(323, 223);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnbuscar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnbuscar.TabIndex = 47;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
             // RegistrarCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 297);
+            this.ClientSize = new System.Drawing.Size(773, 425);
+            this.Controls.Add(this.btnbuscar);
+            this.Controls.Add(this.dataGridViewX1);
             this.Controls.Add(this.txtcosto);
             this.Controls.Add(this.labelX5);
             this.Controls.Add(this.btnCancelar);
@@ -236,6 +273,7 @@ namespace Ap_escuela
             this.Name = "RegistrarCurso";
             this.Text = "Agregar Curso";
             this.Load += new System.EventHandler(this.RegistrarCurso_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -254,5 +292,7 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.ButtonX btnCancelar;
         private DevComponents.DotNetBar.Controls.TextBoxX txtcosto;
         private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
+        private DevComponents.DotNetBar.ButtonX btnbuscar;
     }
 }

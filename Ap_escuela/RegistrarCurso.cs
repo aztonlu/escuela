@@ -54,9 +54,19 @@ namespace Ap_escuela
 
         private void RegistrarCurso_Load(object sender, EventArgs e)
         {
+            Random ran = new Random();
+            int cualquiera = ran.Next(10000);
+            txtidcurso.Text = DateTime.Now.Year.ToString() + '-' + DateTime.Now.Month.ToString() + cualquiera;
             CursoDAL cur = new CursoDAL();
             cur.Buscargrupocb(cbnumerogrupo);
             //alu.Buscar(dni, dataGridViewX1); //AlumnoDAL.Buscar(dataGridViewX1);
+        }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            int dni = Convert.ToInt32(txtdni.Text);
+            DocenteDAL asis = new DocenteDAL();
+            asis.BuscarDocente(dataGridViewX1,dni);
         }
     }
 }

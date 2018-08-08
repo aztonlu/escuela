@@ -144,5 +144,12 @@ namespace Ap_escuela
             txtnombrecurso.Text = dato2;
             txtnumerogrupo.Text = dato3;
         }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            int dni = Convert.ToInt32(txtdni.Text);
+            AlumnoDAL asis = new AlumnoDAL();
+            asis.Buscar(dni,dataGridViewX2); // .Buscar (dataGridViewX2,dni); // .BuscarDocente(dataGridViewX1, dni);
+        }
     }
 }

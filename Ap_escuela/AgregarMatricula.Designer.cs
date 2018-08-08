@@ -28,7 +28,8 @@ namespace Ap_escuela
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtdni = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.labelX3 = new DevComponents.DotNetBar.LabelX();
@@ -42,7 +43,10 @@ namespace Ap_escuela
             this.txtnumerogrupo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.btncancelar = new DevComponents.DotNetBar.ButtonX();
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.dataGridViewX2 = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.btnbuscar = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtdni
@@ -55,7 +59,7 @@ namespace Ap_escuela
             this.txtdni.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtdni.DisabledBackColor = System.Drawing.Color.White;
             this.txtdni.ForeColor = System.Drawing.Color.Black;
-            this.txtdni.Location = new System.Drawing.Point(182, 170);
+            this.txtdni.Location = new System.Drawing.Point(133, 244);
             this.txtdni.Name = "txtdni";
             this.txtdni.PreventEnterBeep = true;
             this.txtdni.Size = new System.Drawing.Size(100, 22);
@@ -69,7 +73,7 @@ namespace Ap_escuela
             // 
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.ForeColor = System.Drawing.Color.Black;
-            this.labelX4.Location = new System.Drawing.Point(33, 167);
+            this.labelX4.Location = new System.Drawing.Point(12, 241);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(106, 23);
             this.labelX4.TabIndex = 48;
@@ -83,7 +87,7 @@ namespace Ap_escuela
             // 
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.ForeColor = System.Drawing.Color.Black;
-            this.labelX3.Location = new System.Drawing.Point(33, 52);
+            this.labelX3.Location = new System.Drawing.Point(484, 55);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(106, 23);
             this.labelX3.TabIndex = 46;
@@ -94,7 +98,7 @@ namespace Ap_escuela
             this.btnguardar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnguardar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnguardar.Image = global::Ap_escuela.Properties.Resources.Guardar;
-            this.btnguardar.Location = new System.Drawing.Point(402, 52);
+            this.btnguardar.Location = new System.Drawing.Point(537, 214);
             this.btnguardar.Name = "btnguardar";
             this.btnguardar.Size = new System.Drawing.Size(150, 54);
             this.btnguardar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -110,7 +114,7 @@ namespace Ap_escuela
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.ForeColor = System.Drawing.Color.Black;
-            this.labelX1.Location = new System.Drawing.Point(33, 93);
+            this.labelX1.Location = new System.Drawing.Point(484, 96);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(106, 23);
             this.labelX1.TabIndex = 42;
@@ -120,7 +124,7 @@ namespace Ap_escuela
             // 
             this.btnLimpiar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnLimpiar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnLimpiar.Location = new System.Drawing.Point(581, 52);
+            this.btnLimpiar.Location = new System.Drawing.Point(537, 344);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(150, 54);
             this.btnLimpiar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -136,7 +140,7 @@ namespace Ap_escuela
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.ForeColor = System.Drawing.Color.Black;
-            this.labelX2.Location = new System.Drawing.Point(33, 133);
+            this.labelX2.Location = new System.Drawing.Point(484, 136);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(106, 23);
             this.labelX2.TabIndex = 54;
@@ -145,17 +149,17 @@ namespace Ap_escuela
             // dataGridViewX1
             // 
             this.dataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewX1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.dataGridViewX1.Location = new System.Drawing.Point(123, 249);
+            this.dataGridViewX1.Location = new System.Drawing.Point(49, 38);
             this.dataGridViewX1.MultiSelect = false;
             this.dataGridViewX1.Name = "dataGridViewX1";
             this.dataGridViewX1.RowHeadersVisible = false;
@@ -176,7 +180,7 @@ namespace Ap_escuela
             this.txtidcurso.DisabledBackColor = System.Drawing.Color.White;
             this.txtidcurso.Enabled = false;
             this.txtidcurso.ForeColor = System.Drawing.Color.Black;
-            this.txtidcurso.Location = new System.Drawing.Point(182, 96);
+            this.txtidcurso.Location = new System.Drawing.Point(633, 99);
             this.txtidcurso.Name = "txtidcurso";
             this.txtidcurso.PreventEnterBeep = true;
             this.txtidcurso.ReadOnly = true;
@@ -194,7 +198,7 @@ namespace Ap_escuela
             this.txtnombrecurso.DisabledBackColor = System.Drawing.Color.White;
             this.txtnombrecurso.Enabled = false;
             this.txtnombrecurso.ForeColor = System.Drawing.Color.Black;
-            this.txtnombrecurso.Location = new System.Drawing.Point(182, 133);
+            this.txtnombrecurso.Location = new System.Drawing.Point(633, 136);
             this.txtnombrecurso.Name = "txtnombrecurso";
             this.txtnombrecurso.PreventEnterBeep = true;
             this.txtnombrecurso.ReadOnly = true;
@@ -212,7 +216,7 @@ namespace Ap_escuela
             this.txtnumerogrupo.DisabledBackColor = System.Drawing.Color.White;
             this.txtnumerogrupo.Enabled = false;
             this.txtnumerogrupo.ForeColor = System.Drawing.Color.Black;
-            this.txtnumerogrupo.Location = new System.Drawing.Point(182, 52);
+            this.txtnumerogrupo.Location = new System.Drawing.Point(633, 55);
             this.txtnumerogrupo.Name = "txtnumerogrupo";
             this.txtnumerogrupo.PreventEnterBeep = true;
             this.txtnumerogrupo.ReadOnly = true;
@@ -224,7 +228,7 @@ namespace Ap_escuela
             this.btncancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btncancelar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btncancelar.Image = global::Ap_escuela.Properties.Resources.cancelar;
-            this.btncancelar.Location = new System.Drawing.Point(402, 122);
+            this.btncancelar.Location = new System.Drawing.Point(537, 284);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(150, 54);
             this.btncancelar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -239,17 +243,51 @@ namespace Ap_escuela
             // 
             this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX5.ForeColor = System.Drawing.Color.Black;
-            this.labelX5.Location = new System.Drawing.Point(103, 220);
+            this.labelX5.Location = new System.Drawing.Point(49, 9);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(106, 23);
             this.labelX5.TabIndex = 61;
             this.labelX5.Text = "Seleccione un curso:";
+            // 
+            // dataGridViewX2
+            // 
+            this.dataGridViewX2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX2.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewX2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dataGridViewX2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.dataGridViewX2.Location = new System.Drawing.Point(49, 283);
+            this.dataGridViewX2.MultiSelect = false;
+            this.dataGridViewX2.Name = "dataGridViewX2";
+            this.dataGridViewX2.RowHeadersVisible = false;
+            this.dataGridViewX2.Size = new System.Drawing.Size(403, 106);
+            this.dataGridViewX2.TabIndex = 62;
+            // 
+            // btnbuscar
+            // 
+            this.btnbuscar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnbuscar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnbuscar.Location = new System.Drawing.Point(270, 241);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnbuscar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnbuscar.TabIndex = 63;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // AgregarMatricula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 449);
+            this.Controls.Add(this.btnbuscar);
+            this.Controls.Add(this.dataGridViewX2);
             this.Controls.Add(this.labelX5);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.txtnumerogrupo);
@@ -265,11 +303,11 @@ namespace Ap_escuela
             this.Controls.Add(this.labelX1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "AgregarMatricula";
             this.Text = "Registrar Matricula";
             this.Load += new System.EventHandler(this.AgregarMatricula_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -289,5 +327,7 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.Controls.TextBoxX txtnumerogrupo;
         private DevComponents.DotNetBar.ButtonX btncancelar;
         private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX2;
+        private DevComponents.DotNetBar.ButtonX btnbuscar;
     }
 }

@@ -40,6 +40,7 @@ namespace Ap_escuela
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.btncancelar = new DevComponents.DotNetBar.ButtonX();
+            this.btnbuscar = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -213,11 +214,24 @@ namespace Ap_escuela
             this.btncancelar.TabIndex = 58;
             this.btncancelar.Text = "Cancelar";
             // 
+            // btnbuscar
+            // 
+            this.btnbuscar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnbuscar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnbuscar.Location = new System.Drawing.Point(309, 65);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnbuscar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnbuscar.TabIndex = 59;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
+            // 
             // RegistrarAsistenciaAlumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 563);
+            this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.dataGridViewX1);
             this.Controls.Add(this.labelX2);
@@ -253,5 +267,6 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.LabelX labelX2;
         private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
         private DevComponents.DotNetBar.ButtonX btncancelar;
+        private DevComponents.DotNetBar.ButtonX btnbuscar;
     }
 }

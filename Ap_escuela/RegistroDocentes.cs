@@ -30,6 +30,7 @@ namespace Ap_escuela
                 Docente Docente = new Docente();
                 Docente.Dni = Convert.ToInt32(txtdni.Text);
                 Docente.Perfil = txtappat.Text;
+                Docente.Horacreacion = DateTime.Now.ToShortDateString();
 
 
                 Persona Persona = new Persona();

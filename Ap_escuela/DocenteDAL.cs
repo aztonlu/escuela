@@ -18,8 +18,8 @@ namespace Ap_escuela
             int retorno = 1;
             using (SqlConnection Conn = BDComun.ObtnerCOnexion())
             {
-                SqlCommand Comando = new SqlCommand(string.Format("Insert Into tdocente (dni, perfil) values ('{0}', '{1}')",
-                    pDocente.Dni, pDocente.Perfil), Conn);
+                SqlCommand Comando = new SqlCommand(string.Format("Insert Into tdocente (dni, perfil, horacreacion) values ('{0}', '{1}', {2})",
+                    pDocente.Dni, pDocente.Perfil, pDocente.Horacreacion), Conn);
 
                 retorno = Comando.ExecuteNonQuery();
                 Conn.Close();

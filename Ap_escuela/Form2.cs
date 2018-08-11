@@ -31,6 +31,7 @@ namespace Ap_escuela
                 Alumno.Dni = Convert.ToInt32(txtdni.Text);
                 Alumno.Observacion = txtappat.Text;
                 Alumno.Interesseguimiento = txtdireccion.Text;
+                Alumno.horacreacion = DateTime.Now.ToShortDateString();
                 
 
                 Persona Persona = new Persona();

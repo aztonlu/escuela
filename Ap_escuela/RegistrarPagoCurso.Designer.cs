@@ -30,7 +30,6 @@ namespace Ap_escuela
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnlimpiar = new DevComponents.DotNetBar.ButtonX();
-            this.monthCalendarAdv1 = new DevComponents.Editors.DateTimeAdv.MonthCalendarAdv();
             this.txtestado = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtobservacion = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtnumerorecibo = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -58,6 +57,7 @@ namespace Ap_escuela
             this.labelX11 = new DevComponents.DotNetBar.LabelX();
             this.txtsaldo = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.labelX12 = new DevComponents.DotNetBar.LabelX();
+            this.txtfechapago = new DevComponents.DotNetBar.Controls.TextBoxX();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,36 +71,6 @@ namespace Ap_escuela
             this.btnlimpiar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnlimpiar.TabIndex = 45;
             this.btnlimpiar.Text = "Limpiar";
-            // 
-            // monthCalendarAdv1
-            // 
-            this.monthCalendarAdv1.AutoSize = true;
-            this.monthCalendarAdv1.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.monthCalendarAdv1.BackgroundStyle.Class = "MonthCalendarAdv";
-            this.monthCalendarAdv1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.monthCalendarAdv1.CommandsBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.monthCalendarAdv1.ContainerControlProcessDialogKey = true;
-            this.monthCalendarAdv1.DisplayMonth = new System.DateTime(2018, 7, 1, 0, 0, 0, 0);
-            this.monthCalendarAdv1.FirstDayOfWeek = System.DayOfWeek.Monday;
-            this.monthCalendarAdv1.ForeColor = System.Drawing.Color.Black;
-            this.monthCalendarAdv1.Location = new System.Drawing.Point(490, 35);
-            this.monthCalendarAdv1.Name = "monthCalendarAdv1";
-            // 
-            // 
-            // 
-            this.monthCalendarAdv1.NavigationBackgroundStyle.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground2;
-            this.monthCalendarAdv1.NavigationBackgroundStyle.BackColorGradientAngle = 90;
-            this.monthCalendarAdv1.NavigationBackgroundStyle.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.BarBackground;
-            this.monthCalendarAdv1.NavigationBackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.monthCalendarAdv1.Size = new System.Drawing.Size(170, 131);
-            this.monthCalendarAdv1.TabIndex = 42;
-            this.monthCalendarAdv1.Text = "monthCalendarAdv1";
             // 
             // txtestado
             // 
@@ -226,6 +196,7 @@ namespace Ap_escuela
             this.txtidpago.Border.Class = "TextBoxBorder";
             this.txtidpago.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtidpago.DisabledBackColor = System.Drawing.Color.White;
+            this.txtidpago.Enabled = false;
             this.txtidpago.ForeColor = System.Drawing.Color.Black;
             this.txtidpago.Location = new System.Drawing.Point(176, 93);
             this.txtidpago.Name = "txtidpago";
@@ -327,7 +298,7 @@ namespace Ap_escuela
             // 
             this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX5.ForeColor = System.Drawing.Color.Black;
-            this.labelX5.Location = new System.Drawing.Point(387, 90);
+            this.labelX5.Location = new System.Drawing.Point(412, 93);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(106, 23);
             this.labelX5.TabIndex = 27;
@@ -404,7 +375,7 @@ namespace Ap_escuela
             this.dataGridViewX1.Location = new System.Drawing.Point(84, 424);
             this.dataGridViewX1.Name = "dataGridViewX1";
             this.dataGridViewX1.RowHeadersVisible = false;
-            this.dataGridViewX1.Size = new System.Drawing.Size(240, 99);
+            this.dataGridViewX1.Size = new System.Drawing.Size(379, 99);
             this.dataGridViewX1.TabIndex = 46;
             this.dataGridViewX1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellContentClick);
             // 
@@ -457,7 +428,7 @@ namespace Ap_escuela
             this.txtnombrecurso.DisabledBackColor = System.Drawing.Color.White;
             this.txtnombrecurso.Enabled = false;
             this.txtnombrecurso.ForeColor = System.Drawing.Color.Black;
-            this.txtnombrecurso.Location = new System.Drawing.Point(490, 178);
+            this.txtnombrecurso.Location = new System.Drawing.Point(510, 134);
             this.txtnombrecurso.Name = "txtnombrecurso";
             this.txtnombrecurso.PreventEnterBeep = true;
             this.txtnombrecurso.Size = new System.Drawing.Size(100, 22);
@@ -471,7 +442,7 @@ namespace Ap_escuela
             // 
             this.labelX11.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX11.ForeColor = System.Drawing.Color.Black;
-            this.labelX11.Location = new System.Drawing.Point(378, 175);
+            this.labelX11.Location = new System.Drawing.Point(398, 131);
             this.labelX11.Name = "labelX11";
             this.labelX11.Size = new System.Drawing.Size(106, 23);
             this.labelX11.TabIndex = 48;
@@ -487,7 +458,7 @@ namespace Ap_escuela
             this.txtsaldo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtsaldo.DisabledBackColor = System.Drawing.Color.White;
             this.txtsaldo.ForeColor = System.Drawing.Color.Black;
-            this.txtsaldo.Location = new System.Drawing.Point(343, 219);
+            this.txtsaldo.Location = new System.Drawing.Point(363, 219);
             this.txtsaldo.Name = "txtsaldo";
             this.txtsaldo.PreventEnterBeep = true;
             this.txtsaldo.Size = new System.Drawing.Size(100, 22);
@@ -501,17 +472,35 @@ namespace Ap_escuela
             // 
             this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX12.ForeColor = System.Drawing.Color.Black;
-            this.labelX12.Location = new System.Drawing.Point(282, 216);
+            this.labelX12.Location = new System.Drawing.Point(300, 216);
             this.labelX12.Name = "labelX12";
             this.labelX12.Size = new System.Drawing.Size(75, 23);
             this.labelX12.TabIndex = 50;
             this.labelX12.Text = "Saldo:";
+            // 
+            // txtfechapago
+            // 
+            this.txtfechapago.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtfechapago.Border.Class = "TextBoxBorder";
+            this.txtfechapago.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtfechapago.DisabledBackColor = System.Drawing.Color.White;
+            this.txtfechapago.Enabled = false;
+            this.txtfechapago.ForeColor = System.Drawing.Color.Black;
+            this.txtfechapago.Location = new System.Drawing.Point(510, 96);
+            this.txtfechapago.Name = "txtfechapago";
+            this.txtfechapago.PreventEnterBeep = true;
+            this.txtfechapago.Size = new System.Drawing.Size(100, 22);
+            this.txtfechapago.TabIndex = 52;
             // 
             // RegistrarPagoCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 535);
+            this.Controls.Add(this.txtfechapago);
             this.Controls.Add(this.txtsaldo);
             this.Controls.Add(this.labelX12);
             this.Controls.Add(this.txtnombrecurso);
@@ -521,7 +510,6 @@ namespace Ap_escuela
             this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.monthCalendarAdv1);
             this.Controls.Add(this.txtestado);
             this.Controls.Add(this.txtobservacion);
             this.Controls.Add(this.txtnumerorecibo);
@@ -545,9 +533,9 @@ namespace Ap_escuela
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "RegistrarPagoCurso";
             this.Text = "Registrar Pago Alumno";
+            this.Load += new System.EventHandler(this.RegistrarPagoCurso_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -556,7 +544,6 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.ButtonX btnlimpiar;
         private DevComponents.DotNetBar.ButtonX btncancelar;
         private DevComponents.DotNetBar.ButtonX btnGuardar;
-        private DevComponents.Editors.DateTimeAdv.MonthCalendarAdv monthCalendarAdv1;
         private DevComponents.DotNetBar.Controls.TextBoxX txtestado;
         private DevComponents.DotNetBar.Controls.TextBoxX txtobservacion;
         private DevComponents.DotNetBar.Controls.TextBoxX txtnumerorecibo;
@@ -582,5 +569,6 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.LabelX labelX11;
         private DevComponents.DotNetBar.Controls.TextBoxX txtsaldo;
         private DevComponents.DotNetBar.LabelX labelX12;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtfechapago;
     }
 }

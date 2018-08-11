@@ -89,10 +89,14 @@ namespace Ap_escuela
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
              //MessageBox.Show(Convert.ToString(cbidcurso.Items[1]));
-            Random ran = new Random();
+            /*Random ran = new Random();
             int cualquiera = ran.Next(10000);
             MessageBox.Show(Convert.ToString(DateTime.Today.ToShortDateString()));
-            MessageBox.Show("alu" + DateTime.Today.ToShortDateString() + DateTime.Today.Second.ToString()+cualquiera);
+            MessageBox.Show("alu" + DateTime.Today.ToShortDateString() + DateTime.Today.Second.ToString()+cualquiera);*/
+            txtdni.Text = "";
+            txtidcurso.Text = "";
+            txtnombrecurso.Text = "";
+            txtnumerogrupo.Text = "";
         }
 
         private void cbnombrecurso_SelectedIndexChanged(object sender, EventArgs e)
@@ -150,6 +154,11 @@ namespace Ap_escuela
             int dni = Convert.ToInt32(txtdni.Text);
             AlumnoDAL asis = new AlumnoDAL();
             asis.Buscar(dni,dataGridViewX2); // .Buscar (dataGridViewX2,dni); // .BuscarDocente(dataGridViewX1, dni);
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

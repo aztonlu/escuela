@@ -32,7 +32,7 @@ namespace Ap_escuela
                 Pago.Dni = Convert.ToInt32(txtdni.Text);
                 Pago.Monto = Convert.ToDecimal(txtmonto.Text);
                 Pago.Cuenta = Convert.ToDecimal(txtcuenta.Text);
-                Pago.Fecha = monthCalendarAdv1.SelectedDate.ToShortDateString();
+                Pago.Fecha = DateTime.Today.ToShortDateString();// monthCalendarAdv1.SelectedDate.ToShortDateString();
                 Pago.Nrorecibo = txtnumerorecibo.Text;
                 Pago.Estado = txtestado.Text;
                 Pago.Observacion = txtobservacion.Text;
@@ -76,6 +76,14 @@ namespace Ap_escuela
             txtnumerogrupo.Text = dato;
             txtmonto.Text = dato4;
             txtsaldo.Text = dato5;
+        }
+
+        private void RegistrarPagoCurso_Load(object sender, EventArgs e)
+        {
+            txtfechapago.Text =Convert.ToString(DateTime.Today.ToShortDateString());
+            Random ran = new Random();
+            int cualquiera = ran.Next(10000);
+            txtidpago.Text = "palu" + DateTime.Today.Month.ToString() + DateTime.Today.Day.ToString() + cualquiera; // txtidpago.Text;// Convert.ToString(cualquiera);
         }
     }
 }

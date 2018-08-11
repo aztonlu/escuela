@@ -40,6 +40,8 @@ namespace Ap_escuela
             this.comboItem2 = new DevComponents.Editors.ComboItem();
             this.comboItem3 = new DevComponents.Editors.ComboItem();
             this.btncancelar = new DevComponents.DotNetBar.ButtonX();
+            this.txtsemestre = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.SuspendLayout();
             // 
             // btnguardar
@@ -65,7 +67,7 @@ namespace Ap_escuela
             this.txtnumerogrupo.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.txtnumerogrupo.DisabledBackColor = System.Drawing.Color.White;
             this.txtnumerogrupo.ForeColor = System.Drawing.Color.Black;
-            this.txtnumerogrupo.Location = new System.Drawing.Point(168, 60);
+            this.txtnumerogrupo.Location = new System.Drawing.Point(168, 90);
             this.txtnumerogrupo.Name = "txtnumerogrupo";
             this.txtnumerogrupo.PreventEnterBeep = true;
             this.txtnumerogrupo.Size = new System.Drawing.Size(100, 22);
@@ -77,11 +79,11 @@ namespace Ap_escuela
             // 
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX2.Location = new System.Drawing.Point(34, 121);
+            this.labelX2.Location = new System.Drawing.Point(34, 143);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(106, 23);
             this.labelX2.TabIndex = 22;
-            this.labelX2.Text = "Horario de grupo:";
+            this.labelX2.Text = "Turno del grupo:";
             // 
             // labelX1
             // 
@@ -89,7 +91,7 @@ namespace Ap_escuela
             // 
             // 
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Location = new System.Drawing.Point(34, 57);
+            this.labelX1.Location = new System.Drawing.Point(34, 87);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(106, 23);
             this.labelX1.TabIndex = 21;
@@ -124,7 +126,7 @@ namespace Ap_escuela
             this.comboItem1,
             this.comboItem2,
             this.comboItem3});
-            this.cbhorario.Location = new System.Drawing.Point(168, 122);
+            this.cbhorario.Location = new System.Drawing.Point(168, 144);
             this.cbhorario.Name = "cbhorario";
             this.cbhorario.Size = new System.Drawing.Size(121, 22);
             this.cbhorario.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -153,12 +155,43 @@ namespace Ap_escuela
             this.btncancelar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btncancelar.TabIndex = 30;
             this.btncancelar.Text = "Cancelar";
+            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
+            // 
+            // txtsemestre
+            // 
+            this.txtsemestre.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.txtsemestre.Border.Class = "TextBoxBorder";
+            this.txtsemestre.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txtsemestre.DisabledBackColor = System.Drawing.Color.White;
+            this.txtsemestre.ForeColor = System.Drawing.Color.Black;
+            this.txtsemestre.Location = new System.Drawing.Point(168, 39);
+            this.txtsemestre.Name = "txtsemestre";
+            this.txtsemestre.PreventEnterBeep = true;
+            this.txtsemestre.Size = new System.Drawing.Size(100, 22);
+            this.txtsemestre.TabIndex = 32;
+            // 
+            // labelX3
+            // 
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.Location = new System.Drawing.Point(34, 36);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(106, 23);
+            this.labelX3.TabIndex = 31;
+            this.labelX3.Text = "Semestre:";
             // 
             // Registrargrupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(686, 257);
+            this.Controls.Add(this.txtsemestre);
+            this.Controls.Add(this.labelX3);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.cbhorario);
             this.Controls.Add(this.btnguardar);
@@ -187,5 +220,7 @@ namespace Ap_escuela
         private DevComponents.Editors.ComboItem comboItem2;
         private DevComponents.Editors.ComboItem comboItem3;
         private DevComponents.DotNetBar.ButtonX btncancelar;
+        private DevComponents.DotNetBar.Controls.TextBoxX txtsemestre;
+        private DevComponents.DotNetBar.LabelX labelX3;
     }
 }

@@ -68,5 +68,10 @@ namespace Ap_escuela
             DocenteDAL asis = new DocenteDAL();
             asis.BuscarDocente(dataGridViewX1,dni);
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

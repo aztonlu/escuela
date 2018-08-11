@@ -28,6 +28,8 @@ namespace Ap_escuela
                 Grupo Grupo = new Grupo();
                 Grupo.Numerogrupo = txtnumerogrupo.Text;
                 Grupo.Horariogrupo = cbhorario.SelectedItem.ToString();// cbhorario.SelectedValue.ToString();
+                Grupo.Semestre = txtsemestre.Text;
+                Grupo.Horacreacion = DateTime.Now.ToShortDateString();
                                 
 
                 int resultado = GrupoDAL.AgregarGrupo(Grupo);
@@ -45,6 +47,11 @@ namespace Ap_escuela
                     MessageBox.Show("No se pudieron Guardar lo datos", "Error al Guardar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

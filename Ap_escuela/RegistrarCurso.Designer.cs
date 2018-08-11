@@ -28,7 +28,7 @@ namespace Ap_escuela
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.txtnombrecurso = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -43,7 +43,7 @@ namespace Ap_escuela
             this.btnguardar = new DevComponents.DotNetBar.ButtonX();
             this.dataGridViewX1 = new DevComponents.DotNetBar.Controls.DataGridViewX();
             this.btnbuscar = new DevComponents.DotNetBar.ButtonX();
-            this.comboBoxEx1 = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.cbsemestre = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.btnbuscarsemestre = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewX1)).BeginInit();
@@ -226,14 +226,14 @@ namespace Ap_escuela
             // dataGridViewX1
             // 
             this.dataGridViewX1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewX1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewX1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
             this.dataGridViewX1.Location = new System.Drawing.Point(45, 301);
             this.dataGridViewX1.Name = "dataGridViewX1";
@@ -253,18 +253,18 @@ namespace Ap_escuela
             this.btnbuscar.Text = "Buscar";
             this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
-            // comboBoxEx1
+            // cbsemestre
             // 
-            this.comboBoxEx1.DisplayMember = "Text";
-            this.comboBoxEx1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBoxEx1.ForeColor = System.Drawing.Color.Black;
-            this.comboBoxEx1.FormattingEnabled = true;
-            this.comboBoxEx1.ItemHeight = 16;
-            this.comboBoxEx1.Location = new System.Drawing.Point(179, 131);
-            this.comboBoxEx1.Name = "comboBoxEx1";
-            this.comboBoxEx1.Size = new System.Drawing.Size(121, 22);
-            this.comboBoxEx1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.comboBoxEx1.TabIndex = 49;
+            this.cbsemestre.DisplayMember = "Text";
+            this.cbsemestre.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbsemestre.ForeColor = System.Drawing.Color.Black;
+            this.cbsemestre.FormattingEnabled = true;
+            this.cbsemestre.ItemHeight = 16;
+            this.cbsemestre.Location = new System.Drawing.Point(179, 131);
+            this.cbsemestre.Name = "cbsemestre";
+            this.cbsemestre.Size = new System.Drawing.Size(121, 22);
+            this.cbsemestre.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cbsemestre.TabIndex = 49;
             // 
             // labelX6
             // 
@@ -290,6 +290,7 @@ namespace Ap_escuela
             this.btnbuscarsemestre.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnbuscarsemestre.TabIndex = 50;
             this.btnbuscarsemestre.Text = "Buscar";
+            this.btnbuscarsemestre.Click += new System.EventHandler(this.btnbuscarsemestre_Click);
             // 
             // RegistrarCurso
             // 
@@ -297,7 +298,7 @@ namespace Ap_escuela
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(773, 425);
             this.Controls.Add(this.btnbuscarsemestre);
-            this.Controls.Add(this.comboBoxEx1);
+            this.Controls.Add(this.cbsemestre);
             this.Controls.Add(this.labelX6);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.dataGridViewX1);
@@ -339,7 +340,7 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.LabelX labelX5;
         private DevComponents.DotNetBar.Controls.DataGridViewX dataGridViewX1;
         private DevComponents.DotNetBar.ButtonX btnbuscar;
-        private DevComponents.DotNetBar.Controls.ComboBoxEx comboBoxEx1;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cbsemestre;
         private DevComponents.DotNetBar.LabelX labelX6;
         private DevComponents.DotNetBar.ButtonX btnbuscarsemestre;
     }

@@ -27,28 +27,16 @@ namespace Ap_escuela
             }
             return retorno;
         }
-        public void Buscargrupocb(ComboBox cb)
+        public void Buscargrupocb(ComboBox cb, String dato)
         {
 
             using (SqlConnection conexion = BDComun.ObtnerCOnexion())
                 try
                 {
                     Grupo pGrupo = new Grupo();
-                    SqlCommand comando = new SqlCommand(string.Format("Select numerogrupo from tgrupo"), conexion);
+                    SqlCommand comando = new SqlCommand(string.Format("Select numerogrupo from tgrupo where semestre like '%{0}%'", dato), conexion);
 
                     SqlDataReader reader = comando.ExecuteReader();
-
-                    //da = new SqlDataAdapter(string.Format("Select numerogrupo from tgrupo"), conexion);
-                    //dt = new DataTable();
-                    //da.Fill(dt);
-                    //cb.DataSource = dt;
-                    //dgv.DataSource = dt;
-
-                    //Alumno pAlumno = new Alumno();
-                    //SqlCommand comando = new SqlCommand(string.Format(
-                      //  "Select Id, Nombre,  Apellido, Direccion, Fecha_nacimiento from Alumnos where Id={0}", pId), conexion);
-
-                    //SqlDataReader reader = comando.ExecuteReader();
 
                     while (reader.Read())
                     {
@@ -65,5 +53,34 @@ namespace Ap_escuela
                     MessageBox.Show("Error" + ex.ToString());
                 }
         }
+
+        public void Buscarsemestrecb(ComboBox cb)
+        {
+
+            using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+                try
+                {
+                    Grupo pGrupo = new Grupo();
+                    SqlCommand comando = new SqlCommand(string.Format("Select semestre from tgrupo"), conexion);
+
+                    SqlDataReader reader = comando.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        cb.Items.Add(reader["semestre"]);
+
+                    }
+                    conexion.Close();
+                    //return pGrupo;
+
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex.ToString());
+                }
+        }
+
+
     }
 }

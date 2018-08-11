@@ -202,6 +202,7 @@ namespace Ap_escuela
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Registrargrupo";
             this.Text = "Registrar Grupo";
+            this.Load += new System.EventHandler(this.Registrargrupo_Load);
             this.ResumeLayout(false);
 
         }

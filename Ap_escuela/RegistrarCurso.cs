@@ -58,7 +58,8 @@ namespace Ap_escuela
             int cualquiera = ran.Next(10000);
             txtidcurso.Text = DateTime.Now.Year.ToString() + '-' + DateTime.Now.Month.ToString() + cualquiera;
             CursoDAL cur = new CursoDAL();
-            cur.Buscargrupocb(cbnumerogrupo);
+            //cur.Buscargrupocb(cbnumerogrupo);
+            cur.Buscarsemestrecb(cbsemestre);
             //alu.Buscar(dni, dataGridViewX1); //AlumnoDAL.Buscar(dataGridViewX1);
         }
 
@@ -72,6 +73,12 @@ namespace Ap_escuela
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnbuscarsemestre_Click(object sender, EventArgs e)
+        {
+            CursoDAL cur = new CursoDAL();
+            cur.Buscargrupocb(cbnumerogrupo,cbsemestre.Text);
         }
     }
 }

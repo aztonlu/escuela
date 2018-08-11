@@ -53,5 +53,10 @@ namespace Ap_escuela
         {
             this.Close();
         }
+
+        private void Registrargrupo_Load(object sender, EventArgs e)
+        {
+            //txtsemestre.Text = Convert.ToString(DateTime.Now.ToShortDateString());
+        }
     }
 }

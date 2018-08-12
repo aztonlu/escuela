@@ -35,7 +35,7 @@ namespace Ap_escuela
                 try
                 {
                     //da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion, talumno.observacion, talumno.interesseguimiento from tpersona inner join talumno on tpersona.dni = talumno.dni where tpersona.dni like '%{0}%'", dni), conexion);
-                    da = new SqlDataAdapter(string.Format("Select tmatricula.numerogrupo AS Grupo, tmatricula.idcurso AS Codigo_Curso, tcurso.nombrecurso AS Nombre_curso, tcurso.monto AS Costo_Curso, tcurso.monto - tpagocurso.cuenta AS SALDO from tmatricula inner join talumno on tmatricula.dni = talumno.dni inner join tpagocurso on tpagocurso.dni = tmatricula.dni inner join tcurso on tmatricula.idcurso = tcurso.idcurso where talumno.dni like '%{0}%'", dni), conexion);
+                    da = new SqlDataAdapter(string.Format("select tmatricula.numerogrupo AS Grupo, tmatricula.idcurso AS Codigo_Curso, tcurso.nombrecurso AS Nombre_Curso, tcurso.monto AS Costo_Curso, tcurso.monto - SUM(tpagocurso.cuenta) AS Saldo, tpagocurso.fecha AS Fecha_Ultimo_Pago from tpagocurso inner join tmatricula on tpagocurso.idcurso = tmatricula.idcurso inner join tcurso on tpagocurso.idcurso = tcurso.idcurso where tmatricula.dni like '%{0}%' group by tmatricula.numerogrupo, tpagocurso.monto, tmatricula.idcurso, tcurso.nombrecurso,tcurso.monto, tpagocurso.fecha", dni), conexion);
                     dt = new DataTable();
                     da.Fill(dt);
                     dgv.DataSource = dt;

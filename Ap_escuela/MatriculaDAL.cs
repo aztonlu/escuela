@@ -74,6 +74,28 @@ namespace Ap_escuela
         }
 
 
+        public void Buscarcargamatricula(DataGridView dgv, string dato)
+        {
+            using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+
+                try
+                {
+                    //da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion, talumno.observacion, talumno.interesseguimiento from tpersona inner join talumno on tpersona.dni = talumno.dni where tpersona.dni like '%{0}%'", dni), conexion);
+                    da = new SqlDataAdapter(string.Format("Select tcurso.idcurso AS Codigo_Curso, nombrecurso AS Nombre_Curso, tcurso.numerogrupo AS Grupo, tcurso.dni AS DNI_Docente, tcurso.monto AS Costo, horariocurso AS Horario from tcurso inner join tgrupo on tcurso.numerogrupo = tgrupo.numerogrupo where tgrupo.semestre like '%{0}%'",dato), conexion);
+                    dt = new DataTable();
+                    da.Fill(dt);
+                    dgv.DataSource = dt;
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex.ToString());
+                }
+        }
+
+
+
+
         public void Buscarrecibo(int dni, DataGridView dgv)
         {
             using (SqlConnection conexion = BDComun.ObtnerCOnexion())

@@ -18,8 +18,8 @@ namespace Ap_escuela
             int retorno = 1;
             using (SqlConnection Conn = BDComun.ObtnerCOnexion())
             {
-                SqlCommand Comando = new SqlCommand(string.Format("Insert Into tcurso (idcurso, nombrecurso, numerogrupo, dni, monto) values ('{0}', '{1}','{2}','{3}','{4}')",
-                    pCurso.Idcurso, pCurso.Nombrecurso, pCurso.Numerogrupo, pCurso.Dni, pCurso.Monto), Conn);
+                SqlCommand Comando = new SqlCommand(string.Format("Insert Into tcurso (idcurso, nombrecurso, numerogrupo, dni, monto, horariocurso, horacreacion) values ('{0}', '{1}','{2}','{3}','{4}','{5}','{6}')",
+                    pCurso.Idcurso, pCurso.Nombrecurso, pCurso.Numerogrupo, pCurso.Dni, pCurso.Monto, pCurso.Horariocurso, pCurso.Horacreacion), Conn);
 
                 retorno = Comando.ExecuteNonQuery();
                 Conn.Close();

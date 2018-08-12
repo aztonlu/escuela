@@ -45,14 +45,14 @@ namespace Ap_escuela
                 //MessageBox.Show(Convert.ToString(DateTime.Today.ToShortDateString()));
                 //("alu" + DateTime.Today.ToShortDateString() + DateTime.Today.Second.ToString() + cualquiera);
 
-                decimal monto = 0;
+                decimal cuenta = 0;
                 PagoCurso Pago = new PagoCurso();
                 Pago.Idpago = "alu" + DateTime.Today.ToShortDateString() + DateTime.Today.Second.ToString() + cualquiera; // txtidpago.Text;
                 Pago.Numerogrupo = txtnumerogrupo.Text;
                 Pago.Idcurso = txtidcurso.Text;
                 Pago.Dni = Convert.ToInt32(txtdni.Text);
-                Pago.Monto = monto;// Convert.ToDecimal(txtmonto.Text);
-                Pago.Cuenta = monto;// Convert.ToDecimal(txtcuenta.Text);
+                Pago.Monto = Convert.ToDecimal(txtcostocurso.Text);// Convert.ToDecimal(txtmonto.Text);
+                Pago.Cuenta = cuenta;// Convert.ToDecimal(txtcuenta.Text);
                 Pago.Fecha = DateTime.Today.ToShortDateString(); // monthCalendarAdv1.SelectedDate.ToShortDateString();
                 Pago.Nrorecibo = "0"; //txtnumerorecibo.Text;
                 //Pago.Estado = txtestado.Text;
@@ -79,10 +79,8 @@ namespace Ap_escuela
 
         private void AgregarMatricula_Load(object sender, EventArgs e)
         {
-            MatriculaDAL matri = new MatriculaDAL();
-            //matri.Buscargrupocb(cbnombrecurso);
-
-            matri.Buscarcarga(dataGridViewX1);
+            CursoDAL cur = new CursoDAL();
+            cur.Buscarsemestrecb(cbsemestre);
             
         }
 
@@ -141,12 +139,19 @@ namespace Ap_escuela
             string dato;
             string dato2;
             string dato3;
+            string dato4;
+            decimal dec;
             dato = (String)dataGridViewX1.CurrentRow.Cells[0].Value; //CurrentCell.Value.ToString(); //Rows[0].Cells[0].Value.ToString();
             dato2 = (String)dataGridViewX1.CurrentRow.Cells[1].Value; //.CurrentCell.Value.ToString();
             dato3 = (String)dataGridViewX1.CurrentRow.Cells[2].Value;
+            dato4 = Convert.ToString((String)dataGridViewX1.CurrentRow.Cells[5].Value);
             txtidcurso.Text = dato;
             txtnombrecurso.Text = dato2;
             txtnumerogrupo.Text = dato3;
+            txthorariocurso.Text = dato4;
+            dec = ((decimal)dataGridViewX1.CurrentRow.Cells[4].Value);
+            txtcostocurso.Text = Convert.ToString(dec);
+
         }
 
         private void btnbuscar_Click(object sender, EventArgs e)
@@ -159,6 +164,17 @@ namespace Ap_escuela
         private void btncancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnbuscarsemestre_Click(object sender, EventArgs e)
+        {
+            MatriculaDAL matri = new MatriculaDAL();
+            //matri.Buscargrupocb(cbnombrecurso);
+            matri.Buscarcargamatricula(dataGridViewX1, cbsemestre.Text);
+
+            //CursoDAL cur = new CursoDAL();
+            //cur.Buscargrupocb(cbnumerogrupo, cbsemestre.Text);
+
         }
     }
 }

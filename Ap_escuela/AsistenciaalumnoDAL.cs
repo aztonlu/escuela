@@ -36,6 +36,27 @@ namespace Ap_escuela
                 {
                     //da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion, talumno.observacion, talumno.interesseguimiento from tpersona inner join talumno on tpersona.dni = talumno.dni where tpersona.dni like '%{0}%'", dni), conexion);
                     da = new SqlDataAdapter(string.Format("Select dni AS DNI_Alumno, numerogrupo AS Grupo, idcurso AS Codigo_Curso, fecha AS Fecha from tasistenciaalumno where tasistenciaalumno.dni like '%{0}%'", dni), conexion);
+                    //da = new SqlDataAdapter(string.Format("Select dni AS DNI_Alumno, numerogrupo AS Grupo, idcurso AS Codigo_Curso, fecha AS Fecha from tasistenciaalumno inner join tgrupo on tasistenciaalumno.numerogrupo = tgrupo.numerogrupo where tasistenciaalumno.dni like '%{0}%'", dni), conexion);
+                    dt = new DataTable();
+                    da.Fill(dt);
+                    dgv.DataSource = dt;
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex.ToString());
+                }
+        }
+
+        public void Buscardni(DataGridView dgv, string semestre, int dni)
+        {
+            using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+
+                try
+                {
+                    //da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion, talumno.observacion, talumno.interesseguimiento from tpersona inner join talumno on tpersona.dni = talumno.dni where tpersona.dni like '%{0}%'", dni), conexion);
+                    da = new SqlDataAdapter(string.Format("select tmatricula.dni, tgrupo.numerogrupo, tmatricula.idcurso from tmatricula inner join tgrupo on tmatricula.numerogrupo = tgrupo.numerogrupo where tgrupo.semestre like '%{0}%' and tmatricula.dni like '%{1}%'", semestre,dni), conexion);
+                    //da = new SqlDataAdapter(string.Format("Select dni AS DNI_Alumno, numerogrupo AS Grupo, idcurso AS Codigo_Curso, fecha AS Fecha from tasistenciaalumno inner join tgrupo on tasistenciaalumno.numerogrupo = tgrupo.numerogrupo where tasistenciaalumno.dni like '%{0}%'", dni), conexion);
                     dt = new DataTable();
                     da.Fill(dt);
                     dgv.DataSource = dt;

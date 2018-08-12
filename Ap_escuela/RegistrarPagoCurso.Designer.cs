@@ -65,7 +65,7 @@ namespace Ap_escuela
             // 
             this.btnlimpiar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnlimpiar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnlimpiar.Location = new System.Drawing.Point(510, 389);
+            this.btnlimpiar.Location = new System.Drawing.Point(568, 334);
             this.btnlimpiar.Name = "btnlimpiar";
             this.btnlimpiar.Size = new System.Drawing.Size(150, 54);
             this.btnlimpiar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -375,7 +375,7 @@ namespace Ap_escuela
             this.dataGridViewX1.Location = new System.Drawing.Point(84, 424);
             this.dataGridViewX1.Name = "dataGridViewX1";
             this.dataGridViewX1.RowHeadersVisible = false;
-            this.dataGridViewX1.Size = new System.Drawing.Size(379, 99);
+            this.dataGridViewX1.Size = new System.Drawing.Size(473, 142);
             this.dataGridViewX1.TabIndex = 46;
             this.dataGridViewX1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewX1_CellContentClick);
             // 
@@ -397,7 +397,7 @@ namespace Ap_escuela
             this.btncancelar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btncancelar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btncancelar.Image = global::Ap_escuela.Properties.Resources.cancelar;
-            this.btncancelar.Location = new System.Drawing.Point(510, 299);
+            this.btncancelar.Location = new System.Drawing.Point(568, 244);
             this.btncancelar.Name = "btncancelar";
             this.btncancelar.Size = new System.Drawing.Size(150, 54);
             this.btncancelar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -409,7 +409,7 @@ namespace Ap_escuela
             this.btnGuardar.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnGuardar.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnGuardar.Image = global::Ap_escuela.Properties.Resources.Guardar;
-            this.btnGuardar.Location = new System.Drawing.Point(510, 217);
+            this.btnGuardar.Location = new System.Drawing.Point(568, 162);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(150, 54);
             this.btnGuardar.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -499,7 +499,7 @@ namespace Ap_escuela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 535);
+            this.ClientSize = new System.Drawing.Size(896, 639);
             this.Controls.Add(this.txtfechapago);
             this.Controls.Add(this.txtsaldo);
             this.Controls.Add(this.labelX12);

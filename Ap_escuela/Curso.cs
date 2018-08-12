@@ -12,10 +12,12 @@ namespace Ap_escuela
       public String Numerogrupo { get; set; }
       public Int32 Dni { get; set; }
       public Decimal Monto { get; set; }
+      public String Horariocurso { get; set; }
+      public String Horacreacion { get; set; }
 
       public Curso() { }
 
-      public Curso(String pIdcurso, String pNombrecurso, String pNumerogrupo, Int32 pDni, Decimal pMonto)
+      public Curso(String pIdcurso, String pNombrecurso, String pNumerogrupo, Int32 pDni, Decimal pMonto, String pHorariocurso, String pHoracreacion)
 
       {
           this.Idcurso = pIdcurso;
@@ -23,6 +25,8 @@ namespace Ap_escuela
           this.Numerogrupo = pNumerogrupo;
           this.Dni = pDni;
           this.Monto = pMonto;
+          this.Horariocurso = pHorariocurso;
+          this.Horacreacion = pHoracreacion;
           
       }
     }

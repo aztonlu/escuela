@@ -33,6 +33,8 @@ namespace Ap_escuela
                 Curso.Numerogrupo = cbnumerogrupo.Text;
                 Curso.Dni = Convert.ToInt32(txtdni.Text);
                 Curso.Monto = Convert.ToDecimal(txtcosto.Text);
+                Curso.Horariocurso = txthorario.Text;
+                Curso.Horacreacion = DateTime.Now.ToShortDateString();
 
 
                 int resultado = CursoDAL.AgregarCurso(Curso);

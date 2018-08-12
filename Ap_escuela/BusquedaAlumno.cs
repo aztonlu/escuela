@@ -26,9 +26,20 @@ namespace Ap_escuela
         {
             //dataGridViewX1.DataSource =  AlumnoDAL.BuscarAlumnos(txtdni.Text);
             //int dni = 85245;
-            int dni = Convert.ToInt32(txtdni.Text);
+            //int dni = Convert.ToInt32(txtdni.Text);
             AlumnoDAL alu = new AlumnoDAL();
-            alu.Buscar(dni, dataGridViewX1); //AlumnoDAL.Buscar(dataGridViewX1);
+            //alu.Buscar(dni, dataGridViewX1); //AlumnoDAL.Buscar(dataGridViewX1);
+
+            int dni = Convert.ToInt32(txtdni.Text);
+            AsistenciaalumnoDAL asis = new AsistenciaalumnoDAL();
+            //asis.Buscarcarga(dataGridViewX1, dni);
+            //int dni = Convert.ToInt32(txtdni.Text);
+            string semestre = cbsemestre.Text;
+            //AsistenciaalumnoDAL asis = new AsistenciaalumnoDAL();
+            asis.Exportarasistencia(dataGridViewX1, dni, semestre);
+            txtnumerogrupo.Text = (String)dataGridViewX1.CurrentRow.Cells[1].Value;
+            txtidcurso.Text = (String)dataGridViewX1.CurrentRow.Cells[2].Value;
+
         }
 
         public void exportargrilla(DataGridView dgw, string filename)
@@ -87,7 +98,7 @@ namespace Ap_escuela
                 pdfDoc.Close();
                 stream.Close();
             }
-            MessageBox.Show("Done");
+            MessageBox.Show("Exportado Satisfactoriamente");
         }
             
             /*{
@@ -231,6 +242,12 @@ namespace Ap_escuela
                 MessageBox.Show("PDF Created!");*/
 
 
+        }
+
+        private void BusquedaAlumno_Load(object sender, EventArgs e)
+        {
+            CursoDAL cur = new CursoDAL();
+            cur.Buscarsemestrecb(cbsemestre);
         }
     }
 }

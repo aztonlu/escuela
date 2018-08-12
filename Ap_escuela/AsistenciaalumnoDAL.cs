@@ -67,6 +67,27 @@ namespace Ap_escuela
                     MessageBox.Show("Error" + ex.ToString());
                 }
         }
+
+
+        public void Exportarasistencia(DataGridView dgv, int dni, string semestre)
+        {
+            using (SqlConnection conexion = BDComun.ObtnerCOnexion())
+
+                try
+                {
+                    //da = new SqlDataAdapter(string.Format("Select tpersona.dni, tpersona.nombre, tpersona.appat, tpersona.apmat, tpersona.fecha_nac, tpersona.telefono, tpersona.correo, tpersona.direccion, talumno.observacion, talumno.interesseguimiento from tpersona inner join talumno on tpersona.dni = talumno.dni where tpersona.dni like '%{0}%'", dni), conexion);
+                    da = new SqlDataAdapter(string.Format("Select tasistenciaalumno.dni AS DNI_Alumno, tasistenciaalumno.numerogrupo AS Grupo, tasistenciaalumno.idcurso AS Codigo_Curso, tcurso.nombrecurso AS Nombre_Curso,tcurso.horariocurso AS horario, tasistenciaalumno.fecha AS Fecha from tasistenciaalumno inner join tcurso on tasistenciaalumno.idcurso = tcurso.idcurso inner join tgrupo on tcurso.numerogrupo = tgrupo.numerogrupo where tasistenciaalumno.dni like '%{0}%' and tgrupo.semestre like '%{1}%'order by tasistenciaalumno.fecha", dni, semestre), conexion);
+                    //da = new SqlDataAdapter(string.Format("Select dni AS DNI_Alumno, numerogrupo AS Grupo, idcurso AS Codigo_Curso, fecha AS Fecha from tasistenciaalumno inner join tgrupo on tasistenciaalumno.numerogrupo = tgrupo.numerogrupo where tasistenciaalumno.dni like '%{0}%'", dni), conexion);
+                    dt = new DataTable();
+                    da.Fill(dt);
+                    dgv.DataSource = dt;
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error" + ex.ToString());
+                }
+        }
     }
 
     

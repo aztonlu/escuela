@@ -39,11 +39,13 @@ namespace Ap_escuela
             this.metroTileItem4 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem5 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem6 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroTileItem3 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.itemContainer4 = new DevComponents.DotNetBar.ItemContainer();
             this.metroTileItem12 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem13 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.metroTileItem14 = new DevComponents.DotNetBar.Metro.MetroTileItem();
-            this.metroTileItem3 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroTileItem7 = new DevComponents.DotNetBar.Metro.MetroTileItem();
+            this.metroTileItem8 = new DevComponents.DotNetBar.Metro.MetroTileItem();
             this.itemPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -263,6 +265,19 @@ namespace Ap_escuela
             this.metroTileItem6.TitleTextFont = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTileItem6.Click += new System.EventHandler(this.metroTileItem6_Click);
             // 
+            // metroTileItem3
+            // 
+            this.metroTileItem3.Name = "metroTileItem3";
+            this.metroTileItem3.SymbolColor = System.Drawing.Color.Empty;
+            this.metroTileItem3.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
+            // 
+            // 
+            // 
+            this.metroTileItem3.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.metroTileItem3.TitleText = "Registrar Usuarios";
+            this.metroTileItem3.TitleTextAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroTileItem3.Click += new System.EventHandler(this.metroTileItem3_Click);
+            // 
             // itemContainer4
             // 
             // 
@@ -275,7 +290,9 @@ namespace Ap_escuela
             this.itemContainer4.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.metroTileItem12,
             this.metroTileItem13,
-            this.metroTileItem14});
+            this.metroTileItem14,
+            this.metroTileItem7,
+            this.metroTileItem8});
             // 
             // 
             // 
@@ -335,18 +352,27 @@ namespace Ap_escuela
             this.metroTileItem14.TitleTextFont = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTileItem14.Click += new System.EventHandler(this.metroTileItem14_Click);
             // 
-            // metroTileItem3
+            // metroTileItem7
             // 
-            this.metroTileItem3.Name = "metroTileItem3";
-            this.metroTileItem3.SymbolColor = System.Drawing.Color.Empty;
-            this.metroTileItem3.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
+            this.metroTileItem7.Name = "metroTileItem7";
+            this.metroTileItem7.SymbolColor = System.Drawing.Color.Empty;
+            this.metroTileItem7.Text = "Costos de ingresos por curso";
+            this.metroTileItem7.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
             // 
             // 
             // 
-            this.metroTileItem3.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.metroTileItem3.TitleText = "Registrar Usuarios";
-            this.metroTileItem3.TitleTextAlignment = System.Drawing.ContentAlignment.MiddleRight;
-            this.metroTileItem3.Click += new System.EventHandler(this.metroTileItem3_Click);
+            this.metroTileItem7.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // metroTileItem8
+            // 
+            this.metroTileItem8.Name = "metroTileItem8";
+            this.metroTileItem8.SymbolColor = System.Drawing.Color.Empty;
+            this.metroTileItem8.Text = "revision alertas pagos";
+            this.metroTileItem8.TileColor = DevComponents.DotNetBar.Metro.eMetroTileColor.Default;
+            // 
+            // 
+            // 
+            this.metroTileItem8.TileStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // seleccion
             // 
@@ -383,5 +409,7 @@ namespace Ap_escuela
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem5;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem6;
         private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem3;
+        private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem7;
+        private DevComponents.DotNetBar.Metro.MetroTileItem metroTileItem8;
     }
 }

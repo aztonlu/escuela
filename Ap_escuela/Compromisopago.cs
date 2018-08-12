@@ -316,8 +316,10 @@ namespace Ap_escuela
 
             // Abrimos el archivo
             doc.Open();
-            doc.Add(new Paragraph("TITULO"));
-            //doc.Add(Chunk.NEWLINE);
+            doc.Add(new Paragraph("Asociacion de Contadores, Economistas y Administradores del Perú"));
+            doc.Add(Chunk.NEWLINE);
+            doc.Add(new Paragraph("Av. Micaela Bastidas N° 258 OF. 202 (EDIF. EL ROBLE) - WANCHAQ"));
+            doc.Add(new Paragraph("Telf. 084 267723 - RPC: 993635501 / RPM: #984500691"));
 
             // Creamos una tabla que contendrá el nombre, apellido y país
             // de nuestros visitante.
@@ -333,12 +335,10 @@ namespace Ap_escuela
             tblPruebadireccion.WidthPercentage = 100;
 
             // Configuramos el título de las columnas de la tabla
-            doc.Add(new Paragraph("Dni"));
             PdfPCell clDni = new PdfPCell(new Phrase("dni", _standardFont));
             clDni.BorderWidth = 0;
             clDni.BorderWidthBottom = 0.75f;
 
-            doc.Add(new Paragraph("Nombre"));
             PdfPCell clNombre = new PdfPCell(new Phrase("nombre", _standardFont));
             clNombre.BorderWidth = 0;
             clNombre.BorderWidthBottom = 0.75f;
@@ -371,14 +371,18 @@ namespace Ap_escuela
 
 
 
-            PdfPCell cdninuevo = new PdfPCell(new Phrase("dni", _standardFont));
+            PdfPCell cdninuevo = new PdfPCell(new Phrase("Con DNI N° ", _standardFont));
             clDireccion.BorderWidth = 0;
             clDireccion.BorderWidthBottom = 0.75f;
 
 
-            PdfPCell cnombrenuevo = new PdfPCell(new Phrase("nombre", _standardFont));
-            clDireccion.BorderWidth = 0;
-            clDireccion.BorderWidthBottom = 0.75f;
+            /*PdfPCell cnombrenuevo = new PdfPCell(new Phrase("nombre", _standardFont));
+            cnombrenuevo.BorderWidth = 0;
+            cnombrenuevo.BorderWidthBottom = 0.75f;*/
+
+            PdfPCell cnombrenuevo = new PdfPCell(new Phrase("Recibi del Sr. (a) ", _standardFont));
+            cnombrenuevo.BorderWidth = 0;
+            cnombrenuevo.BorderWidthBottom = 0.75f;
 
             PdfPCell cappat = new PdfPCell(new Phrase("Apellido paterno", _standardFont));
             cappat.BorderWidth = 0;
@@ -416,8 +420,9 @@ namespace Ap_escuela
             tblPrueba.AddCell(clCorreo);
             tblPrueba.AddCell(clDireccion);
 
-            tblPruebadni.AddCell(cdninuevo);
+            
             tblPruebanombre.AddCell(cnombrenuevo);
+            tblPruebadni.AddCell(cdninuevo);
             tblPruebaappat.AddCell(cappat);
             tblPruebaapmat.AddCell(capmat);
             tblPruebafecha_nac.AddCell(cfecha);
@@ -483,7 +488,6 @@ namespace Ap_escuela
 
             // Añadimos las celdas a la tabla
             tblPrueba.AddCell(clDni);
-            doc.Add(new Paragraph("nom"));
             tblPrueba.AddCell(clNombre);
             tblPrueba.AddCell(clAppat);
             tblPrueba.AddCell(clApmat);
@@ -502,9 +506,11 @@ namespace Ap_escuela
             tblPruebacorreo.AddCell(ccorreo);
             tblPruebadireccion.AddCell(cdireccion); ;
 
-            doc.Add(tblPrueba);
-            doc.Add(tblPruebadni);
+            //doc.Add(tblPrueba);
+            //doc.Add(new Paragraph("Dni"));
+            
             doc.Add(tblPruebanombre);
+            doc.Add(tblPruebadni);
             doc.Add(tblPruebaappat);
             doc.Add(tblPruebaapmat);
             doc.Add(tblPruebafecha_nac);
